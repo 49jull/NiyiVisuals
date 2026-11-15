@@ -7,10 +7,10 @@ Scope: local Home and shared foundation only. No deployment, client-site mutatio
 - `npm run check`: 0 errors, 0 warnings, 0 hints.
 - `npm run lint`: pass (ESLint 10, TypeScript and Astro rules).
 - `npm run build`: pass; exactly one HTML content page.
-- `npm run test`: all 5 tests pass. Includes six photographic placements, original Home text, category routes, preview semantics, research exclusion and all 16 original handoff manifest entries.
+- `npm run test`: all 5 tests pass. Includes six photographic placements, original Home text, category routes, preview semantics, research exclusion and all 16 current handoff manifest entries.
 - `npm audit`: zero vulnerabilities, including development tools after a scoped transitive dependency override.
 - [Web Interface Guidelines](https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md) fetched and applied during UI review; PRODUCT.md controls source-copy voice, pinned typography and scope where generic guidance differs.
-- Impeccable detector: one warning matching “Roboto” inside “Roboto Mono”; kept because PRODUCT.md explicitly requires that metadata family. No other findings.
+- Impeccable detector: the revision reports font-ramp advisories against the earlier design record. Intentional Home story/mobile/category display roles are now recorded in DESIGN.md. Earlier generic “Roboto” matching was a false positive for the prescribed Roboto Mono metadata role.
 - Raster provenance scan: 54 source/build raster files checked, none missing provenance. Sources and generated derivatives are accounted for separately.
 
 ## Browser checks
@@ -44,3 +44,11 @@ Impeccable finish verdict: SHIP for local homepage visual review. A verdict pass
 Only Home has been developed. Dev/preview 302 handoffs make pending navigation useful without claiming the other pages are ready; the future Services anchors do not exist on the original site. Gallery 4 returns HTTP 404. Production output contains no redirects or other content pages.
 
 Original Home copy was recovered, but copy exports for other pages, owner masters/rights/credits, currency and terms, privacy, inquiry delivery, hosting/origin, redirect control and owner editing workflow still require later work. Canonical and sitemap configuration is deferred until the actual origin is chosen. The homepage stays noindex throughout local review.
+
+## Differentiation revision — 15 November 2026
+
+The user liked the initial homepage but requested greater visual separation from the original. Revised the opening into a full-width typographic composition with actions before a landscape image, gave Sport a photograph-left/large-caption-right spread, broadened the desktop Parties crop, and changed the complete personal story to a paper-colored chapter with copy first and an inset portrait to the right. All source copy, six photo placements, nav destinations, font families and restrained-motion behavior are retained.
+
+PRODUCT.md v1.1 and its identical distribution copy record these user-authorized layout changes; their manifest entries were refreshed. The other 14 supplied research/register/evidence files remain unchanged. The body sizes remain 18px tablet/desktop and 17px mobile. Browser checks at 320/390/768/1024/1366/1920px show no horizontal document overflow. This revision supersedes the initial layout evidence; the homepage approval gate remains pending.
+
+The independent refinement review also returned SHIP for local homepage visual review, with no material fix requested. The revised paper chapter was checked in-browser for its actual prose colors and dark focus treatment. See `.impeccable/review/finish-review.md` for the current review scope.

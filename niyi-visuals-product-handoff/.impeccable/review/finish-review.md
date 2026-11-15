@@ -2,45 +2,45 @@
 
 ## Disposition
 
-**SHIP — local homepage for user visual review.** The body-typography finding is resolved in source, and refreshed desktop/mobile evidence shows the larger prose fitting the existing composition. This final disposition supersedes the intermediate FIX verdict. It does not authorize publication or development of the remaining pages.
+**SHIP — revised local homepage for user visual review.** No material fix is required in this refinement pass. The updated composition responds to the user's request for clearer separation from Pixieset while preserving the On Both Sides direction. This verdict does not authorize publication or development of other content pages.
 
-Reviewed on 15 November 2026 against `PRODUCT.md`, `.impeccable/surfaces/src-pages-index-astro.md`, the Impeccable craft floor, and the current official Web Interface Guidelines fetched from their source. The pinned On Both Sides composition is the visual authority; no approved comp or quality-board catalog was supplied.
+Reviewed on 15 November 2026 against PRODUCT.md v1.1, the updated Home surface brief, the Impeccable craft floor, and the official Web Interface Guidelines fetched during this review session. The user-authorized revision supersedes the initial five/seven opening and dark biography treatment; those older layouts are not the acceptance target. No approved comp or quality-board catalog was supplied.
 
 ## Material findings
 
-**Previous P2 body-typography finding: resolved.** PRODUCT section 6 specifies 17px mobile and 18px tablet/laptop/wide-desktop body text. This verdict pass scores only the concrete typography correction and its visible wrapping; unrelated styling was not reopened.
+**None requiring correction.** This was one bounded pass over the updated `src/pages/index.astro`, `src/components/CategoryFeature.astro`, and refreshed full `desktop.jpg` / `mobile.jpg` evidence. Both captures show all six photographic regions loaded and a coherent document-start composition. Rejected transient captures and older hero crops were not used to judge this revision.
 
-| Fix | Status | Source / evidence |
+The previous body-typography correction remains intact:
+
+| Fix | Status | Current source |
 |---|---|---|
-| Hero supporting prose: 18px desktop/tablet, 17px mobile | Resolved | `src/pages/index.astro:57`, `:95`, `:105`; 1.65 leading retained. Refreshed desktop/mobile supporting copy fits without collision. |
-| Biography prose: 18px desktop/tablet, 17px mobile | Resolved | `src/pages/index.astro:79`, `:123`; 1.65 leading retained. The intentional 24–32px introductory paragraph at `:80` remains distinct through its more specific selector. |
-| Service descriptions: 18px desktop/tablet, 17px mobile; 1.6 leading | Resolved | `src/pages/index.astro:86`, `:131`; refreshed service rows accommodate wrapping without clipping or overlapping controls. |
-| Inquiry supporting prose: 18px desktop/tablet, 17px mobile; 1.6 leading | Resolved | `src/pages/index.astro:93`, `:135`; refreshed invitation fits with clear separation from its action. |
+| Hero supporting prose: 18px desktop/tablet, 17px mobile; 1.65 leading | Resolved | `src/pages/index.astro:65`, `:118` |
+| Biography prose: 18px desktop/tablet, 17px mobile; 1.65 leading | Resolved | `src/pages/index.astro:80`, `:129`; the intentional 24–32px introductory line remains at `:81` |
+| Service descriptions: 18px desktop/tablet, 17px mobile; 1.6 leading | Resolved | `src/pages/index.astro:89`, `:137` |
+| Inquiry supporting prose: 18px desktop/tablet, 17px mobile; 1.6 leading | Resolved | `src/pages/index.astro:96`, `:141` |
 
-**Fix score: 4 resolved / 0 partial / 0 unresolved.** No further correction is required for this finding. The main implementation agent reports a 1440px browser-computed check of 18px for all four roles, with 29.7px hero/biography leading and 28.8px service/inquiry leading; this independent pass verifies the source and refreshed image evidence rather than claiming to have rerun that browser check.
-
-The detector's `overused-font` warning at `src/styles/global.css:3` is a false positive for this brief: PRODUCT explicitly requires Roboto Mono for short metadata, paired here with Archivo for display, body, and UI.
-
-The initial `mobile-hero.jpg` showed the former CTA wrap. The current full `mobile.jpg` and source show the corrected 16px CTA gap. The hero crop was subsequently refreshed as well; the initial crop is superseded. The supplied full desktop/mobile captures show loaded photography and coherent page content; no invalid capture was used to judge the result.
+**Fix score: 4 resolved / 0 partial / 0 unresolved.** The detector's Roboto warning remains a brief-authorized exception: PRODUCT explicitly specifies Roboto Mono for short metadata.
 
 ## Visual quality / brief fidelity
 
-The homepage expresses the specified photographic world consistently: ink/paper neutrals, restrained Archivo typography, sparse mono metadata, square photographic frames, thin rules, quiet controls, and no invented logo, badges, testimonials, or generic equal-card section system. The desktop opening establishes the intended five/seven text/image balance. The mobile celebration remains landscape and preserves the group context. Text sits on a solid readable ground.
+The revised opening is visibly more authored: the action/emotion phrase stretches across the desktop width, the remaining original headline provides a quieter second level, actions are immediately available, and the celebration occupies its own broad landscape frame. Mobile adapts the opposing phrase alignment and keeps both actions before the photograph. The hierarchy remains clear without introducing new copy or decorative branding.
 
-The sequence is complete and recognizably editorial: opening celebration, dominant Sport, offset Parties/Lifestyle, photographer portrait with the five Home introductory blocks, three compact service rows, running photograph, original closing invitation, and footer. All six Home placement IDs are explicitly represented through typed photo records. The original Home supporting text and five introductory blocks are projected from a dedicated public content record rather than the research documents. No apparent omission or fabricated business claim was found in rendered Home content. The body sizing now follows the specified roles, as recorded in the resolved-fix table.
+The Sport image-left/category-right spread gives the lead collection a stronger identity. Its large title and restrained rule/action balance the photograph without competing with its subject. The broader desktop Parties crop and offset Lifestyle portrait produce distinct scales; the full category groups keep their correct single destinations. Mobile restores the compact image/title/action grouping and ordered Sport, Parties, Lifestyle sequence.
 
-Desktop and mobile have deliberate differences without losing the same hierarchy. Category titles and their actions stay attached to their photographs, source color/monochrome treatment remains intact, and the personal story has a continuous readable measure. The mobile menu has clear hierarchy and comfortable spacing. No material crop, clipping, overlap, or misplaced category was visible in the supplied current full captures.
+The paper biography chapter provides the strongest separation from the former continuous dark page. Copy precedes the inset photographer portrait in both DOM and mobile reading order. Its full five-block story stays continuous, readable, and comfortably separated from the image. The paper-specific prose/caption colors, focus override, and selection colors are present in source. The main implementation agent reports computed muted prose `rgb(96,92,86)` on `rgb(243,239,233)` and verified dark focus; this pass did not repeat those browser measurements.
 
-Static inspection supports a reusable foundation: semantic links/buttons, a single H1 with section headings, landmarks and skip link, shared tokens/components, real image descriptions, reserved image frames, responsive derivative selection, high-priority hero loading, lazy supporting photography, visible focus styling, native modal semantics, and explicit reduced-motion handling. The authored motion is limited to the opening composition, selected work entrance, and ordinary interaction feedback; content is visible by default.
+All six Home photographs, original Home copy, category mappings, services/inquiry structure, Archivo/Roboto Mono roles, neutral tokens, and restrained control language remain intact. The refreshed captures show no material overlap, crop failure, clipped body copy, or disconnected action introduced by the refinement. The layout differentiates through composition and chapter rhythm while staying within the selected direction.
 
 ## Validation limitations
 
-The initial independent pass inspected source and the five named screenshots. The final typography verdict inspected updated source plus refreshed `desktop.jpg` and `mobile.jpg`; both show all six photographic regions loaded, and the corrected prose wraps cleanly in the reviewed desktop/mobile compositions. It did not operate a browser or rerun build/runtime tests. Keyboard trapping, Escape, focus return, outside dismissal, navigation redirects, zoom/reflow, broken-image behavior, no-JavaScript behavior, actual performance, and screen-reader output cannot be certified from screenshots. The main implementation agent's separately recorded checks remain the evidence for those behaviors.
+This independent pass inspected source and supplied screenshots; it did not operate a browser or rerun build/runtime tests. The main implementation agent reports no overflow at 320/390/768/1024/1366/1920px, paper contrast/focus checks, and passing build/type/lint/five tests. Those remain separately recorded implementation evidence, not independently repeated results.
 
-No production integration was exercised or certified. A contact form is outside this homepage implementation. Provider acceptance, real inquiry receipt, final canonical origin, owner privacy content, photo masters/publication rights, hosting, and production indexing remain outside this review verdict. The preview's `noindex, nofollow` state is appropriate to the current local review scope.
+Keyboard trapping, Escape, focus return, outside dismissal, navigation redirects, zoom/reflow, broken-image behavior, no-JavaScript behavior, actual performance, and screen-reader output cannot be certified from screenshots. Earlier source and screenshot observations of the shared foundation do not replace those runtime checks.
+
+No production integration was exercised or certified. A contact form is outside this homepage implementation. Provider acceptance, real inquiry receipt, final canonical origin, owner privacy content, photo masters/publication rights, hosting, and production indexing remain outside this verdict. The local preview's `noindex, nofollow` remains appropriate.
 
 ## Final scope verdict
 
-**Homepage-only scope is respected.** The remaining seven content routes are local dev/preview handoffs to the existing site, not newly implemented content pages. Their presence does not establish completion of the wider eight-page specification. No deployment, client-site edit, inquiry submission, or hosting migration is approved by this review.
+**Homepage-only scope is respected.** Other content routes remain local dev/preview handoffs to the existing site, not newly developed pages. No deployment, client-site edit, inquiry submission, or hosting migration is approved by this review.
 
-The typography correction is complete at this review scope. Proceed to the user's visual review of the local homepage. Do not build the remaining content pages or publish before the applicable user approval.
+The current refinement is ready for the user's visual review. Preserve the homepage gate before developing remaining pages or publishing.

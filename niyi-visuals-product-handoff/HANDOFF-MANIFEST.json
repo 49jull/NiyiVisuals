@@ -10,13 +10,13 @@
   "files": [
     {
       "path": "PRODUCT.md",
-      "bytes": 69013,
-      "sha256": "0b653f156fb5a00d7118d6a083c1a0ea42bd3955f3bcd7b6b152d899171e4c6e"
+      "bytes": 70023,
+      "sha256": "af02a1c8a863e3c3f4116cc223b8677b6be5a619f3f53094fb56bafe57d50ee4"
     },
     {
       "path": "outputs/PRODUCT.md",
-      "bytes": 69013,
-      "sha256": "0b653f156fb5a00d7118d6a083c1a0ea42bd3955f3bcd7b6b152d899171e4c6e"
+      "bytes": 70023,
+      "sha256": "af02a1c8a863e3c3f4116cc223b8677b6be5a619f3f53094fb56bafe57d50ee4"
     },
     {
       "path": "outputs/redesign-strategy.md",
@@ -88,5 +88,6 @@
       "bytes": 102908,
       "sha256": "8785457d8a7caf2f5e8ebffb2f23e136e4d6dee7777f22e7d9a8c1a92f6be1d4"
     }
-  ]
+  ],
+  "spec_revision_note": "PRODUCT.md v1.1 records the user-requested homepage layout differentiation on 15 November 2026. Supplied research, registers and evidence are unchanged."
 }

@@ -44,7 +44,7 @@ test('review remains private and modal controls expose named states', () => {
   assert.match(html, /<dialog[^>]*aria-label="Site navigation"/);
   assert.match(html, /href="#main-content"/);
 });
-test('original supplied evidence remains byte-identical', () => {
+test('supplied evidence and authorized specification revision match the manifest', () => {
   const manifest = JSON.parse(read('../HANDOFF-MANIFEST.json'));
   for (const item of manifest.files) {
     const file = new URL(`../${item.path}`, import.meta.url);

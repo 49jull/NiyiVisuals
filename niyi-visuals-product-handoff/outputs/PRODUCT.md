@@ -2,7 +2,7 @@
 
 <!-- impeccable:product-schema 1 -->
 
-**Version:** 1.0 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
+**Version:** 1.1 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
 
 **Creative direction:** On Both Sides. **Existing website:** [Niyi Visuals](https://niyivisuals.mypixieset.com/)
 
@@ -204,7 +204,7 @@ Use `/services/#sport`, `/services/#parties` and `/services/#lifestyle` for rele
 
 Create a carefully edited sports-and-people portfolio: dark photographic settings, warm typography, strong changes in image scale, understandable captions and calm light information pages. The athlete's perspective connects action with personal meaning across all three categories. This is not a concept name that must be printed on the public website.
 
-**Memorable first impression:** an unmistakably real team-celebration photograph alongside clear personal identity and action/emotion language. Essential text sits on solid ground. The visitor can identify the work and enter it without waiting for an animated intro.
+**Memorable first impression:** an unmistakably real team-celebration photograph beneath a wide editorial treatment of the original action/emotion headline, with clear personal identity. Essential text sits on solid ground. The visitor can identify the work and enter it without waiting for an animated intro.
 
 **Composition:** vary a large landscape, offset portrait pair and narrower reading passage inside one grid. Use thin rules, short category labels and disciplined alignment. Strong typography and image editing supply the personality. Services uses aligned comparison rows; About uses readable personal narrative; Contact prioritizes completing a task.
 
@@ -320,14 +320,16 @@ All pages include the shared header/footer, one H1, correct landmarks, page meta
 
 ### P01 — Home `/`
 
-**Goal:** identify photographer, services and perspective, show authentic work early, lead to a category or inquiry. **Mode:** Experience; inquiry is the secondary outcome. **Theme:** ink.
+**Goal:** identify photographer, services and perspective, show authentic work early, lead to a category or inquiry. **Mode:** Experience; inquiry is the secondary outcome. **Theme:** ink, with a warm-paper personal-story chapter.
+
+**Revision note — 15 November 2026:** after reviewing the first local homepage, the user requested clearer visual separation from the original site while retaining On Both Sides. The following wide opening, restructured work spread and paper biography chapter supersede the initial five/seven hero and dark biography layout. Original copy, photographs, route mapping, accessibility and restrained-motion requirements remain binding.
 
 **Order and composition**
 
 1. Compact shared header.
-2. Hero: short category/location descriptor using known facts; existing hero heading; original supporting prose; View work → `/portfolio/`; secondary Let's connect → `/contact/`; `NV-HOME-01`. Desktop text about five columns, image seven; at wider sizes image may bleed right. Text sits on solid ink. Avoid a full-screen height requirement.
-3. Work sequence: dominant Sport feature using `NV-HOME-04`, then offset Parties/Lifestyle using `03`/`05`. Each complete title/image/action shares its correct route. Vary scale without three uniform cards.
-4. Personal introduction using `NV-HOME-02`, the original five Home prose blocks and link to About. Put the section heading before its related prose.
+2. Hero: short category/location descriptor using known facts; existing hero heading; original supporting prose; View work → `/portfolio/`; secondary Let's connect → `/contact/`; `NV-HOME-01`. Use a wide typographic opening: the original action/emotion phrase spans the desktop width, with the remaining original headline beneath it and actions alongside. Place the landscape celebration photograph below, followed by the original supporting prose. Text sits on solid ink. Avoid a full-screen height requirement.
+3. Work sequence: dominant Sport feature using `NV-HOME-04`, with its photograph on the left and a large linked category title/action beside it; then an offset Parties/Lifestyle pair using `03`/`05`, contrasting a broader Parties crop with a portrait-led Lifestyle feature. Each complete title/image/action shares its correct route. Vary scale without three uniform cards.
+4. Personal introduction on a warm-paper chapter using `NV-HOME-02`, the original five Home prose blocks and link to About. Use a continuous reading column on the left and an inset photographer portrait on the right; stack in reading order on mobile. Put the section heading before its related prose.
 5. Compact service guide in three rows: category and a confirmed description, leading to corresponding Services anchors. Do not show invented starting prices or normalize the ambiguous existing ones.
 6. `NV-HOME-06` closing photograph, source closing invitation and one clear inquiry action.
 7. Footer.

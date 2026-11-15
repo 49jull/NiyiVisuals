@@ -17,10 +17,25 @@ colors:
 typography:
   display:
     fontFamily: "Archivo, Helvetica Neue, sans-serif"
-    fontSize: "clamp(44px, 6.1vw, 96px)"
+    fontSize: "clamp(48px, 7.05vw, 96px)"
     fontWeight: 500
-    lineHeight: 1.04
+    lineHeight: 1.06
     letterSpacing: "-0.025em"
+  home-story:
+    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontSize: "clamp(28px, 3.45vw, 48px)"
+    fontWeight: 500
+    lineHeight: 1.15
+  home-display-mobile:
+    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontSize: "clamp(42px, 9vw, 64px)"
+    fontWeight: 500
+    lineHeight: 1.06
+  category-display:
+    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontSize: "clamp(48px, 5vw, 72px)"
+    fontWeight: 500
+    lineHeight: 1.2
   headline:
     fontFamily: "Archivo, Helvetica Neue, sans-serif"
     fontSize: "clamp(32px, 3.9vw, 56px)"
@@ -125,7 +140,7 @@ Warm neutrals keep the photographic color and human subjects prominent. The fron
 - **Muted dark-page text** softens supporting prose, captions and metadata without hiding them.
 - **Decorative rule** divides sections; **dark control border** identifies interactive outlines. These have distinct roles.
 - **Warm focus** is the dark-page focus indicator. It is a functional accent rather than a decorative brand color.
-- **Light-page text**, **muted light-page text**, **light control border** and **light focus** exist as foundation tokens only. No paper-themed content page is implemented in this scope.
+- **Light-page text**, **muted light-page text** and **light focus** are used in the homepage’s paper-colored biography chapter. **Light control border** is reserved for future practical pages. No separate paper-themed content page is implemented.
 
 **The Photographic Color Rule.** Preserve the registered photographs’ original color or monochrome treatment; the interface stays neutral.
 
@@ -135,8 +150,8 @@ Warm neutrals keep the photographic color and human subjects prominent. The fron
 
 **Metadata:** Roboto Mono, monospace fallback, self-hosted normal weight (400), `font-display: swap`. Font assets and OFL notices remain in `public/fonts/`; only Archivo is preloaded by `src/layouts/BaseLayout.astro`.
 
-- **Display:** frontmatter gives the base H1. Home switches to `clamp(52px, 6.1vw, 68px)` at 768–1100px, `clamp(42px, 7.7vw, 58px)` below 768px, and 40px below 360px. Desktop headline spans form four lines; mobile spans flow inline. The latter half uses muted text.
-- **Headline / title:** the frontmatter records the reusable H2/H3 hierarchy. Category names enlarge to `clamp(26px, 2.8vw, 40px)`; the inquiry H2 uses `clamp(40px, 5vw, 72px)`.
+- **Display:** Home uses `clamp(48px, 7.05vw, 96px)` and 1.06 leading. The original “Where action” / “meets emotion” phrase spans one desktop row; the rest of the original headline is a muted 28–48px line beneath it. Below 768px the two main phrases form opposing left/right aligned lines at `clamp(42px, 9vw, 64px)` (40px below 360px); the remaining words use 24–34px. Both actions remain before the photograph in DOM and visual order.
+- **Headline / title:** reusable H2/H3 roles retain the frontmatter hierarchy. The leading Sport category has a deliberate 48–72px display treatment beside the photograph, returning to 32px on mobile. Other categories remain 26–40px. The inquiry H2 retains its 40–72px treatment. These are intentional named variants, not a replacement body scale.
 - **Body:** 18px at tablet/desktop and 17px below 768px. Hero and biography prose use 1.65 leading; service and inquiry prose use 1.6. The first biography paragraph remains a distinct 24–32px introduction at 1.2 leading. Biography is bounded to 57ch, hero supporting text to 39ch (45ch mobile), and inquiry supporting text to 35ch (32ch mobile).
 - **UI:** actions use the frontmatter role; desktop navigation uses 15px, with selected narrow-screen secondary actions at 14px. Minimum interactive geometry is preserved independently of text size.
 - **Metadata:** default 12px; photo captions use 1.45 leading. The mobile hero context/caption and narrow footer use 10px for short non-prose labels. Do not promote those small exceptions into a general text role.
@@ -147,9 +162,13 @@ Warm neutrals keep the photographic color and human subjects prominent. The fron
 
 The shared container is `min(calc(100% - gutter * 2), 1440px)` and centered. Fluid gutter, grid gap and section spacing are recorded in frontmatter; gutter becomes 16px below 360px. The opaque sticky header reserves 88px, switching to 72px at 900px and below. Anchor scroll offsets add 24px to header height.
 
-The homepage uses explicit proportional grids rather than a generic card grid: hero 5/7; lead work 3/9; offset work pair 6/5; biography 5/6; services 4/8; inquiry 1/1. The work pair gap grows from 40px to 144px and Lifestyle starts 128px lower. At 768–1100px the hero is 1/1.05 and services 3/8. Below 768px these reading sections stack; the work note disappears, the pair has 40px separation, Lifestyle is 86% wide and right aligned, and the biography portrait is 80% wide. Service arrows occupy their own 44px column beside title/description. Footer columns adapt at 1023px and 600px.
+The homepage now separates the wide typographic opening from its full-width landscape celebration image, with the original supporting copy and exploration link underneath. On desktop the headline’s secondary line and the two actions share a baseline; tablet/mobile actions flow beneath the heading. No essential text overlays the photograph.
 
-Crops are deliberate, reserved and square-cornered: celebration 1.16 desktop, 0.94 at tablet, 1.5 mobile; Sport 1.24 desktop and 4/5 mobile; Parties, Lifestyle and photographer 4/5; running 2.35 desktop and 1.5 mobile. `src/content/photos.ts` owns desktop/mobile focal positions: celebration 50% 60%, photographer 50% 48%, Parties 50% 0%, Sport 50% 64%, Lifestyle 50% 43%, running 50% 55%. Both breakpoint records currently agree per image; preserve the separate fields.
+The leading Sport feature is an 8/3 image/category-caption grid with a large title and ruled action; its photograph is 1.15. The following Parties/Lifestyle spread uses a 6/5 grid, 40–144px gap and a 96px Lifestyle offset. Parties has a broader 1.05 crop while Lifestyle retains 4/5. Below 768px the lead stacks with a normal caption, Sport and Parties return to 4/5, and Lifestyle remains 86% wide and right aligned.
+
+The personal story is a full-width paper-colored chapter. Inside its container, a 7/4 reading-column/portrait grid reverses the earlier photograph-left arrangement. The original five paragraphs precede the inset 3/4 monochrome portrait in DOM order. Mobile stacks in that same reading order, with the portrait at 80% width aligned right. Prose uses light-page color tokens; focus is dark ink on paper and selection reverses to ink/paper.
+
+Services remains 4/8 (3/8 on tablet) on ink; inquiry remains 1/1. The service rows and footer keep their existing responsive structure. The celebration is 2.2 on desktop and 1.5 below 768px; running remains 2.35/1.5. Focal records and original color/monochrome treatments remain in `src/content/photos.ts` and are unchanged.
 
 `PhotoFigure.astro` uses cover cropping, explicit intrinsic image dimensions and reserved aspect frames. Astro generates WebP/JPEG derivatives at supported widths among 480/768/1280/1920px with quality 83. The hero is eager/high priority; supporting images are lazy. A failed image keeps its frame and descriptive text.
 
@@ -181,7 +200,7 @@ Each category feature is a single full-image/title/action link. Caption titles s
 
 ### Focus and motion
 
-The implemented dark-page focus treatment is a 2px warm outline with 5px offset. Skip to content appears on focus. Links remain usable without animation or scripts.
+The implemented focus treatment is a 2px warm outline with 5px offset on ink, overridden with dark ink inside the paper biography chapter. Skip to content appears on focus. Links remain usable without animation or scripts.
 
 The shared easing is `cubic-bezier(0.22, 1, 0.36, 1)`. A loaded hero image can settle from 1.015 to 1 over 400ms; at widths of at least 768px the title can settle up to 8px over 400ms. The first work feature enters once by 12px over 400ms at a 0.12 intersection threshold. These are progressive enhancements with visible starting content. Menu entrance is a 220ms opacity change. Reduced motion sets animation/transition durations to zero and bypasses scripted entrances. No ambient loops or paragraph-by-paragraph reveal sequence exists.
 
@@ -203,3 +222,7 @@ This scope contains no image enlargement viewer or inquiry form. The inquiry clo
 - **Don’t** turn the work sequence into three uniform cards or put long prose in tracked mono.
 - **Don’t** place readable content behind photographic overlays or depend on hover alone.
 - **Don’t** infer a paper-themed page, viewer, inquiry form, hosting service, CMS or production origin from this homepage record.
+
+## Homepage differentiation revision — 15 November 2026
+
+The user requested clearer visual distance from the original Pixieset website while retaining On Both Sides. The wide opening, separate landscape image, leading Sport caption and paper biography chapter are the resulting approved-scope design changes. The revision keeps the same fonts, neutral palette, source copy and photographs. PRODUCT.md v1.1 records this change; the other seven pages remain behind the homepage approval gate.

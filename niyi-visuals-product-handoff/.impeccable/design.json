@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-15T17:17:34.677918+00:00",
+  "generatedAt": "2026-11-15T18:28:23.377747+00:00",
   "title": "Design System: Niyi Visuals",
   "extensions": {
     "colorMeta": {
@@ -107,7 +107,7 @@
           "oklch(84% 0.00401 84.59)",
           "oklch(95% 0.00401 84.59)"
         ],
-        "purpose": "Foundation-only light-page token; no light page implemented."
+        "purpose": "Used in the homepage warm-paper biography chapter; separate practical pages remain unimplemented."
       },
       "text-muted-light": {
         "displayName": "Muted light-page text",
@@ -122,7 +122,7 @@
           "oklch(84% 0.01077 78.22)",
           "oklch(95% 0.01077 78.22)"
         ],
-        "purpose": "Foundation-only light-page token; no light page implemented."
+        "purpose": "Used in the homepage warm-paper biography chapter; separate practical pages remain unimplemented."
       },
       "control-border-light": {
         "displayName": "Light control border",
@@ -167,7 +167,7 @@
           "oklch(84% 0.00401 84.59)",
           "oklch(95% 0.00401 84.59)"
         ],
-        "purpose": "Foundation-only light-page token; no light page implemented."
+        "purpose": "Used in the homepage warm-paper biography chapter; separate practical pages remain unimplemented."
       },
       "action-hover": {
         "displayName": "Action hover",
@@ -188,7 +188,7 @@
     "typographyMeta": {
       "display": {
         "displayName": "Home display",
-        "purpose": "Home H1, real 90% font stretch; responsive overrides in DESIGN.md.",
+        "purpose": "Home main phrase across the desktop width, with a smaller original story line. 90% real font stretch; responsive opposing alignments on mobile.",
         "fontAsset": "public/fonts/archivo-latin-variable.woff2",
         "weightRange": "100 900",
         "stretchRange": "62% 125%"
@@ -206,6 +206,14 @@
         "purpose": "Sparse contextual labels and captions, never long prose.",
         "fontAsset": "public/fonts/roboto-mono-latin-400.woff2",
         "fontWeight": 400
+      },
+      "home-story": {
+        "displayName": "Home story line",
+        "purpose": "Original final headline clause below the main action/emotion phrase; muted, 28–48px desktop and 24–34px mobile."
+      },
+      "category-display": {
+        "displayName": "Leading Sport category",
+        "purpose": "48–72px Sport caption beside its photograph, returning to 32px on mobile."
       }
     },
     "shadows": [],
@@ -284,7 +292,7 @@
     "focus": {
       "value": "2px solid var(--focus-dark)",
       "offset": "5px",
-      "purpose": "Implemented dark-page focus-visible ring."
+      "purpose": "Warm focus on ink; overridden by focus-light dark ink in the paper biography chapter."
     },
     "rampNote": "Tonal ramps are synthesized panel previews only; they are not additional interface colors or CSS tokens.",
     "sources": [
@@ -352,11 +360,11 @@
   ],
   "narrative": {
     "northStar": "On Both Sides",
-    "overview": "On Both Sides gives the client’s photography the greatest visual weight. Ink grounds, warm paper text, variable Archivo, sparse mono metadata, rectangular images and fine rules produce a confident, human editorial system. Color comes primarily from the registered photographs; interface ornament remains quiet.\n\nThis record describes the built homepage and shared foundation only. It is evidence for local homepage review, not a claim that the remaining pages, a viewer, a contact form or production integrations exist. The pinned direction is already selected; this document records its implementation.",
+    "overview": "On Both Sides retains the client’s photography, neutral palette and Archivo voice while the homepage uses a new wide typographic opening, a separate landscape celebration image, a leading Sport image/category spread, and a warm-paper biography chapter. This revision responds to the user’s request for greater distinction from the original Pixieset site. Homepage only; no viewer, contact form or other pages are implemented.",
     "keyCharacteristics": [
-      "Real photography leads; text stays on a solid ground.",
-      "Asymmetric image scale with continuous readable prose.",
-      "Quiet links, thin rules and restrained state feedback."
+      "Wide action/emotion typography above real landscape photography.",
+      "Contrasting work-image proportions with a prominent Sport caption.",
+      "A warm-paper reading chapter within the dark photographic site."
     ],
     "rules": [
       {
@@ -386,7 +394,7 @@
       "Don’t substitute stock or generated portfolio photographs, invented logos or business claims.",
       "Don’t turn the work sequence into three uniform cards or put long prose in tracked mono.",
       "Don’t place readable content behind photographic overlays or depend on hover alone.",
-      "Don’t infer a paper-themed page, viewer, inquiry form, hosting service, CMS or production origin from this homepage record."
+      "Don’t infer a separately implemented paper-themed page, viewer, inquiry form, hosting service, CMS or production origin from this homepage record."
     ]
   }
 }

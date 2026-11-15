@@ -12,28 +12,28 @@ import { categories, routes } from '../content/site';
   <section class="hero container" aria-labelledby="home-title">
     <div class="hero-context metadata"><span>Sport, parties &amp; lifestyle photography</span><span>Apeldoorn, The Netherlands</span></div>
     <div class="hero-composition">
-      <h1 id="home-title" class="hero-title" aria-label={home.heading}><span>Where action</span>{" "}<span>meets emotion</span>{" "}<span class="quieter">every frame</span>{" "}<span class="quieter">tells a story</span></h1>
-      <div class="hero-visual"><PhotoFigure photo={photos.celebration} eager sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1599px) 56vw, 840px" /><div class="hero-photo-caption metadata"><span>Sport / celebration</span><a href={routes.sport} aria-label="View Sport photography"><Arrow /></a></div></div>
-      <div class="hero-details">
-        <p class="hero-description">{home.supporting}</p>
+      <div class="hero-opening">
+        <h1 id="home-title" class="hero-title" aria-label={home.heading}><span class="hero-title-main"><span>Where action</span>{" "}<span>meets emotion</span></span>{" "}<span class="hero-title-story">every frame tells a story</span></h1>
         <div class="hero-actions"><ActionLink href={routes.work} variant="primary">View work</ActionLink><ActionLink href={routes.contact}>Let's connect</ActionLink></div>
       </div>
+      <div class="hero-visual"><PhotoFigure photo={photos.celebration} eager sizes="(max-width: 1599px) calc(100vw - 40px), 1440px" /><div class="hero-photo-caption metadata"><span>Sport / celebration</span><a href={routes.sport} aria-label="View Sport photography"><Arrow /></a></div></div>
+      <div class="hero-details"><p class="hero-description">{home.supporting}</p><a href="#work" class="explore-link">Explore the work<Arrow direction="down" /></a></div>
     </div>
-    <div class="hero-baseline"><span class="metadata">Niyi Visuals</span><a href="#work" class="explore-link">Explore the work<Arrow direction="down" /></a></div>
   </section>
 
   <section id="work" class="work container" aria-labelledby="work-title">
     <div class="section-heading"><h2 id="work-title">My work</h2><ActionLink href={routes.work}>View all work</ActionLink></div>
     <div class="work-lead" data-feature-entrance>
-      <div class="work-note"><p>Sport.<br />Parties.<br />Lifestyle.</p><span class="metadata">Action. Emotion.<br />Real moments.</span></div>
       <CategoryFeature name="Sport" href={routes.sport} photo={photos.sport} layout="lead" />
     </div>
     <div class="work-pair"><CategoryFeature name="Parties" href={routes.parties} photo={photos.parties} layout="wide" /><CategoryFeature name="Lifestyle" href={routes.lifestyle} photo={photos.lifestyle} layout="portrait" /></div>
   </section>
 
-  <section id="about" class="about container" aria-labelledby="about-title">
-    <div class="about-portrait"><PhotoFigure photo={photos.photographer} sizes="(max-width: 767px) calc(100vw - 40px), 38vw" caption="Niyi Scholten / Photography" /></div>
-    <div class="about-copy"><h2 id="about-title">About me</h2><div class="biography">{home.introduction.map((paragraph, index) => <p class:list={[index === 0 && 'introduction']}>{paragraph}</p>)}</div><ActionLink href={routes.about}>More about me</ActionLink></div>
+  <section id="about" class="about-chapter" aria-labelledby="about-title">
+    <div class="about container">
+      <div class="about-copy"><h2 id="about-title">About me</h2><div class="biography">{home.introduction.map((paragraph, index) => <p class:list={[index === 0 && 'introduction']}>{paragraph}</p>)}</div><ActionLink href={routes.about}>More about me</ActionLink></div>
+      <div class="about-portrait"><PhotoFigure photo={photos.photographer} sizes="(max-width: 767px) calc(100vw - 80px), 34vw" caption="Niyi Scholten / Photography" /></div>
+    </div>
   </section>
 
   <section id="services" class="services container" aria-labelledby="services-title">
@@ -48,38 +48,41 @@ import { categories, routes } from '../content/site';
 </BaseLayout>
 <style>
   .hero { padding-top: 28px; }
-  .hero-context { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 32px; }
-  .hero-composition { display: grid; grid-template-columns: 5fr 7fr; gap: var(--grid-gap); align-items: center; row-gap: 0; }
-  .hero-title { grid-column: 1; align-self: end; min-width: 0; padding-top: 8px; }
-  .hero-details { grid-column: 1; align-self: start; padding-bottom: 20px; }
-  .hero-title span { display: block; }
-  .hero-title .quieter { color: var(--text-muted-dark); }
-  .hero-description { margin-top: 28px; max-width: 39ch; font-size: 18px; line-height: 1.65; color: var(--text-muted-dark); }
-  .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin-top: 28px; }
-  .hero-visual { min-width: 0; grid-column: 2; grid-row: 1 / 3; }
-  .hero-visual :global(.photo__frame) { aspect-ratio: 1.16; }
-  .hero-photo-caption { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+  .hero-context { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 36px; }
+  .hero-composition { display: grid; gap: 28px; }
+  .hero-opening { position: relative; }
+  .hero-title { font-size: clamp(48px, 7.05vw, 96px); line-height: 1.06; font-stretch: 90%; }
+  .hero-title-main { display: flex; justify-content: space-between; gap: 24px; }
+  .hero-title-main > span { white-space: nowrap; }
+  .hero-title-story { display: block; max-width: 65%; margin-top: 24px; color: var(--text-muted-dark); font-size: clamp(28px, 3.45vw, 48px); line-height: 1.15; }
+  .hero-actions { position: absolute; right: 0; bottom: 0; display: flex; align-items: center; gap: 24px; }
+  .hero-visual { min-width: 0; }
+  .hero-visual :global(.photo__frame) { aspect-ratio: 2.2; }
+  .hero-photo-caption { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
   .hero-photo-caption a { display: grid; place-items: center; width: 44px; height: 44px; }
   .hero-photo-caption :global(svg) { width: 16px; }
-  .hero-baseline { margin-top: 24px; padding-bottom: 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--rule-decorative); }
-  .explore-link { display: flex; align-items: center; gap: 28px; min-height: 48px; text-decoration: none; font-size: 13px; }
+  .hero-details { display: flex; align-items: end; justify-content: space-between; gap: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--rule-decorative); }
+  .hero-description { max-width: 63ch; font-size: 18px; line-height: 1.65; color: var(--text-muted-dark); }
+  .explore-link { display: flex; flex: none; align-items: center; gap: 28px; min-height: 48px; text-decoration: none; font-size: 14px; }
   .explore-link:hover { text-decoration: underline; }
   .explore-link :global(svg) { width: 16px; }
-  .work { padding-top: var(--section-space); }
+  .work { padding-top: var(--section-space); padding-bottom: var(--section-space); }
   .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 48px; }
-  .work-lead { display: grid; grid-template-columns: 3fr 9fr; gap: var(--grid-gap); align-items: end; }
-  .work-note { padding-bottom: 60px; }
-  .work-note p { font-size: clamp(26px, 3vw, 44px); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 28px; }
+  .work-lead { display: block; }
   .work-pair { display: grid; grid-template-columns: 6fr 5fr; gap: clamp(40px, 9vw, 144px); align-items: start; padding-top: 72px; }
-  .work-pair > :global(a:last-child) { margin-top: 128px; }
-  .about { display: grid; grid-template-columns: 5fr 6fr; gap: clamp(48px, 8.4vw, 128px); align-items: center; padding-top: var(--section-space); padding-bottom: var(--section-space); }
-  .about-portrait :global(.photo__frame) { aspect-ratio: 4 / 5; }
+  .work-pair > :global(a:last-child) { margin-top: 96px; }
+  .about-chapter { background: var(--paper); color: var(--text-light-page); }
+  .about { display: grid; grid-template-columns: 7fr 4fr; gap: clamp(48px, 9vw, 144px); align-items: center; padding-block: var(--section-space); }
+  .about-portrait :global(.photo__frame) { aspect-ratio: 3 / 4; }
+  .about-portrait :global(figcaption) { color: var(--text-muted-light); }
   .about-copy { max-width: 57ch; }
   .about-copy h2 { margin-bottom: 32px; }
-  .biography p { margin-bottom: 20px; color: var(--text-muted-dark); font-size: 18px; line-height: 1.65; }
-  .biography .introduction { color: var(--paper); font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 24px; }
+  .biography p { margin-bottom: 20px; color: var(--text-muted-light); font-size: 18px; line-height: 1.65; }
+  .biography .introduction { color: var(--text-light-page); font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 24px; }
   .about-copy :global(.action) { margin-top: 4px; }
-  .services { display: grid; grid-template-columns: 4fr 8fr; gap: var(--grid-gap); padding-block: 48px var(--section-space); border-top: 1px solid var(--rule-decorative); }
+  .about-chapter :global(:focus-visible) { outline-color: var(--focus-light); }
+  .about-chapter :global(::selection) { background: var(--ink); color: var(--paper); }
+  .services { display: grid; grid-template-columns: 4fr 8fr; gap: var(--grid-gap); padding-block: var(--section-space); }
   .services-heading h2 { margin-bottom: 28px; }
   .service-row { display: grid; grid-template-columns: 3fr 5fr 44px; align-items: center; gap: 24px; min-height: 132px; padding-block: 26px; border-bottom: 1px solid var(--rule-decorative); text-decoration: none; }
   .service-row:first-child { padding-top: 0; min-height: 104px; }
@@ -91,34 +94,37 @@ import { categories, routes } from '../content/site';
   .inquiry-copy { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); align-items: start; padding-block: 48px 64px; border-bottom: 1px solid var(--rule-decorative); }
   .inquiry-copy h2 { font-size: clamp(40px, 5vw, 72px); }
   .inquiry-copy p { max-width: 35ch; color: var(--text-muted-dark); font-size: 18px; line-height: 1.6; margin-bottom: 28px; }
-  @media (min-width: 1600px) { .hero-composition { grid-template-columns: 5fr 7fr; } }
-  @media (min-width: 768px) and (max-width: 1100px) { .hero-title { font-size: clamp(52px, 6.1vw, 68px); } .hero-composition { grid-template-columns: 1fr 1.05fr; } .hero-visual :global(.photo__frame) { aspect-ratio: 0.94; } .hero-description { font-size: 18px; } .hero-actions { gap: 12px; } .about { gap: 48px; } .services { grid-template-columns: 3fr 8fr; } .service-row { gap: 16px; } }
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .hero-actions { position: static; margin-top: 24px; }
+    .hero-title-story { max-width: none; }
+    .about { gap: 48px; }
+    .services { grid-template-columns: 3fr 8fr; }
+    .service-row { gap: 16px; }
+  }
   @media (max-width: 767px) {
     .hero { padding-top: 20px; }
     .hero-context { display: block; font-size: 10px; padding-bottom: 24px; }
     .hero-context span { display: block; }
     .hero-context span + span { margin-top: 4px; }
-    .hero-composition { display: flex; flex-direction: column; align-items: stretch; gap: 28px; }
-    .hero-details { display: contents; }
-    .hero-title { font-size: clamp(42px, 7.7vw, 58px); }
-    .hero-title span { display: inline; }
-    .hero-description { margin-top: 0; max-width: 45ch; font-size: 17px; }
-    .hero-visual { }
+    .hero-composition { gap: 24px; }
+    .hero-title { font-size: clamp(42px, 9vw, 64px); }
+    .hero-title-main { display: flex; flex-direction: column; gap: 0; }
+    .hero-title-main > span:last-child { align-self: end; }
+    .hero-title-story { max-width: none; font-size: clamp(24px, 5.2vw, 34px); margin-top: 20px; }
+    .hero-actions { position: static; margin-top: 24px; flex-wrap: wrap; gap: 16px; }
     .hero-visual :global(.photo__frame) { aspect-ratio: 1.5; }
-    .hero-actions { margin-top: -4px; gap: 16px; }
     .hero-photo-caption { margin-top: 0; font-size: 10px; }
-    .hero-baseline { margin-top: 20px; padding-bottom: 16px; }
-    .hero-baseline > span { display: none; }
-    .hero-baseline .explore-link { width: 100%; justify-content: space-between; }
+    .hero-details { display: block; padding-bottom: 24px; }
+    .hero-description { max-width: 45ch; font-size: 17px; }
+    .explore-link { justify-content: space-between; margin-top: 24px; }
     .section-heading { align-items: center; margin-bottom: 28px; }
     .section-heading :global(.action) { gap: 14px; font-size: 14px; }
     .work-lead { display: block; }
-    .work-note { display: none; }
     .work-pair { grid-template-columns: 1fr; gap: 40px; padding-top: 40px; }
     .work-pair > :global(a:last-child) { margin-top: 0; width: 86%; margin-left: auto; }
     .about { grid-template-columns: 1fr; gap: 32px; align-items: start; }
-    .about-portrait { width: 80%; }
-    .about-portrait :global(.photo__frame) { aspect-ratio: 4 / 5; }
+    .about-portrait { width: 80%; margin-left: auto; margin-top: 8px; }
+    .about-portrait :global(.photo__frame) { aspect-ratio: 3 / 4; }
     .about-copy h2 { margin-bottom: 24px; }
     .biography p { font-size: 17px; }
     .services { grid-template-columns: 1fr; gap: 24px; padding-top: 32px; }
