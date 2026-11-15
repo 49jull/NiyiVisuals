@@ -1,0 +1,61 @@
+---
+import { navigation, categories, contact } from '../content/site';
+import WorkDisclosure from './WorkDisclosure.astro';
+import Arrow from './Arrow.astro';
+---
+<header class="site-header">
+  <div class="header-inner container">
+    <a class="brand" href="/" aria-label="Niyi Scholten — Home"><span>Niyi Scholten</span><span class="brand-note">Photography</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <WorkDisclosure id="desktop-work-categories" />
+      {navigation.slice(1).map(item => <a class:list={[item.label === 'Contact' && 'nav-contact']} href={item.href}>{item.label}{item.label === 'Contact' && <Arrow />}</a>)}
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-label">Menu</span><span class="menu-lines" aria-hidden="true"><span></span><span></span></span></button>
+  </div>
+</header>
+<dialog id="mobile-navigation" class="mobile-navigation" aria-label="Site navigation">
+  <div class="mobile-top"><a class="brand" href="/">Niyi Scholten</a><button type="button" class="menu-close" aria-label="Close menu" autofocus><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19" /></svg></button></div>
+  <nav aria-label="Mobile navigation">
+    <a href="/" aria-current="page" class="mobile-home">Home</a>
+    <WorkDisclosure id="mobile-work-categories" />
+    {navigation.slice(1).map(item => <a href={item.href}>{item.label}</a>)}
+  </nav>
+  <div class="mobile-bottom"><div class="mobile-categories">{categories.map(category => <a href={category.route}>{category.name}</a>)}</div><a href={`mailto:${contact.email}`}>{contact.email}</a><p>Apeldoorn, The Netherlands</p></div>
+</dialog>
+<noscript><style>.menu-toggle { display: none !important; }</style><nav class="no-script-nav container" aria-label="Site navigation">{navigation.map(item => <a href={item.href}>{item.label}</a>)}</nav></noscript>
+<style>
+  .site-header { position: sticky; top: 0; z-index: 20; height: var(--header-height); background: var(--ink); }
+  .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule-decorative); }
+  .brand { display: inline-flex; gap: 22px; align-items: baseline; font-size: 23px; font-weight: 500; letter-spacing: -0.025em; white-space: nowrap; text-decoration: none; }
+  .brand-note { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.02em; color: var(--text-muted-dark); }
+  .desktop-nav { display: flex; align-items: center; gap: 32px; font-size: 15px; }
+  .desktop-nav > a { display: inline-flex; align-items: center; gap: 28px; padding-block: 14px; text-decoration: none; }
+  .desktop-nav :global(.work-navigation > a) { text-decoration: none; }
+  .desktop-nav > a:hover, .desktop-nav :global(.work-navigation > a:hover) { text-decoration: underline; text-underline-offset: 6px; }
+  .desktop-nav .nav-contact { border: 1px solid var(--control-border-dark); padding: 10px 16px; border-radius: 2px; transition: background-color 160ms, color 160ms; }
+  .desktop-nav .nav-contact:hover { background: var(--paper); color: var(--ink); text-decoration: none; }
+  .menu-toggle { display: none; align-items: center; justify-content: end; gap: 12px; padding: 0; min-width: 48px; height: 48px; background: none; color: inherit; border: 0; cursor: pointer; }
+  .menu-label { font-size: 13px; }
+  .menu-lines { width: 24px; display: grid; gap: 6px; }
+  .menu-lines span { height: 1px; background: currentColor; width: 100%; }
+  .mobile-navigation { margin: 0; width: 100%; height: 100dvh; max-width: none; max-height: none; padding: 0 20px 32px; color: var(--paper); background: var(--surface-dark); border: 0; overflow-y: auto; overscroll-behavior: contain; padding-bottom: max(32px, env(safe-area-inset-bottom)); }
+  .mobile-navigation[open] { display: flex; flex-direction: column; animation: menu-in 220ms var(--ease-out); }
+  .mobile-navigation::backdrop { background: var(--ink); }
+  .mobile-top { display: flex; flex: none; height: 72px; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule-decorative); }
+  .menu-close { width: 48px; height: 48px; display: grid; place-items: center; border: 0; color: inherit; background: none; cursor: pointer; }
+  .mobile-navigation nav { display: flex; flex-direction: column; align-items: start; gap: 4px; padding-block: 32px; }
+  .mobile-navigation nav > a, .mobile-navigation :global(.work-navigation > a) { font-size: clamp(30px, 8vw, 44px); line-height: 1.3; letter-spacing: -0.025em; padding-block: 6px; text-decoration: none; }
+  .mobile-navigation nav > a:hover { text-decoration: underline; text-underline-offset: 8px; }
+  .mobile-home { color: var(--text-muted-dark); }
+  .mobile-navigation :global(.work-navigation) { flex-wrap: wrap; width: 100%; }
+  .mobile-navigation :global(.work-categories) { position: static; flex-basis: 100%; border: 0; padding: 8px 0 8px 24px; }
+  .mobile-navigation :global(.work-categories a) { padding-block: 10px; }
+  .mobile-bottom { margin-top: auto; padding-top: 24px; font-size: 14px; }
+  .mobile-bottom p { color: var(--text-muted-dark); font-size: 13px; margin-top: 12px; }
+  .mobile-categories { display: flex; gap: 22px; margin-bottom: 24px; }
+  .mobile-categories a { display: inline-flex; align-items: center; min-height: 44px; }
+  .no-script-nav { display: flex; flex-wrap: wrap; gap: 24px; padding-block: 16px; }
+  @keyframes menu-in { from { opacity: 0.8; } to { opacity: 1; } }
+  @media (max-width: 900px) { .desktop-nav { display: none; } .menu-toggle { display: flex; } .brand-note { display: none; } }
+  @media (prefers-reduced-motion: reduce) { .mobile-navigation[open] { animation: none; } }
+</style>

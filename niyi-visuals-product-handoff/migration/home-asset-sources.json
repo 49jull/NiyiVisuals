@@ -1,0 +1,62 @@
+[
+  {
+    "id": "NV-HOME-01",
+    "source": "https://images-pw.pixieset.com/site/N0WR7O/l99WZo/NS508538-82df1da2-2500.jpg",
+    "file": "src/assets/photography/NV-HOME-01.jpg",
+    "status": "Existing hosted derivative for local prototype; master and publication information pending",
+    "downloadBytes": 526836,
+    "desktopCrop": "See typed Photo record and component aspect ratio",
+    "mobileCrop": "See typed Photo record and responsive component ratio",
+    "localAssetSha256": "e0d2ed516d6934216dee71678d2ff26197ef054c3d6049dab1e6c8ff7b9415fe"
+  },
+  {
+    "id": "NV-HOME-02",
+    "source": "https://images-pw.pixieset.com/site/N0WR7O/MrZm3j/IMG_0308-91326e7d-2500.jpeg",
+    "file": "src/assets/photography/NV-HOME-02.jpeg",
+    "status": "Existing hosted derivative for local prototype; master and publication information pending",
+    "downloadBytes": 754844,
+    "desktopCrop": "See typed Photo record and component aspect ratio",
+    "mobileCrop": "See typed Photo record and responsive component ratio",
+    "localAssetSha256": "36b6b9a11c5ea9ce21c9a5f3048167efc87451f58dfb3d62965f681027de3856"
+  },
+  {
+    "id": "NV-HOME-03",
+    "source": "https://images-pw.pixieset.com/site/N0WR7O/aWwkKM/NS509159-a5909f0d-2500.jpg",
+    "file": "src/assets/photography/NV-HOME-03.jpg",
+    "status": "Existing hosted derivative for local prototype; master and publication information pending",
+    "downloadBytes": 566599,
+    "desktopCrop": "See typed Photo record and component aspect ratio",
+    "mobileCrop": "See typed Photo record and responsive component ratio",
+    "localAssetSha256": "d796f2a3c97ebeefba7f5c80bf05d9525d0138d9041aa942a250291c224bd7b3"
+  },
+  {
+    "id": "NV-HOME-04",
+    "source": "https://images-pw.pixieset.com/site/N0WR7O/dy9Kzw/NS505691-99d656c2-2500.jpg",
+    "file": "src/assets/photography/NV-HOME-04.jpg",
+    "status": "Existing hosted derivative for local prototype; master and publication information pending",
+    "downloadBytes": 432634,
+    "desktopCrop": "See typed Photo record and component aspect ratio",
+    "mobileCrop": "See typed Photo record and responsive component ratio",
+    "localAssetSha256": "c88523543c84dec7c328ca129ef275b6d4ef5aad7aa7a26255e5cfa57517204c"
+  },
+  {
+    "id": "NV-HOME-05",
+    "source": "https://images-pw.pixieset.com/site/N0WR7O/8reGzM/_NS56672-a7cc4f1d-2500.jpg",
+    "file": "src/assets/photography/NV-HOME-05.jpg",
+    "status": "Existing hosted derivative for local prototype; master and publication information pending",
+    "downloadBytes": 396207,
+    "desktopCrop": "See typed Photo record and component aspect ratio",
+    "mobileCrop": "See typed Photo record and responsive component ratio",
+    "localAssetSha256": "631a93c95ec9c53f3f9e4d7edb3f04f3acfbc10ed9c0fb4300af32d20312df24"
+  },
+  {
+    "id": "NV-HOME-06",
+    "source": "https://images-pw.pixieset.com/site/N0WR7O/rKDxJ6/NS506970-Edit-Recovered-7aa3f64d-2500.jpeg",
+    "file": "src/assets/photography/NV-HOME-06.jpeg",
+    "status": "Existing hosted derivative for local prototype; master and publication information pending",
+    "downloadBytes": 975499,
+    "desktopCrop": "See typed Photo record and component aspect ratio",
+    "mobileCrop": "See typed Photo record and responsive component ratio",
+    "localAssetSha256": "c058b55c0918df22ca110b355e0c3f4cac5e2ee7f997b88c2178eb44a3eddcd6"
+  }
+]

@@ -1,0 +1,16 @@
+---
+import Arrow from './Arrow.astro';
+interface Props { href: string; variant?: 'primary' | 'outline' | 'text'; class?: string; }
+const { href, variant = 'text', class: className } = Astro.props;
+---
+<a href={href} class:list={['action', `action--${variant}`, className]}><span><slot /></span><Arrow direction="right" /></a>
+<style>
+  .action { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; min-height: 48px; font-size: 16px; font-weight: 500; text-decoration: none; }
+  .action--primary, .action--outline { padding: 12px 22px; border: 1px solid var(--control-border-dark); border-radius: 2px; transition: background-color 160ms, color 160ms, transform 120ms; }
+  .action--primary { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+  .action--primary:hover { background: #dcd5cb; border-color: #dcd5cb; }
+  .action--outline:hover { background: var(--paper); color: var(--ink); }
+  .action--text span { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; text-decoration-color: var(--control-border-dark); transition: text-decoration-color 160ms; }
+  .action--text:hover span { text-decoration-color: currentColor; }
+  @media (prefers-reduced-motion: no-preference) { .action:active { transform: translateY(1px); } }
+</style>

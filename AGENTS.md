@@ -9,9 +9,9 @@
 
 ## Scope and review gates
 
-- Current scope is preparation only. No application code, scaffold, dependency installation, homepage, external Site registration, deployment, client-site edits or real inquiry submissions are authorized in this preparation stage.
-- On a subsequent homepage implementation request, build foundation and Home only. The user must review the homepage before any other content page is developed. Route definitions and shared navigation may be prepared first; do not disguise unfinished destinations as working pages.
-- Owner editing/CMS choice is deferred until after homepage review. Astro with strict TypeScript, static HTML and plain CSS is the technical recommendation, not a selected hosting service or approved Pixieset migration.
+- Current scope is local foundation and complete homepage implementation, including dependency installation, preview and validation. No other content pages, external Site registration, public deployment, client-site edits or real inquiry submissions are authorized.
+- On a subsequent homepage implementation request, build foundation and Home only. The completed local homepage is awaiting the user’s visual approval before any other content page is developed. Route definitions and shared navigation may be prepared first; do not disguise unfinished destinations as working pages.
+- Owner editing/CMS choice is deferred until after homepage review. The implemented stack is Astro with strict TypeScript, static HTML and plain CSS. Hosting selection and live Pixieset migration remain unapproved.
 - Changes to client hosting/domain, publication, real message tests and new paid services need their own applicable user authorization.
 
 ## Content and design

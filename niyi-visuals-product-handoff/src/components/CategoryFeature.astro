@@ -1,0 +1,24 @@
+---
+import type { Photo } from '../content/photos';
+import PhotoFigure from './PhotoFigure.astro';
+import Arrow from './Arrow.astro';
+interface Props { name: string; href: string; photo: Photo; layout?: 'lead' | 'wide' | 'portrait'; }
+const { name, href, photo, layout = 'portrait' } = Astro.props;
+---
+<a class:list={['category-feature', `category-feature--${layout}`]} href={href}>
+  <PhotoFigure photo={photo} sizes={layout === 'lead' ? '(max-width: 767px) calc(100vw - 40px), (max-width: 1599px) 60vw, 920px' : '(max-width: 767px) calc(100vw - 40px), 46vw'} />
+  <div class="category-caption"><h3>{name}</h3><span class="category-action">View {name === 'Parties' ? 'parties' : name.toLowerCase()}<Arrow /></span></div>
+</a>
+<style>
+  .category-feature { display: block; min-width: 0; text-decoration: none; }
+  .category-feature :global(.photo__frame) { aspect-ratio: 4 / 5; }
+  .category-feature--lead :global(.photo__frame) { aspect-ratio: 1.24; }
+  .category-feature--wide :global(.photo__frame) { aspect-ratio: 4 / 5; }
+  .category-feature :global(img) { transition: transform 360ms var(--ease-out); }
+  .category-caption { display: flex; gap: 16px; align-items: center; justify-content: space-between; padding-top: 18px; }
+  .category-caption h3 { font-size: clamp(26px, 2.8vw, 40px); }
+  .category-action { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+  .category-feature:hover .category-action { text-decoration: underline; text-underline-offset: 5px; }
+  @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) { .category-feature:hover :global(img) { transform: scale(1.02); } }
+  @media (max-width: 767px) { .category-feature--lead :global(.photo__frame) { aspect-ratio: 4 / 5; } .category-feature--wide :global(.photo__frame) { aspect-ratio: 4 / 5; } .category-caption { padding-top: 14px; } }
+</style>

@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T17:17:34.677918+00:00",
+  "title": "Design System: Niyi Visuals",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "displayName": "Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00000 0.00)",
+          "oklch(26% 0.00000 0.00)",
+          "oklch(38% 0.00000 0.00)",
+          "oklch(49% 0.00000 0.00)",
+          "oklch(61% 0.00000 0.00)",
+          "oklch(72% 0.00000 0.00)",
+          "oklch(84% 0.00000 0.00)",
+          "oklch(95% 0.00000 0.00)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "surface-dark": {
+        "displayName": "Dark surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00389 106.74)",
+          "oklch(26% 0.00389 106.74)",
+          "oklch(38% 0.00389 106.74)",
+          "oklch(49% 0.00389 106.74)",
+          "oklch(61% 0.00389 106.74)",
+          "oklch(72% 0.00389 106.74)",
+          "oklch(84% 0.00389 106.74)",
+          "oklch(95% 0.00389 106.74)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "paper": {
+        "displayName": "Warm paper",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00909 78.28)",
+          "oklch(26% 0.00909 78.28)",
+          "oklch(38% 0.00909 78.28)",
+          "oklch(49% 0.00909 78.28)",
+          "oklch(61% 0.00909 78.28)",
+          "oklch(72% 0.00909 78.28)",
+          "oklch(84% 0.00909 78.28)",
+          "oklch(95% 0.00909 78.28)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "text-muted-dark": {
+        "displayName": "Muted dark-page text",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01497 74.39)",
+          "oklch(26% 0.01497 74.39)",
+          "oklch(38% 0.01497 74.39)",
+          "oklch(49% 0.01497 74.39)",
+          "oklch(61% 0.01497 74.39)",
+          "oklch(72% 0.01497 74.39)",
+          "oklch(84% 0.01497 74.39)",
+          "oklch(95% 0.01497 74.39)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "rule-decorative": {
+        "displayName": "Decorative rule",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00709 95.28)",
+          "oklch(26% 0.00709 95.28)",
+          "oklch(38% 0.00709 95.28)",
+          "oklch(49% 0.00709 95.28)",
+          "oklch(61% 0.00709 95.28)",
+          "oklch(72% 0.00709 95.28)",
+          "oklch(84% 0.00709 95.28)",
+          "oklch(95% 0.00709 95.28)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "control-border-dark": {
+        "displayName": "Dark control border",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00855 80.71)",
+          "oklch(26% 0.00855 80.71)",
+          "oklch(38% 0.00855 80.71)",
+          "oklch(49% 0.00855 80.71)",
+          "oklch(61% 0.00855 80.71)",
+          "oklch(72% 0.00855 80.71)",
+          "oklch(84% 0.00855 80.71)",
+          "oklch(95% 0.00855 80.71)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "text-light-page": {
+        "displayName": "Light-page text",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00401 84.59)",
+          "oklch(26% 0.00401 84.59)",
+          "oklch(38% 0.00401 84.59)",
+          "oklch(49% 0.00401 84.59)",
+          "oklch(61% 0.00401 84.59)",
+          "oklch(72% 0.00401 84.59)",
+          "oklch(84% 0.00401 84.59)",
+          "oklch(95% 0.00401 84.59)"
+        ],
+        "purpose": "Foundation-only light-page token; no light page implemented."
+      },
+      "text-muted-light": {
+        "displayName": "Muted light-page text",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01077 78.22)",
+          "oklch(26% 0.01077 78.22)",
+          "oklch(38% 0.01077 78.22)",
+          "oklch(49% 0.01077 78.22)",
+          "oklch(61% 0.01077 78.22)",
+          "oklch(72% 0.01077 78.22)",
+          "oklch(84% 0.01077 78.22)",
+          "oklch(95% 0.01077 78.22)"
+        ],
+        "purpose": "Foundation-only light-page token; no light page implemented."
+      },
+      "control-border-light": {
+        "displayName": "Light control border",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01341 79.75)",
+          "oklch(26% 0.01341 79.75)",
+          "oklch(38% 0.01341 79.75)",
+          "oklch(49% 0.01341 79.75)",
+          "oklch(61% 0.01341 79.75)",
+          "oklch(72% 0.01341 79.75)",
+          "oklch(84% 0.01341 79.75)",
+          "oklch(95% 0.01341 79.75)"
+        ],
+        "purpose": "Foundation-only light-page token; no light page implemented."
+      },
+      "focus-dark": {
+        "displayName": "Warm focus",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.08740 70.68)",
+          "oklch(26% 0.08740 70.68)",
+          "oklch(38% 0.08740 70.68)",
+          "oklch(49% 0.08740 70.68)",
+          "oklch(61% 0.08740 70.68)",
+          "oklch(72% 0.08740 70.68)",
+          "oklch(84% 0.08740 70.68)",
+          "oklch(95% 0.08740 70.68)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      },
+      "focus-light": {
+        "displayName": "Light focus",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.00401 84.59)",
+          "oklch(26% 0.00401 84.59)",
+          "oklch(38% 0.00401 84.59)",
+          "oklch(49% 0.00401 84.59)",
+          "oklch(61% 0.00401 84.59)",
+          "oklch(72% 0.00401 84.59)",
+          "oklch(84% 0.00401 84.59)",
+          "oklch(95% 0.00401 84.59)"
+        ],
+        "purpose": "Foundation-only light-page token; no light page implemented."
+      },
+      "action-hover": {
+        "displayName": "Action hover",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01562 77.06)",
+          "oklch(26% 0.01562 77.06)",
+          "oklch(38% 0.01562 77.06)",
+          "oklch(49% 0.01562 77.06)",
+          "oklch(61% 0.01562 77.06)",
+          "oklch(72% 0.01562 77.06)",
+          "oklch(84% 0.01562 77.06)",
+          "oklch(95% 0.01562 77.06)"
+        ],
+        "purpose": "See DESIGN.md Colors for the implemented role."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Home display",
+        "purpose": "Home H1, real 90% font stretch; responsive overrides in DESIGN.md.",
+        "fontAsset": "public/fonts/archivo-latin-variable.woff2",
+        "weightRange": "100 900",
+        "stretchRange": "62% 125%"
+      },
+      "body": {
+        "displayName": "Reading prose",
+        "purpose": "18px tablet/desktop; hero/biography use 1.65 leading."
+      },
+      "body-mobile": {
+        "displayName": "Mobile reading prose",
+        "purpose": "17px below 768px."
+      },
+      "metadata": {
+        "displayName": "Short mono metadata",
+        "purpose": "Sparse contextual labels and captions, never long prose.",
+        "fontAsset": "public/fonts/roboto-mono-latin-400.woff2",
+        "fontWeight": 400
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Authored entrance, category image and disclosure easing."
+      },
+      {
+        "name": "entrance",
+        "value": "400ms",
+        "purpose": "Hero image 1.015→1 when loaded; desktop title ≤8px; first-work once ≤12px."
+      },
+      {
+        "name": "category-hover",
+        "value": "360ms",
+        "purpose": "Fine-pointer image scale 1.02; no effect with reduced motion."
+      },
+      {
+        "name": "menu-in",
+        "value": "220ms",
+        "purpose": "Native menu opacity 0.8→1."
+      },
+      {
+        "name": "disclosure",
+        "value": "180ms",
+        "purpose": "Chevron rotates 180 degrees."
+      },
+      {
+        "name": "state-feedback",
+        "value": "160ms",
+        "purpose": "Action, navigation and service color/underline feedback."
+      },
+      {
+        "name": "pressed-action",
+        "value": "120ms",
+        "purpose": "1px pressed action shift when motion is allowed."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0s",
+        "purpose": "CSS transition/animation durations become zero; scripted entrances bypassed."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-gutter",
+        "value": "359px"
+      },
+      {
+        "name": "footer-stack",
+        "value": "600px"
+      },
+      {
+        "name": "mobile-content",
+        "value": "767px"
+      },
+      {
+        "name": "mobile-header",
+        "value": "900px"
+      },
+      {
+        "name": "footer-compact",
+        "value": "1023px"
+      },
+      {
+        "name": "tablet-hero-max",
+        "value": "1100px"
+      },
+      {
+        "name": "wide",
+        "value": "1600px"
+      }
+    ],
+    "focus": {
+      "value": "2px solid var(--focus-dark)",
+      "offset": "5px",
+      "purpose": "Implemented dark-page focus-visible ring."
+    },
+    "rampNote": "Tonal ramps are synthesized panel previews only; they are not additional interface colors or CSS tokens.",
+    "sources": [
+      "src/styles/tokens.css",
+      "src/styles/global.css",
+      "src/pages/index.astro",
+      "src/components/ActionLink.astro",
+      "src/components/SiteHeader.astro",
+      "src/components/WorkDisclosure.astro",
+      "src/components/CategoryFeature.astro",
+      "src/components/PhotoFigure.astro",
+      "src/components/SiteFooter.astro",
+      "src/scripts/interactions.ts",
+      "src/content/photos.ts"
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary destination action",
+      "kind": "button",
+      "refersTo": "action-primary",
+      "description": "Homepage work/inquiry link; destination semantics remain an anchor.",
+      "html": "<a class=\"ds-action ds-primary\" href=\"/portfolio/\"><span>View work</span><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" /></svg></a>",
+      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:48px;font:500 16px/1.6 var(--font-sans);text-decoration:none;}.ds-primary{padding:12px 22px;border:1px solid var(--paper);border-radius:2px;background:var(--paper);color:var(--ink);transition:background-color 160ms,color 160ms,transform 120ms}.ds-primary:hover{background:var(--ds-action-hover,#dcd5cb);border-color:var(--ds-action-hover,#dcd5cb)}.ds-primary:focus-visible{outline:2px solid var(--focus-dark);outline-offset:5px;}@media(prefers-reduced-motion:no-preference){.ds-primary:active{transform:translateY(1px)}}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}.ds-action svg{flex:none;transform:rotate(45deg)}"
+    },
+    {
+      "name": "Text destination action",
+      "kind": "button",
+      "refersTo": "action-text",
+      "description": "Quiet related-page action with a persistent underline.",
+      "html": "<a class=\"ds-action ds-text\" href=\"/portfolio/\"><span>View all work</span><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" /></svg></a>",
+      "css": ".ds-action{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-height:48px;font:500 16px/1.6 var(--font-sans);text-decoration:none;}.ds-text{color:var(--paper)}.ds-text span{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;text-decoration-color:var(--control-border-dark);transition:text-decoration-color 160ms}.ds-text:hover span{text-decoration-color:currentColor}.ds-text:focus-visible{outline:2px solid var(--focus-dark);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-text span{transition:none}}.ds-action svg{flex:none;transform:rotate(45deg)}"
+    },
+    {
+      "name": "Contact navigation link",
+      "kind": "nav",
+      "refersTo": "nav-contact",
+      "description": "Outlined desktop navigation action; quiet inversion on hover.",
+      "html": "<a class=\"ds-contact\" href=\"/contact/\">Contact<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" /></svg></a>",
+      "css": ".ds-contact{display:inline-flex;align-items:center;gap:28px;padding:10px 16px;border:1px solid var(--control-border-dark);border-radius:2px;font:400 15px/1.6 var(--font-sans);color:var(--paper);text-decoration:none;transition:background-color 160ms,color 160ms}.ds-contact:hover{background:var(--paper);color:var(--ink)}.ds-contact:focus-visible{outline:2px solid var(--focus-dark);outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-contact{transition:none}}"
+    },
+    {
+      "name": "Work category disclosure surface",
+      "kind": "nav",
+      "refersTo": "work-categories",
+      "description": "Expanded-state visual of the independent Work category list; production behavior lives in interactions.ts.",
+      "html": "<nav class=\"ds-categories\" aria-label=\"Photography categories\"><a href=\"/gallery-1/\">Sport</a><a href=\"/gallery-2/\">Parties</a><a href=\"/gallery-3/\">Lifestyle</a></nav>",
+      "css": ".ds-categories{min-width:190px;padding:12px;border:1px solid var(--control-border-dark);background:var(--surface-dark);color:var(--paper);font:400 16px/1.6 var(--font-sans)}.ds-categories a{display:block;padding:12px;color:inherit}.ds-categories a:hover{background:var(--ink);text-decoration:underline;text-underline-offset:5px}.ds-categories a:focus-visible{outline:2px solid var(--focus-dark);outline-offset:5px;}"
+    },
+    {
+      "name": "Service destination row",
+      "kind": "custom",
+      "refersTo": "service-arrow",
+      "description": "A full linked row with title, description and outlined arrow.",
+      "html": "<a class=\"ds-service\" href=\"/services/#sport\"><h3>Sport</h3><p>Match action, feeling and atmosphere.</p><span class=\"ds-service-arrow\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M5 19 19 5M5 5h14v14\" /></svg></span></a>",
+      "css": ".ds-service{display:grid;grid-template-columns:3fr 5fr 44px;align-items:center;gap:24px;min-height:132px;padding:26px 0;border-bottom:1px solid var(--rule-decorative);color:var(--paper);font-family:var(--font-sans);text-decoration:none}.ds-service h3{margin:0;font-size:clamp(24px,2.2vw,32px);font-weight:500;line-height:1.2;letter-spacing:-.015em}.ds-service p{margin:0;max-width:25ch;font-size:18px;line-height:1.6;color:var(--text-muted-dark)}.ds-service-arrow{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--control-border-dark);border-radius:2px;transition:color 160ms,background-color 160ms}.ds-service:hover .ds-service-arrow{background:var(--paper);color:var(--ink)}.ds-service:hover h3{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px}.ds-service:focus-visible{outline:2px solid var(--focus-dark);outline-offset:5px;}@media(max-width:767px){.ds-service{grid-template-columns:1fr 44px;gap:8px 20px;min-height:0;padding:24px 0}.ds-service p{grid-column:1;font-size:17px}.ds-service-arrow{grid-column:2;grid-row:1/3}}@media(prefers-reduced-motion:reduce){.ds-service-arrow{transition:none}}"
+    },
+    {
+      "name": "Mobile navigation contents",
+      "kind": "nav",
+      "description": "The native dialog’s visual contents only; this panel snippet does not implement modal behavior.",
+      "html": "<nav class=\"ds-mobile\" aria-label=\"Mobile navigation preview\"><a href=\"/\" aria-current=\"page\">Home</a><a href=\"/portfolio/\">Work</a><a href=\"/services/\">Services</a><a href=\"/about/\">About</a><a href=\"/contact/\">Contact</a></nav>",
+      "css": ".ds-mobile{display:flex;flex-direction:column;align-items:start;gap:4px;padding:32px 20px;background:var(--surface-dark);color:var(--paper);font-family:var(--font-sans)}.ds-mobile a{padding:6px 0;font-size:clamp(30px,8vw,44px);line-height:1.3;letter-spacing:-.025em;color:inherit;text-decoration:none}.ds-mobile a[aria-current]{color:var(--text-muted-dark)}.ds-mobile a:hover{text-decoration:underline;text-underline-offset:8px}.ds-mobile a:focus-visible{outline:2px solid var(--focus-dark);outline-offset:5px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "On Both Sides",
+    "overview": "On Both Sides gives the client’s photography the greatest visual weight. Ink grounds, warm paper text, variable Archivo, sparse mono metadata, rectangular images and fine rules produce a confident, human editorial system. Color comes primarily from the registered photographs; interface ornament remains quiet.\n\nThis record describes the built homepage and shared foundation only. It is evidence for local homepage review, not a claim that the remaining pages, a viewer, a contact form or production integrations exist. The pinned direction is already selected; this document records its implementation.",
+    "keyCharacteristics": [
+      "Real photography leads; text stays on a solid ground.",
+      "Asymmetric image scale with continuous readable prose.",
+      "Quiet links, thin rules and restrained state feedback."
+    ],
+    "rules": [
+      {
+        "name": "The Photographic Color Rule",
+        "body": "Preserve the registered photographs’ original color or monochrome treatment; the interface stays neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Reading Voice Rule",
+        "body": "Use Archivo for prose and UI; reserve Roboto Mono for short metadata.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Separate regions with tone, spacing and fine rules; do not introduce decorative shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve photograph identity, meaningful alt text, reserved geometry and the recorded focal positions.",
+      "Do keep linked image, full category name and action together as one destination.",
+      "Do retain the 18px tablet/desktop and 17px mobile prose roles, with the larger biography introduction distinct.",
+      "Do keep content visible before enhancement and make reduced motion static.",
+      "Do use destination links and state-changing buttons with visible keyboard focus."
+    ],
+    "donts": [
+      "Don’t substitute stock or generated portfolio photographs, invented logos or business claims.",
+      "Don’t turn the work sequence into three uniform cards or put long prose in tracked mono.",
+      "Don’t place readable content behind photographic overlays or depend on hover alone.",
+      "Don’t infer a paper-themed page, viewer, inquiry form, hosting service, CMS or production origin from this homepage record."
+    ]
+  }
+}

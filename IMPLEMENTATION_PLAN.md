@@ -1,6 +1,12 @@
 # Niyi Visuals implementation plan
 
-Prepared 15 November 2026. Preparation is complete; application implementation has not started. This document supplements the supplied PRODUCT.md rather than replacing it.
+Prepared 15 November 2026. Preparation and the local homepage implementation are complete. This document supplements the supplied PRODUCT.md rather than replacing it.
+
+## Current implementation status
+
+Astro, strict TypeScript and plain CSS are implemented in the application root. All six Home photographs and exact original Home copy are present. Shared navigation, responsive image components, the full homepage, provenance records, build/lint/type checks and five preservation/scope tests are complete. Desktop/mobile browser inspection and the independent Impeccable review are complete; the reviewer scored four typography fixes resolved. See application README.md, QA.md, DESIGN.md and .impeccable/review/ for current evidence.
+
+**User homepage approval is pending. Do not begin other pages or deploy.** The dev server is local at http://127.0.0.1:4321/. Pending pages use a documented dev/preview-only 302 to the exact existing website paths. Home copy and local photo derivative availability are now resolved for the prototype; owner masters/publication information and all production integration decisions remain open. Owner editing workflow is still deferred until after homepage review. The sections below retain the original staged plan and preparation baseline for reference.
 
 ## Project understanding and source map
 
@@ -121,6 +127,8 @@ These dependencies do not require a broad questionnaire before foundation work. 
 - The dollar signs in a Netherlands-based offer are unresolved source content, not an implementation typo. Public price meaning requires owner clarification.
 - The original-site screenshots are audit evidence, not redesign comps or a layout constraint. On Both Sides is already chosen; no new concept tournament is needed.
 
-## Preparation handoff
+## Preparation handoff (historical baseline)
+
+This section records the initial preparation delivery; see the current implementation status above.
 
 Added repository-level AGENTS.md, this plan and .gitignore; initialized local Git with a baseline commit after verification. Supplied documentation/evidence remains byte-identical. No application source, dependency installation, dev server, mockup, external Site, deployment, client-site change or message submission was performed. The next implementation task should begin Stage 1 and then build Home for Stage 3 review, stopping before remaining pages.

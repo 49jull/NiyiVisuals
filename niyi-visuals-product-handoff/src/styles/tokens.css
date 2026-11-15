@@ -1,0 +1,22 @@
+:root {
+  --ink: #0c0c0c;
+  --surface-dark: #171715;
+  --paper: #f3efe9;
+  --text-muted-dark: #b8b1a8;
+  --rule-decorative: #34332f;
+  --control-border-dark: #6f6c67;
+  --text-light-page: #22211f;
+  --text-muted-light: #605c56;
+  --control-border-light: #827d75;
+  --focus-dark: #f0c28c;
+  --focus-light: #22211f;
+  --font-sans: 'Archivo', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+  --gutter: clamp(20px, 3.34vw, 64px);
+  --grid-gap: clamp(16px, 2.2vw, 32px);
+  --section-space: clamp(72px, 8vw, 128px);
+  --header-height: 88px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (max-width: 900px) { :root { --header-height: 72px; } }
+@media (max-width: 359px) { :root { --gutter: 16px; } }
