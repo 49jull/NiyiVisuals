@@ -1,0 +1,942 @@
+{
+  "reviewed": "2026-11-15",
+  "note": "Distinct observed label/destination pairs per page; includes blank image links and navigation submenu links. Does not imply a successful form submission. Cookie controls can remain in the DOM after dismissal.",
+  "links": [
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "SPORT",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "PARTY'S",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "LIFESTYLE",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "READ MORE",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "P",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "S",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "L",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "SEE PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Home",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "About",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Services",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Portfolio",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Sport",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Party's",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Lifestyle",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "Contact",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/about/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "VIEW PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/services/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "View Gallery",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "View Gallery",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "View Gallery",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-4/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/portfolio/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/#",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/#",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Home",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "About",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Services",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Portfolio",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Sport",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Party's",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Lifestyle",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "Contact",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "LET'S CONNECT",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/#",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "SPORT",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "PARTY'S",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "LIFESTYLE",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": "learn more about our cookies"
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "Save Preferences",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "HOME",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "ABOUT",
+      "destination": "https://niyivisuals.mypixieset.com/about/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "SERVICES",
+      "destination": "https://niyivisuals.mypixieset.com/services/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "PORTFOLIO",
+      "destination": "https://niyivisuals.mypixieset.com/portfolio/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-1/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-2/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "https://niyivisuals.mypixieset.com/gallery-3/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "CONTACT",
+      "destination": "https://niyivisuals.mypixieset.com/contact/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "NIYI SCHOLTEN",
+      "destination": "https://niyivisuals.mypixieset.com/",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "https://www.instagram.com/niyi.visuals?igsh=MXViMG52OGQ3ejFuNw==",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "",
+      "destination": "https://www.tiktok.com/@niyi.visuals?_t=ZN-8wWRryr8KpT&_r=1",
+      "aria_label": null
+    },
+    {
+      "page": "https://niyivisuals.mypixieset.com/contact/",
+      "visible_label": "PIXIESET",
+      "destination": "https://pixieset.com/website/?utm_source=pixieset&utm_medium=ugc&utm_content=website",
+      "aria_label": null
+    }
+  ]
+}

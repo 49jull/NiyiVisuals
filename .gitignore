@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+dist/
+.astro/
+coverage/
+test-results/
+playwright-report/
+*.log
+.env
+.env.*
+!.env.example
+.impeccable/config.local.json
+
+# Future owner-supplied originals and private exports; never publish these.
+private/

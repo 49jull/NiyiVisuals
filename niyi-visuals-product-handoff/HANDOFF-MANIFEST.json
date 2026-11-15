@@ -1,0 +1,92 @@
+{
+  "project": "Niyi Visuals — On Both Sides",
+  "prepared": "2026-11-15",
+  "scope": "Planning documents and existing research evidence only. No website implementation, original photo binaries, prose export, credentials or hosting configuration.",
+  "entrypoint": "PRODUCT.md",
+  "distribution_copy": "outputs/PRODUCT.md",
+  "paths_relative_to": "Extracted archive/project root",
+  "source_research_pages": 8,
+  "source_image_placements": 100,
+  "files": [
+    {
+      "path": "PRODUCT.md",
+      "bytes": 69013,
+      "sha256": "0b653f156fb5a00d7118d6a083c1a0ea42bd3955f3bcd7b6b152d899171e4c6e"
+    },
+    {
+      "path": "outputs/PRODUCT.md",
+      "bytes": 69013,
+      "sha256": "0b653f156fb5a00d7118d6a083c1a0ea42bd3955f3bcd7b6b152d899171e4c6e"
+    },
+    {
+      "path": "outputs/redesign-strategy.md",
+      "bytes": 77946,
+      "sha256": "6e08c4fe292c48a79b7ea067b1c45cd731b7e7bd0f68605b89d7458d665a90b5"
+    },
+    {
+      "path": "outputs/content-inventory.md",
+      "bytes": 26160,
+      "sha256": "fcc6a6c8f97a377f8e28e64ada19f1e8dae22e55105ba6e2dfbe84195aa0fe1f"
+    },
+    {
+      "path": "outputs/asset-register.md",
+      "bytes": 26717,
+      "sha256": "7bb7e835c7aa494e65e526202d22384e297ffed4b4fad5f5dd78c2a27771d295"
+    },
+    {
+      "path": "outputs/asset-register.json",
+      "bytes": 111256,
+      "sha256": "84220d839b99ed306d63289957e8b474883e527b976d9885f2d421d7d2d11e06"
+    },
+    {
+      "path": "outputs/link-register.json",
+      "bytes": 31442,
+      "sha256": "4bbd0a78916c9c31ceb03ebe689fee8b7d46db8170970f223261099781b0bcb5"
+    },
+    {
+      "path": "outputs/evidence/contact-desktop.jpg",
+      "bytes": 35131,
+      "sha256": "0bc0e23c06365dd21cf0e6dd1e6d2281b4715e6efe2d430399b726548a1e51f2"
+    },
+    {
+      "path": "outputs/evidence/contact-mobile.jpg",
+      "bytes": 22300,
+      "sha256": "c7a750a4ad2ad419521ddb57e7cf969edf3323ee2311665da39aa8f12edea701"
+    },
+    {
+      "path": "outputs/evidence/gallery-4-error.jpg",
+      "bytes": 19517,
+      "sha256": "607b3c6f8ae597f210f6854324337cc0393acebc3550d0dd3d753c041cb0ad2d"
+    },
+    {
+      "path": "outputs/evidence/home-desktop.jpg",
+      "bytes": 135253,
+      "sha256": "c9c172e2e3735cc697e0d3ec50c1d67cfe5a9cad0453b482c008b85f2207b3c8"
+    },
+    {
+      "path": "outputs/evidence/home-mobile.jpg",
+      "bytes": 49892,
+      "sha256": "1c240a587f54da5d3ccf1852c61b809e4c6f369896ede85a829173aef86a573f"
+    },
+    {
+      "path": "outputs/evidence/home-tablet.jpg",
+      "bytes": 97539,
+      "sha256": "5fcee986fe60bf9fe0d8cde59b5c47e77663920870930888b97cf27783ff17bb"
+    },
+    {
+      "path": "outputs/evidence/menu-mobile.jpg",
+      "bytes": 11017,
+      "sha256": "84a2149718aa0c159b352f62438169981320ea3169179ff550f4d1563c304de4"
+    },
+    {
+      "path": "outputs/evidence/portfolio-desktop.jpg",
+      "bytes": 67290,
+      "sha256": "a878b0eddb846703bd1b13b6957965c27512a2915f4f111eda93cb1dd960d778"
+    },
+    {
+      "path": "outputs/evidence/services-desktop.jpg",
+      "bytes": 102908,
+      "sha256": "8785457d8a7caf2f5e8ebffb2f23e136e4d6dee7777f22e7d9a8c1a92f6be1d4"
+    }
+  ]
+}
