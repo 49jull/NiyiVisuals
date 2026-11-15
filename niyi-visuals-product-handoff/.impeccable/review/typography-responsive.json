@@ -1,0 +1,182 @@
+[
+  {
+    "actions": [
+      {
+        "right": 152.5078125,
+        "text": "View work",
+        "top": 307.984375
+      },
+      {
+        "right": 141.34375,
+        "text": "Let's connect",
+        "top": 368.3828125
+      }
+    ],
+    "document": 305,
+    "headline": "40px",
+    "photos": 6,
+    "phrases": [
+      {
+        "left": 16,
+        "right": 289.7421875,
+        "text": "Where action"
+      },
+      {
+        "left": 16,
+        "right": 289.7421875,
+        "text": "meets emotion"
+      }
+    ],
+    "viewport": 320
+  },
+  {
+    "actions": [
+      {
+        "right": 171.40625,
+        "text": "View work",
+        "top": 307.984375
+      },
+      {
+        "right": 325.2734375,
+        "text": "Let's connect",
+        "top": 308.984375
+      }
+    ],
+    "document": 375,
+    "headline": "40px",
+    "photos": 6,
+    "phrases": [
+      {
+        "left": 20,
+        "right": 355,
+        "text": "Where action"
+      },
+      {
+        "left": 81.2578125,
+        "right": 355,
+        "text": "meets emotion"
+      }
+    ],
+    "viewport": 390
+  },
+  {
+    "actions": [
+      {
+        "right": 197.9453125,
+        "text": "View work",
+        "top": 288.109375
+      },
+      {
+        "right": 374.3359375,
+        "text": "Let's connect",
+        "top": 289.90625
+      }
+    ],
+    "document": 753,
+    "headline": "49.92px",
+    "photos": 6,
+    "phrases": [
+      {
+        "left": 25.6484375,
+        "right": 325.5703125,
+        "text": "Where action"
+      },
+      {
+        "left": 385.7109375,
+        "right": 727.34375,
+        "text": "meets emotion"
+      }
+    ],
+    "viewport": 768
+  },
+  {
+    "actions": [
+      {
+        "right": 206.5,
+        "text": "View work",
+        "top": 330.5078125
+      },
+      {
+        "right": 382.890625,
+        "text": "Let's connect",
+        "top": 332.3046875
+      }
+    ],
+    "document": 1009,
+    "headline": "66.56px",
+    "photos": 6,
+    "phrases": [
+      {
+        "left": 34.203125,
+        "right": 434.1015625,
+        "text": "Where action"
+      },
+      {
+        "left": 519.2890625,
+        "right": 974.796875,
+        "text": "meets emotion"
+      }
+    ],
+    "viewport": 1024
+  },
+  {
+    "actions": [
+      {
+        "right": 1128.984375,
+        "text": "View work",
+        "top": 291.6328125
+      },
+      {
+        "right": 1305.375,
+        "text": "Let's connect",
+        "top": 293.4296875
+      }
+    ],
+    "document": 1351,
+    "headline": "88px",
+    "photos": 6,
+    "phrases": [
+      {
+        "left": 45.625,
+        "right": 574.3359375,
+        "text": "Where action"
+      },
+      {
+        "left": 703.140625,
+        "right": 1305.375,
+        "text": "meets emotion"
+      }
+    ],
+    "viewport": 1366
+  },
+  {
+    "actions": [
+      {
+        "right": 1496.109375,
+        "text": "View work",
+        "top": 292.640625
+      },
+      {
+        "right": 1672.5,
+        "text": "Let's connect",
+        "top": 294.4375
+      }
+    ],
+    "document": 1905,
+    "headline": "88px",
+    "photos": 6,
+    "phrases": [
+      {
+        "left": 232.5,
+        "right": 761.2109375,
+        "text": "Where action"
+      },
+      {
+        "left": 1070.265625,
+        "right": 1672.5,
+        "text": "meets emotion"
+      }
+    ],
+    "viewport": 1920
+  }
+]

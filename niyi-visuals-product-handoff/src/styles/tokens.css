@@ -8,9 +8,12 @@
   --text-light-page: #22211f;
   --text-muted-light: #605c56;
   --control-border-light: #827d75;
+  --accent: #dfa080;
+  --accent-hover: #efb99a;
+  --accent-on-paper: #984b30;
   --focus-dark: #f0c28c;
   --focus-light: #22211f;
-  --font-sans: 'Archivo', 'Helvetica Neue', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', 'Helvetica Neue', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
   --gutter: clamp(20px, 3.34vw, 64px);
   --grid-gap: clamp(16px, 2.2vw, 32px);

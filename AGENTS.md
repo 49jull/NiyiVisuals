@@ -16,7 +16,7 @@
 
 ## Content and design
 
-- Implement the pinned “On Both Sides” direction and page-specific requirements in PRODUCT.md. Use the specified Archivo/Roboto Mono roles, neutral dark/paper themes, editorial image scale and restrained motion. Do not substitute a generic template or mix the unselected concepts.
+- Implement the pinned “On Both Sides” direction and page-specific requirements in PRODUCT.md. Use the specified Plus Jakarta Sans/Roboto Mono roles, ink/paper themes with restrained coral actions, editorial image scale and restrained motion. Do not substitute a generic template or mix the unselected concepts.
 - Use the client's registered photographs. No stock/generated portfolio images, invented logo, business claims, captions, endorsements, pricing interpretations or placeholder marketing copy.
 - Preserve all eight source routes and account for all 100 image placements. Keep category mappings authoritative and correct; `/gallery-4/` is an honest 404 pending historical clarification, not a fourth gallery.
 - Preserve exact source copy separately from approved display copy. Inventory summaries are not verbatim copy. Keep provenance and approval records in development-only data; explicitly project approved public fields into rendered content.

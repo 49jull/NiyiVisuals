@@ -13,53 +13,55 @@ colors:
   control-border-light: "#827d75"
   focus-dark: "#f0c28c"
   focus-light: "#22211f"
-  action-hover: "#dcd5cb"
+  accent: "#dfa080"
+  accent-hover: "#efb99a"
+  accent-on-paper: "#984b30"
 typography:
   display:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
-    fontSize: "clamp(48px, 7.05vw, 96px)"
-    fontWeight: 500
-    lineHeight: 1.06
-    letterSpacing: "-0.025em"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
+    fontSize: "clamp(48px, 6.5vw, 88px)"
+    fontWeight: 600
+    lineHeight: 1.08
+    letterSpacing: "-0.035em"
   home-story:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "clamp(28px, 3.45vw, 48px)"
-    fontWeight: 500
+    fontWeight: 600
     lineHeight: 1.15
   home-display-mobile:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
-    fontSize: "clamp(42px, 9vw, 64px)"
-    fontWeight: 500
-    lineHeight: 1.06
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
+    fontSize: "clamp(40px, 8.6vw, 60px)"
+    fontWeight: 600
+    lineHeight: 1.08
   category-display:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "clamp(48px, 5vw, 72px)"
-    fontWeight: 500
+    fontWeight: 600
     lineHeight: 1.2
   headline:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "clamp(32px, 3.9vw, 56px)"
-    fontWeight: 500
+    fontWeight: 600
     lineHeight: 1.1
     letterSpacing: "-0.025em"
   title:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "clamp(24px, 2.2vw, 32px)"
-    fontWeight: 500
+    fontWeight: 600
     lineHeight: 1.2
     letterSpacing: "-0.015em"
   body:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "18px"
     fontWeight: 400
     lineHeight: 1.6
   body-mobile:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "17px"
     fontWeight: 400
     lineHeight: 1.6
   action:
-    fontFamily: "Archivo, Helvetica Neue, sans-serif"
+    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
     fontSize: "16px"
     fontWeight: 500
   metadata:
@@ -82,13 +84,13 @@ spacing:
   footer: "64px"
 components:
   action-primary:
-    backgroundColor: "{colors.paper}"
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.ink}"
     typography: "{typography.action}"
     rounded: "{rounded.control}"
     padding: "12px 22px"
   action-primary-hover:
-    backgroundColor: "{colors.action-hover}"
+    backgroundColor: "{colors.accent-hover}"
     textColor: "{colors.ink}"
   action-text:
     textColor: "{colors.paper}"
@@ -117,7 +119,7 @@ components:
 
 **Creative North Star: "On Both Sides"**
 
-On Both Sides gives the client’s photography the greatest visual weight. Ink grounds, warm paper text, variable Archivo, sparse mono metadata, rectangular images and fine rules produce a confident, human editorial system. Color comes primarily from the registered photographs; interface ornament remains quiet.
+On Both Sides gives the client’s photography the greatest visual weight. Ink grounds, warm paper text, variable Plus Jakarta Sans, sparse mono metadata, rectangular images and fine rules produce a confident, human editorial system. Color comes primarily from the registered photographs; interface ornament remains quiet.
 
 This record describes the built homepage and shared foundation only. It is evidence for local homepage review, not a claim that the remaining pages, a viewer, a contact form or production integrations exist. The pinned direction is already selected; this document records its implementation.
 
@@ -136,27 +138,27 @@ Warm neutrals keep the photographic color and human subjects prominent. The fron
 
 - **Ink** is the page ground, opaque sticky header, selected inverse text and backdrop.
 - **Dark surface** distinguishes the native mobile navigation, category disclosure and reserved image/failure frames.
-- **Warm paper** supplies primary text and filled actions; **action hover** gently darkens the filled action.
+- **Warm paper** supplies primary text and the personal chapter. **Coral accent** identifies primary actions and small category arrows; **accent hover** lightens their fill. **Accent on paper** supplies the small biography-link arrow.
 - **Muted dark-page text** softens supporting prose, captions and metadata without hiding them.
 - **Decorative rule** divides sections; **dark control border** identifies interactive outlines. These have distinct roles.
 - **Warm focus** is the dark-page focus indicator. It is a functional accent rather than a decorative brand color.
 - **Light-page text**, **muted light-page text** and **light focus** are used in the homepage’s paper-colored biography chapter. **Light control border** is reserved for future practical pages. No separate paper-themed content page is implemented.
 
-**The Photographic Color Rule.** Preserve the registered photographs’ original color or monochrome treatment; the interface stays neutral.
+**The Photographic Color Rule.** Preserve the registered photographs’ original color or monochrome treatment; large interface surfaces stay neutral and coral is reserved for actions and small directional details.
 
 ## Typography
 
-**Display / body / UI:** Archivo, with Helvetica Neue and sans-serif fallbacks. The self-hosted WOFF2 declares weight (100–900), stretch (62%–125%), normal style and `font-display: swap`. The display uses real font stretch (90%); body and UI retain normal width. The built hierarchy uses regular prose (400) and medium headings/actions (500).
+**Display / body / UI:** Plus Jakarta Sans, with Helvetica Neue and sans-serif fallbacks. The self-hosted WOFF2 declares weight (200–800), normal style and `font-display: swap`. All roles retain natural width. The built hierarchy uses regular prose (400), medium actions (500) and semibold headings (600).
 
-**Metadata:** Roboto Mono, monospace fallback, self-hosted normal weight (400), `font-display: swap`. Font assets and OFL notices remain in `public/fonts/`; only Archivo is preloaded by `src/layouts/BaseLayout.astro`.
+**Metadata:** Roboto Mono, monospace fallback, self-hosted normal weight (400), `font-display: swap`. Font assets and OFL notices remain in `public/fonts/`; only Plus Jakarta Sans is preloaded by `src/layouts/BaseLayout.astro`.
 
-- **Display:** Home uses `clamp(48px, 7.05vw, 96px)` and 1.06 leading. The original “Where action” / “meets emotion” phrase spans one desktop row; the rest of the original headline is a muted 28–48px line beneath it. Below 768px the two main phrases form opposing left/right aligned lines at `clamp(42px, 9vw, 64px)` (40px below 360px); the remaining words use 24–34px. Both actions remain before the photograph in DOM and visual order.
+- **Display:** Home uses `clamp(48px, 6.5vw, 88px)` and 1.08 leading. The original “Where action” / “meets emotion” phrase spans one desktop row; the rest of the original headline is a muted 28–48px line beneath it. Below 768px the two main phrases form opposing left/right aligned lines at `clamp(40px, 8.6vw, 60px)` (40px below 360px); the remaining words use 24–34px. Both actions remain before the photograph in DOM and visual order.
 - **Headline / title:** reusable H2/H3 roles retain the frontmatter hierarchy. The leading Sport category has a deliberate 48–72px display treatment beside the photograph, returning to 32px on mobile. Other categories remain 26–40px. The inquiry H2 retains its 40–72px treatment. These are intentional named variants, not a replacement body scale.
-- **Body:** 18px at tablet/desktop and 17px below 768px. Hero and biography prose use 1.65 leading; service and inquiry prose use 1.6. The first biography paragraph remains a distinct 24–32px introduction at 1.2 leading. Biography is bounded to 57ch, hero supporting text to 39ch (45ch mobile), and inquiry supporting text to 35ch (32ch mobile).
+- **Body:** 18px at tablet/desktop and 17px below 768px. Hero and biography prose use 1.65 leading; service and inquiry prose use 1.6. The first biography paragraph remains a distinct 24–32px introduction at 1.2 leading. Biography is bounded to 57ch, hero supporting text to 63ch (45ch mobile), and inquiry supporting text to 35ch (32ch mobile).
 - **UI:** actions use the frontmatter role; desktop navigation uses 15px, with selected narrow-screen secondary actions at 14px. Minimum interactive geometry is preserved independently of text size.
 - **Metadata:** default 12px; photo captions use 1.45 leading. The mobile hero context/caption and narrow footer use 10px for short non-prose labels. Do not promote those small exceptions into a general text role.
 
-**The Reading Voice Rule.** Use Archivo for prose and UI; reserve Roboto Mono for short metadata.
+**The Reading Voice Rule.** Use Plus Jakarta Sans for prose and UI; reserve Roboto Mono for short metadata.
 
 ## Layout
 
@@ -225,4 +227,12 @@ This scope contains no image enlargement viewer or inquiry form. The inquiry clo
 
 ## Homepage differentiation revision — 15 November 2026
 
-The user requested clearer visual distance from the original Pixieset website while retaining On Both Sides. The wide opening, separate landscape image, leading Sport caption and paper biography chapter are the resulting approved-scope design changes. The revision keeps the same fonts, neutral palette, source copy and photographs. PRODUCT.md v1.1 records this change; the other seven pages remain behind the homepage approval gate.
+The user requested clearer visual distance from the original Pixieset website while retaining On Both Sides. The wide opening, separate landscape image, leading Sport caption and paper biography chapter are the resulting approved-scope design changes. That layout revision kept the source copy and photographs. The subsequent user-requested typography/color revision below supersedes its original font and action color. PRODUCT.md v1.1 records this change; the other seven pages remain behind the homepage approval gate.
+
+## Typography and accent revision — 15 November 2026
+
+User requested the Aponic documentation typeface and small amounts of color. Computed styles verified Plus Jakarta Sans Variable (reference H1 700, sections 600, prose/navigation 400). Portfolio uses the same family with 600 headings, 400 prose and 500 actions; sparse Roboto Mono metadata remains. The wider face uses a 48–88px desktop display, 40–60px mobile display and 1.08 leading without artificial width compression. Mobile hero actions use 15px text and 20px icon gaps, reducing to the existing 14px narrow-screen role. Only primary action fills, category arrows, the biography arrow and service hover fills gain coral; selection uses coral on ink. The explicit reference font request overrides generic detector saturation advice. PRODUCT.md v1.2 is authoritative.
+
+### Detector exceptions for this revision
+
+Plus Jakarta Sans is the explicit user reference and Roboto Mono is a pinned sparse metadata role, so generic “overused font” findings do not apply. The type scan also flags documented context-specific sizes: shared non-Home H1 defaults 44–96px, short metadata 10px, narrow secondary actions 14px, mobile hero actions 15px, and story-line endpoint 34px. They remain intentional exceptions; prose stays 17–18px, the visible Home display stays within 88px, and responsive fitting was checked from 320 to 1920px.

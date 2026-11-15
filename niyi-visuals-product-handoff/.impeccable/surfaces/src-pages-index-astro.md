@@ -13,7 +13,7 @@ Mode: Experience. Build only the homepage and its shared foundation. The user ha
 
 THESIS: Niyi's lived understanding of a sporting moment connects celebration, action and personal photography. Real photographs lead, with the original words given a solid readable ground.
 
-OWN-WORLD: Specified ink and warm paper, Archivo variable and sparse Roboto Mono metadata, rectangular photographs, hairline section boundaries and quiet outlined controls. No decorative gradients, cards, club badges or invented content.
+OWN-WORLD: Specified ink and warm paper, Plus Jakarta Sans variable and sparse Roboto Mono metadata, rectangular photographs, hairline section boundaries and quiet outlined controls with muted coral primary actions and small directional accents. No decorative gradients, cards, club badges or invented content.
 
 STORY: Identify Niyi and his Apeldoorn base; enter Sport, Parties or Lifestyle; read the complete original Home introduction; find services and inquiry.
 

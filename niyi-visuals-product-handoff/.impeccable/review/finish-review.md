@@ -1,3 +1,17 @@
+# Current typography refinement review
+
+**SHIP for local homepage review.** Reviewed the requested Plus Jakarta Sans and restrained coral revision after the independent composition review archived below. This latest pass was performed by the implementing agent.
+
+Desktop 1440px and mobile 390px screenshots show the new face across headings, prose and navigation, all six authentic photos, clear hierarchy, and limited coral action emphasis. Mobile opening action spacing was tightened after the initial inspection; the confirming capture shows both actions on one row at 390px. At 320px actions wrap cleanly. Measurements at 320/390/768/1024/1366/1920px show no document overflow and all six photos loaded. Native mobile menu opens with Close focus; Escape restores the page. Existing reduced-motion and focus rules remain.
+
+Actual solid-color contrast: ink/coral 8.83:1; ink/hover 11.25:1; dark coral/paper 5.42:1. The focus ring is offset onto ink/paper. The user reference font overrides generic font-saturation detector advice. Scope remains homepage only, without publication.
+
+Current evidence: `desktop.jpg`, `mobile.jpg`, `desktop-hero.jpg`, `mobile-hero.jpg`, `mobile-menu.jpg`, `typography-responsive.json`. Official Web Interface Guidelines were fetched fresh for this review; no material issue found in changed UI files. Build, lint, type and source-integrity checks are recorded in QA.md.
+
+---
+
+# Archived independent composition review
+
 # Independent homepage finish review
 
 ## Disposition

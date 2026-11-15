@@ -2,7 +2,7 @@
 
 <!-- impeccable:product-schema 1 -->
 
-**Version:** 1.1 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
+**Version:** 1.2 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
 
 **Creative direction:** On Both Sides. **Existing website:** [Niyi Visuals](https://niyivisuals.mypixieset.com/)
 
@@ -228,26 +228,26 @@ MUST NOT use generic purple/blue gradients, glow, floating glass panels, decorat
 
 Flat-color reference ratios: paper/ink 17.08:1; muted-dark/ink 9.21:1; light-page text/paper 14.05:1; muted-light/paper 5.80:1. Control-border pairs against ink/paper are 3.74:1 and 3.57:1. Decorative rule/ink is only 1.55:1 and cannot identify an interactive boundary. Check actual adjacent surfaces, transparency and rendered states separately.
 
-Paper is the primary action accent; most chromatic color comes from photography. Main text MUST NOT depend on contrast against a changing image crop. Prefer solid text panels; any local image scrim must be tested for the actual crops and must not flatten the whole photograph.
+Muted coral is the primary action accent; most chromatic color still comes from photography. Use `accent` #DFA080 for filled primary actions and small category arrows, `accent-hover` #EFB99A for their hover fill, and `accent-on-paper` #984B30 for a small arrow on paper. Large backgrounds and headings retain ink/paper neutrals. Main text MUST NOT depend on contrast against a changing image crop. Prefer solid text panels; any local image scrim must be tested for the actual crops and must not flatten the whole photograph.
 
 ### Typography
 
-Use **Archivo variable** for headings, body and UI; **Roboto Mono 400** only for short metadata, indices and image counts. Retaining Archivo refines the incumbent identity. Do not substitute Inter/Geist by habit. Do not ship Barlow/Instrument Serif/DM Sans from the unselected alternatives.
+Use **Plus Jakarta Sans variable** for headings, body and UI; **Roboto Mono 400** only for short metadata, indices and image counts. This user-requested font revision follows the verified typography of https://docs.aponic.org (15 November 2026), superseding the earlier Archivo recommendation. Do not substitute Inter/Geist by habit. Do not ship Barlow/Instrument Serif/DM Sans from the unselected alternatives.
 
 | Role | Mobile | Tablet | Laptop | Wide desktop | Weight / leading / tracking |
 |---|---:|---:|---:|---:|---|
-| Home display | 44–48px | 60–68px | 80–88px | 88–96px | Archivo 500; 1.02–1.08; −0.025em |
-| Page H1 | 40–44px | 56px | 64px | 72px | Archivo 500; 1.08; −0.025em |
-| H2 | 30–34px | 40px | 48px | 56px | Archivo 500; 1.1; −0.02em |
-| H3 | 24px | 26px | 28px | 32px | Archivo 500; 1.2; −0.01em |
-| Body | 17px | 18px | 18px | 18px | Archivo 400; 1.55–1.65; normal tracking |
-| UI / button | 16px | 16px | 15–16px | 16px | Archivo 500; 1.3 |
+| Home display | 40–60px | 50–66px | 80–88px | 88px | Plus Jakarta Sans 600; 1.08; −0.035em |
+| Page H1 | 40–44px | 56px | 64px | 72px | Plus Jakarta Sans 600; 1.08; −0.025em |
+| H2 | 30–34px | 40px | 48px | 56px | Plus Jakarta Sans 600; 1.1; −0.02em |
+| H3 | 24px | 26px | 28px | 32px | Plus Jakarta Sans 600; 1.2; −0.01em |
+| Body | 17px | 18px | 18px | 18px | Plus Jakarta Sans 400; 1.55–1.65; normal tracking |
+| UI / button | 16px | 16px | 15–16px | 16px | Plus Jakarta Sans 500; 1.3 |
 | Metadata | 12–13px | 13px | 13px | 13px | Roboto Mono 400; 1.45; +0.02em |
-| Price | 28–32px | 32px | 36px | 36px | Archivo 500; 1.15; −0.015em |
+| Price | 28–32px | 32px | 36px | 36px | Plus Jakarta Sans 600; 1.15; −0.015em |
 
-Use fluid interpolation, not device-specific hard breaks alone. At 320px, reduce display size toward 40–42px if needed; never clip text to preserve an oversized heading. Body measure 50–65 characters on wider screens; use available width on mobile. Use normal font width for body/UI; display may use Archivo's supported width axis around 88–95%, without horizontal transforms. Short labels may be uppercase; paragraphs may not be all-caps/tracked mono.
+Use fluid interpolation, not device-specific hard breaks alone. At 320px, reduce display size toward 40–42px if needed; never clip text to preserve an oversized heading. Body measure 50–65 characters on wider screens; use available width on mobile. Use normal font width throughout; Plus Jakarta Sans has a weight axis (200–800), with no width axis or horizontal transforms. Short labels may be uppercase; paragraphs may not be all-caps/tracked mono.
 
-Self-host appropriate WOFF2 subsets when feasible, preserve supplied OFL notices and confirm the files support the chosen axes. Use a resilient sans-serif/monospace fallback and visible text during loading. Preload only truly critical font files. Font budgets are in section 13. Sources already researched: `https://github.com/google/fonts/blob/main/ofl/archivo/METADATA.pb` and `https://github.com/googlefonts/RobotoMono`.
+Self-host appropriate WOFF2 subsets when feasible, preserve supplied OFL notices and confirm the files support the chosen axes. Use a resilient sans-serif/monospace fallback and visible text during loading. Preload only truly critical font files. Font budgets are in section 13. Sources already researched: `https://github.com/google/fonts/tree/main/ofl/plusjakartasans` and `https://github.com/googlefonts/RobotoMono`.
 
 ### Layout, spacing and shape
 
@@ -621,10 +621,14 @@ Use meaningful tests tied to failure risk, not dozens of tests mirroring CSS or 
 | Contact | Fields before image on mobile; direct contacts usable; labels/errors/status understandable; server acceptance and arranged real receipt checked separately |
 | Accessibility | Keyboard + screen reader; contrast at real rendered states; semantic headings; image/action text; reduced motion; no-JS navigation |
 | Performance | Recorded lab conditions/results and asset/bundle checks; field goals stated as pending when field data is unavailable |
-| Visual direction | Archivo/Roboto Mono roles, neutral palette, strong real imagery, intentional density, warm practical pages, no generic AI-template decoration |
+| Visual direction | Plus Jakarta Sans/Roboto Mono roles, ink/paper palette with restrained coral accents, strong real imagery, intentional density, warm practical pages, no generic AI-template decoration |
 | Motion | Optional enhancement, small amplitude/timing, no hidden content when disabled/failed; static pages still convincing |
 | Release | All relevant owner/hosting/copy/form/privacy gates resolved or explicitly scoped; no invented readiness claim |
 
 A developer saying “the build passed” is insufficient evidence of correct image routes, working delivery, accessible overlays or professional art direction. Conversely, screenshots alone cannot establish backend delivery or commercial correctness. The final implementation handoff must distinguish implemented, tested, unverified and owner-dependent items.
 
 **Completion rule:** the future website is done only when its agreed scope satisfies this specification and relevant dependencies. This planning document is done when it faithfully consolidates the research, makes development choices explicit, preserves unresolved facts and supplies accessible source references. Stop after delivering the planning handoff for the current task.
+
+### User-requested typography and accent revision — 15 November 2026
+
+Version 1.2 adopts Plus Jakarta Sans, verified from Aponic’s computed heading, paragraph and navigation styles, while retaining the On Both Sides composition, authentic photography and exact client copy. Use 600 for portfolio headings, 400 for prose and 500 for actions; the reference documentation uses 700 for its main heading and 600 for sections. Preserve sparse Roboto Mono metadata. Self-host the Latin variable font, retune long headlines for its natural width, and keep coral limited to primary actions, small arrows and their states. No remaining pages or deployment are authorized.

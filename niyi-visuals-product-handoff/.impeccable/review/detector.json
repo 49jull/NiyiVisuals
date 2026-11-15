@@ -1,15 +1,23 @@
 [
   {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 54,
-    "snippet": "font-size: clamp(48px, 7.05vw, 96px) has fluid endpoint 48px off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "48px"
+    "antipattern": "overused-font",
+    "name": "Overused font",
+    "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/styles/global.css",
+    "line": 2,
+    "snippet": "font-family: 'Plus Jakarta Sans"
+  },
+  {
+    "antipattern": "overused-font",
+    "name": "Overused font",
+    "description": "Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, and Space Grotesk are used on so many sites they no longer feel distinctive. Each new wave of AI-generated UIs converges on the same handful of faces. Choose a face that gives your interface personality.",
+    "severity": "warning",
+    "category": "slop",
+    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/styles/global.css",
+    "line": 3,
+    "snippet": "font-family: 'Roboto"
   },
   {
     "antipattern": "design-system-font-size",
@@ -17,11 +25,11 @@
     "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
     "severity": "advisory",
     "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 57,
-    "snippet": "font-size: clamp(28px, 3.45vw, 48px) has fluid endpoints 28px and 48px off the DESIGN.md type ramp",
+    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/styles/global.css",
+    "line": 17,
+    "snippet": "font-size: clamp(44px, 6.1vw, 96px) has fluid endpoints 44px and 96px off the DESIGN.md type ramp",
     "advisory": true,
-    "ignoreValue": "28px"
+    "ignoreValue": "44px"
   },
   {
     "antipattern": "design-system-font-size",
@@ -42,19 +50,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 95,
-    "snippet": "font-size: clamp(40px, 5vw, 72px) has fluid endpoints 40px and 72px off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "40px"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 106,
+    "line": 107,
     "snippet": "font-size: 10px is off the DESIGN.md type ramp",
     "advisory": true,
     "ignoreValue": "10px"
@@ -66,19 +62,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 110,
-    "snippet": "font-size: clamp(42px, 9vw, 64px) has fluid endpoints 42px and 64px off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "42px"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 113,
+    "line": 114,
     "snippet": "font-size: clamp(24px, 5.2vw, 34px) has fluid endpoint 34px off the DESIGN.md type ramp",
     "advisory": true,
     "ignoreValue": "34px"
@@ -91,6 +75,18 @@
     "category": "quality",
     "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
     "line": 116,
+    "snippet": "font-size: 15px is off the DESIGN.md type ramp",
+    "advisory": true,
+    "ignoreValue": "15px"
+  },
+  {
+    "antipattern": "design-system-font-size",
+    "name": "Font size outside DESIGN.md",
+    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
+    "severity": "advisory",
+    "category": "quality",
+    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
+    "line": 119,
     "snippet": "font-size: 10px is off the DESIGN.md type ramp",
     "advisory": true,
     "ignoreValue": "10px"
@@ -102,7 +98,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 121,
+    "line": 124,
     "snippet": "font-size: 14px is off the DESIGN.md type ramp",
     "advisory": true,
     "ignoreValue": "14px"
@@ -114,7 +110,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 133,
+    "line": 136,
     "snippet": "font-size: 14px is off the DESIGN.md type ramp",
     "advisory": true,
     "ignoreValue": "14px"
@@ -126,55 +122,7 @@
     "severity": "advisory",
     "category": "quality",
     "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 143,
-    "snippet": "font-size: 40px is off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "40px"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/pages/index.astro",
-    "line": 143,
-    "snippet": "font-size: 14px is off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "14px"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/components/CategoryFeature.astro",
-    "line": 18,
-    "snippet": "font-size: clamp(48px, 5vw, 72px) has fluid endpoints 48px and 72px off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "48px"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/components/CategoryFeature.astro",
-    "line": 23,
-    "snippet": "font-size: clamp(26px, 2.8vw, 40px) has fluid endpoints 26px and 40px off the DESIGN.md type ramp",
-    "advisory": true,
-    "ignoreValue": "26px"
-  },
-  {
-    "antipattern": "design-system-font-size",
-    "name": "Font size outside DESIGN.md",
-    "description": "A literal font-size is off the type ramp documented in DESIGN.md typography. Use a documented size step or update the design system if the new step is intentional.",
-    "severity": "advisory",
-    "category": "quality",
-    "file": "/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff/src/components/CategoryFeature.astro",
-    "line": 24,
+    "line": 146,
     "snippet": "font-size: 14px is off the DESIGN.md type ramp",
     "advisory": true,
     "ignoreValue": "14px"

@@ -31,7 +31,7 @@ The first screenshot attempts contained capture artifacts from unloaded/offscree
 
 ## Performance evidence and limits
 
-Production browser enhancement is inlined: 2,464 bytes uncompressed / 987 bytes gzipped at measurement. No React runtime or animation library. CSS approximately 23KB uncompressed; self-hosted font files total 102,784 bytes, below the specified 120KB font target. Hero responsive WebP variants range about 27–219KB (480–1920px). No high-resolution collection preloading or third-party scripts.
+Production browser enhancement is inlined: 2,464 bytes uncompressed / 987 bytes gzipped at measurement. No React runtime or animation library. CSS approximately 23KB uncompressed; self-hosted font files total 40,028 bytes, below the specified 120KB font target. Hero responsive WebP variants range about 27–219KB (480–1920px). No high-resolution collection preloading or third-party scripts.
 
 These are build asset measurements, not a Lighthouse score or field Core Web Vitals claim. Initial transfer varies with viewport, device pixel ratio, lazy-loading thresholds and browser cache. Field LCP/INP/CLS and a full release accessibility/device pass remain unmeasured.
 
@@ -47,8 +47,16 @@ Original Home copy was recovered, but copy exports for other pages, owner master
 
 ## Differentiation revision — 15 November 2026
 
-The user liked the initial homepage but requested greater visual separation from the original. Revised the opening into a full-width typographic composition with actions before a landscape image, gave Sport a photograph-left/large-caption-right spread, broadened the desktop Parties crop, and changed the complete personal story to a paper-colored chapter with copy first and an inset portrait to the right. All source copy, six photo placements, nav destinations, font families and restrained-motion behavior are retained.
+The user liked the initial homepage but requested greater visual separation from the original. Revised the opening into a full-width typographic composition with actions before a landscape image, gave Sport a photograph-left/large-caption-right spread, broadened the desktop Parties crop, and changed the complete personal story to a paper-colored chapter with copy first and an inset portrait to the right. All source copy, six photo placements, nav destinations, the then-current font families and restrained-motion behavior were retained.
 
 PRODUCT.md v1.1 and its identical distribution copy record these user-authorized layout changes; their manifest entries were refreshed. The other 14 supplied research/register/evidence files remain unchanged. The body sizes remain 18px tablet/desktop and 17px mobile. Browser checks at 320/390/768/1024/1366/1920px show no horizontal document overflow. This revision supersedes the initial layout evidence; the homepage approval gate remains pending.
 
 The independent refinement review also returned SHIP for local homepage visual review, with no material fix requested. The revised paper chapter was checked in-browser for its actual prose colors and dark focus treatment. See `.impeccable/review/finish-review.md` for the current review scope.
+
+## Typography and coral revision — 15 November 2026
+
+Replaced Archivo with self-hosted Plus Jakarta Sans variable (Latin, 200–800, swap, critical preload), verified against docs.aponic.org computed styles. Semibold headings, medium actions and regular 17–18px prose retain clear roles. Removed unused Archivo binaries/dependency and its unsupported width-axis styling. Muted coral is limited to primary actions, category arrows, biography arrow, service hover and selection. New reference and contrast evidence: `migration/typography-reference.md`. Desktop/mobile screenshots now show this revision; original photographic assets and text remain unchanged.
+
+For v1.2, desktop/mobile were inspected together, with one mobile action-spacing correction confirmed. Responsive measurements at 320/390/768/1024/1366/1920px show no horizontal document overflow and six loaded photos. Native mobile menu open/Escape behavior was rechecked. Coral pairs measure 8.83:1 for ink text, 11.25:1 on hover, and 5.42:1 for the dark coral arrow on paper. Type detector exceptions are explicitly recorded in DESIGN.md. Fresh Web Interface Guidelines review found no material issue in changed files.
+
+Post-revision checks: `npm run check` (0 errors/warnings/hints), `npm run lint`, `npm run build`, all five `npm run test` cases and `git diff --check` passed. `npm audit --omit=optional --audit-level=low` reported zero vulnerabilities. Self-hosted fonts now total 40,028 bytes.

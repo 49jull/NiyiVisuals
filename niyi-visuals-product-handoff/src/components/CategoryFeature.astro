@@ -22,6 +22,7 @@ const { name, href, photo, layout = 'portrait' } = Astro.props;
   .category-caption { display: flex; gap: 16px; align-items: center; justify-content: space-between; padding-top: 18px; }
   .category-caption h3 { font-size: clamp(26px, 2.8vw, 40px); }
   .category-action { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+  .category-action :global(svg) { color: var(--accent); }
   .category-feature:hover .category-action { text-decoration: underline; text-underline-offset: 5px; }
   @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) { .category-feature:hover :global(img) { transform: scale(1.02); } }
   @media (max-width: 767px) { .category-feature--lead { display: block; } .category-feature--lead .category-caption { flex-direction: row; align-items: center; gap: 16px; padding-bottom: 0; } .category-feature--lead .category-caption h3 { font-size: 32px; } .category-feature--lead .category-action { width: auto; border: 0; padding: 0; } .category-feature--lead :global(.photo__frame) { aspect-ratio: 4 / 5; } .category-feature--wide :global(.photo__frame) { aspect-ratio: 4 / 5; } .category-caption { padding-top: 14px; } }

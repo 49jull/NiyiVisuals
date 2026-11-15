@@ -37,7 +37,7 @@ Recommend a custom **Astro + strict TypeScript + plain CSS** implementation for 
 - Use reusable Astro components for shared behavior and photographic primitives, with deliberately different page compositions. Use small TypeScript modules for the Work disclosure, modal mobile navigation, image viewer and inquiry enhancement. No React runtime is needed for current requirements.
 - Use CSS custom properties for the specified palette, typography, spacing, grid, geometry, focus and timing. Component CSS handles local layout. Start with CSS transitions; add a small intersection observer only for the selected one-time entrances.
 - Use Astro's image pipeline for owned local web sources, producing responsive sizes/formats without upscaling. Preserve immutable masters separately outside public output. Exact registered derivatives may support an appropriate private prototype; record provenance and verify actual image dimensions before use. Production must not depend on assumed permanent Pixieset hotlinking.
-- Self-host the selected Archivo variable and Roboto Mono 400 WOFF2 subsets with their OFL notices and font-display behavior. Verify actual axes and file sizes before selecting preload hints.
+- Self-host the selected Plus Jakarta Sans variable and Roboto Mono 400 WOFF2 subsets with their OFL notices and font-display behavior. Verify actual axes and file sizes before selecting preload hints.
 - Start with build-time typed content files. The user chose **“Decide after homepage review”** for the owner editing workflow. Do not select or add a CMS yet; keep records independent of templates so a later editing integration has a clear boundary.
 - Use npm and a committed package lock for a single small app. At implementation, select compatible supported releases and pin through the lockfile. Plan `astro check` and a production build, plus focused integration/browser checks as functionality arrives.
 - Hosting, canonical origin and form provider remain open. The frontend remains static; a real inquiry endpoint needs either a secure external service/function or an Astro server route with a hosting adapter. A build-time static endpoint cannot receive messages at runtime. Choose that adapter/provider together during integration, keeping secrets off the client.
@@ -67,7 +67,7 @@ Internal content records retain source page/section, exact original text when av
 
 ## Visual execution
 
-Follow PRODUCT.md sections 6–8 and 12 exactly for design values and page order. Ink `#0C0C0C` frames Home/About/Work/galleries; paper `#F3EFE9` gives Services and Contact calm practical surfaces. Archivo supplies expressive display typography and readable 17–18px prose; Roboto Mono is restricted to short metadata. Images remain rectangular and preserve source color/monochrome choices. Typography, cropping and image scale carry the identity.
+Follow PRODUCT.md sections 6–8 and 12 exactly for design values and page order. Ink `#0C0C0C` frames Home/About/Work/galleries; paper `#F3EFE9` gives Services and Contact calm practical surfaces. Plus Jakarta Sans supplies expressive display typography and readable 17–18px prose; Roboto Mono is restricted to short metadata. Images remain rectangular and preserve source color/monochrome choices. Typography, cropping and image scale carry the identity.
 
 Home opens with the compact opaque header, factual service/location descriptor and a wide treatment of the original headline on solid ink. The two actions sit alongside its secondary line on desktop; the registered `NV-HOME-01` celebration image spans the container beneath it, followed by the original supporting copy. “View work” and “Let's connect” have clear hierarchy. Keep the celebration landscape on phones when needed to preserve people. No forced fullscreen hero or delayed intro.
 
@@ -134,3 +134,7 @@ These dependencies do not require a broad questionnaire before foundation work. 
 This section records the initial preparation delivery; see the current implementation status above.
 
 Added repository-level AGENTS.md, this plan and .gitignore; initialized local Git with a baseline commit after verification. Supplied documentation/evidence remains byte-identical. No application source, dependency installation, dev server, mockup, external Site, deployment, client-site change or message submission was performed. The next implementation task should begin Stage 1 and then build Home for Stage 3 review, stopping before remaining pages.
+
+## Current typography revision
+
+User requested the typeface from docs.aponic.org and small color accents. PRODUCT.md v1.2 records verified Plus Jakarta Sans variable for headings/prose/UI, continued sparse Roboto Mono metadata, and restrained muted coral actions/arrows. This supersedes the original font and action-color recommendation; the homepage review gate remains.

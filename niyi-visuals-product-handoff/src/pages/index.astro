@@ -51,7 +51,7 @@ import { categories, routes } from '../content/site';
   .hero-context { display: flex; justify-content: space-between; gap: 24px; padding-bottom: 36px; }
   .hero-composition { display: grid; gap: 28px; }
   .hero-opening { position: relative; }
-  .hero-title { font-size: clamp(48px, 7.05vw, 96px); line-height: 1.06; font-stretch: 90%; }
+  .hero-title { font-size: clamp(48px, 6.5vw, 88px); line-height: 1.08; letter-spacing: -0.035em; }
   .hero-title-main { display: flex; justify-content: space-between; gap: 24px; }
   .hero-title-main > span { white-space: nowrap; }
   .hero-title-story { display: block; max-width: 65%; margin-top: 24px; color: var(--text-muted-dark); font-size: clamp(28px, 3.45vw, 48px); line-height: 1.15; }
@@ -80,6 +80,7 @@ import { categories, routes } from '../content/site';
   .biography p { margin-bottom: 20px; color: var(--text-muted-light); font-size: 18px; line-height: 1.65; }
   .biography .introduction { color: var(--text-light-page); font-size: clamp(24px, 2.2vw, 32px); line-height: 1.2; letter-spacing: -0.015em; margin-bottom: 24px; }
   .about-copy :global(.action) { margin-top: 4px; }
+  .about-copy :global(.action svg) { color: var(--accent-on-paper); }
   .about-chapter :global(:focus-visible) { outline-color: var(--focus-light); }
   .about-chapter :global(::selection) { background: var(--ink); color: var(--paper); }
   .services { display: grid; grid-template-columns: 4fr 8fr; gap: var(--grid-gap); padding-block: var(--section-space); }
@@ -88,7 +89,7 @@ import { categories, routes } from '../content/site';
   .service-row:first-child { padding-top: 0; min-height: 104px; }
   .service-row p { font-size: 18px; line-height: 1.6; color: var(--text-muted-dark); max-width: 25ch; }
   .service-arrow { display: grid; width: 44px; height: 44px; place-items: center; border: 1px solid var(--control-border-dark); border-radius: 2px; transition: color 160ms, background-color 160ms; }
-  .service-row:hover .service-arrow { color: var(--ink); background: var(--paper); }
+  .service-row:hover .service-arrow { color: var(--ink); background: var(--accent); }
   .service-row:hover h3 { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
   .inquiry-image :global(.photo__frame) { aspect-ratio: 2.35; }
   .inquiry-copy { display: grid; grid-template-columns: 1fr 1fr; gap: var(--grid-gap); align-items: start; padding-block: 48px 64px; border-bottom: 1px solid var(--rule-decorative); }
@@ -107,11 +108,13 @@ import { categories, routes } from '../content/site';
     .hero-context span { display: block; }
     .hero-context span + span { margin-top: 4px; }
     .hero-composition { gap: 24px; }
-    .hero-title { font-size: clamp(42px, 9vw, 64px); }
+    .hero-title { font-size: clamp(40px, 8.6vw, 60px); }
     .hero-title-main { display: flex; flex-direction: column; gap: 0; }
     .hero-title-main > span:last-child { align-self: end; }
     .hero-title-story { max-width: none; font-size: clamp(24px, 5.2vw, 34px); margin-top: 20px; }
     .hero-actions { position: static; margin-top: 24px; flex-wrap: wrap; gap: 16px; }
+    .hero-actions :global(.action) { font-size: 15px; gap: 20px; }
+    .hero-actions :global(.action--primary) { padding-inline: 18px; }
     .hero-visual :global(.photo__frame) { aspect-ratio: 1.5; }
     .hero-photo-caption { margin-top: 0; font-size: 10px; }
     .hero-details { display: block; padding-bottom: 24px; }

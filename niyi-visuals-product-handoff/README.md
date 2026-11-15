@@ -28,7 +28,7 @@ The preview command prints its own Local URL (4322 when the development server o
 
 - Original Home headline, supporting paragraph, five introduction blocks and closing invitation, recovered from the rendered source website.
 - All six registered Home photo placements, with exact recorded source URLs and local responsive WebP/JPEG variants.
-- Self-hosted Archivo weight/width variable font and Roboto Mono 400, with OFL notices.
+- Self-hosted Plus Jakarta Sans weight variable font and Roboto Mono 400, with OFL notices.
 - A wide typographic hero above landscape photography, a leading Sport image/category spread, offset Parties/Lifestyle photography, a warm-paper personal story, service rows, inquiry close and complete shared footer.
 - Native route links; independent Work disclosure; modal mobile navigation with Escape, browser-native focus containment, focus return and scroll restoration.
 - Descriptive image alternatives, reserved geometry, high-priority opening image, lazy below-fold images and an image failure treatment.
