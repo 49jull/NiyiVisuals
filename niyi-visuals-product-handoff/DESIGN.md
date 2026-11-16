@@ -1,238 +1,308 @@
 ---
 name: Niyi Visuals
-description: The implemented On Both Sides homepage system for local review.
+description: An editorial photographic register in paper, charcoal and restrained vermilion.
 colors:
-  ink: "#0c0c0c"
-  surface-dark: "#171715"
-  paper: "#f3efe9"
-  text-muted-dark: "#b8b1a8"
-  rule-decorative: "#34332f"
-  control-border-dark: "#6f6c67"
-  text-light-page: "#22211f"
-  text-muted-light: "#605c56"
-  control-border-light: "#827d75"
-  focus-dark: "#f0c28c"
-  focus-light: "#22211f"
-  accent: "#dfa080"
-  accent-hover: "#efb99a"
-  accent-on-paper: "#984b30"
+  paper: "#f7f7f2"
+  ink: "#24251f"
+  muted: "#66675f"
+  line: "#d0d1c8"
+  surface: "#edede6"
+  accent: "#bd361e"
+  accent-hover: "#972d1a"
+  contact-ground: "#eaeae2"
 typography:
   display:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "clamp(48px, 6.5vw, 88px)"
-    fontWeight: 600
-    lineHeight: 1.08
-    letterSpacing: "-0.035em"
-  home-story:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "clamp(28px, 3.45vw, 48px)"
-    fontWeight: 600
-    lineHeight: 1.15
-  home-display-mobile:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "clamp(40px, 8.6vw, 60px)"
-    fontWeight: 600
-    lineHeight: 1.08
-  category-display:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "clamp(48px, 5vw, 72px)"
-    fontWeight: 600
-    lineHeight: 1.2
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(48px, 5.95vw, 96px)"
+    fontWeight: 500
+    lineHeight: "1.035"
+    letterSpacing: "-.04em"
+  display-mobile:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(38px, 10vw, 68px)"
+    fontWeight: 500
+    lineHeight: "1.07"
+    letterSpacing: "-.04em"
+  story-line:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(17px, 1.75vw, 24px)"
+    fontWeight: 500
+    lineHeight: "1.4"
+    letterSpacing: "-.02em"
   headline:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "clamp(32px, 3.9vw, 56px)"
-    fontWeight: 600
-    lineHeight: 1.1
-    letterSpacing: "-0.025em"
-  title:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "clamp(24px, 2.2vw, 32px)"
-    fontWeight: 600
-    lineHeight: 1.2
-    letterSpacing: "-0.015em"
-  body:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "18px"
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(38px, 4.2vw, 64px)"
+    fontWeight: 500
+    lineHeight: "1.05"
+    letterSpacing: "-.035em"
+  project-title:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(42px, 5.6vw, 80px)"
+    fontWeight: 500
+    lineHeight: "1.05"
+    letterSpacing: "-.035em"
+  card-title:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(18px, 1.7vw, 24px)"
+    fontWeight: 500
+    lineHeight: "1.35"
+    letterSpacing: "-.025em"
+  perspective:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(26px, 3.1vw, 46px)"
     fontWeight: 400
-    lineHeight: 1.6
-  body-mobile:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
+    lineHeight: "1.3"
+    letterSpacing: "-.03em"
+  body:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
     fontSize: "17px"
     fontWeight: 400
-    lineHeight: 1.6
-  action:
-    fontFamily: "Plus Jakarta Sans, Helvetica Neue, sans-serif"
-    fontSize: "16px"
-    fontWeight: 500
-  metadata:
-    fontFamily: "Roboto Mono, monospace"
+    lineHeight: "1.6"
+    letterSpacing: "normal"
+  body-introduction:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "23px"
+    fontWeight: 400
+    lineHeight: "1.4"
+    letterSpacing: "normal"
+  nav:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "14px"
+    fontWeight: 400
+    lineHeight: "1.6"
+    letterSpacing: "normal"
+  label:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "13px"
+    fontWeight: 400
+    lineHeight: "1.6"
+    letterSpacing: "normal"
+  caption:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
     fontSize: "12px"
     fontWeight: 400
-    lineHeight: 1.5
-    letterSpacing: "0.02em"
+    lineHeight: "1.6"
+    letterSpacing: "normal"
+  wordmark:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "23px"
+    fontWeight: 600
+    lineHeight: "1.6"
+    letterSpacing: "-.04em"
+  contact-display:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(48px, 7vw, 96px)"
+    fontWeight: 500
+    lineHeight: "1.05"
+    letterSpacing: "-.04em"
+  contact-email:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(22px, 3.4vw, 48px)"
+    fontWeight: 400
+    lineHeight: "1.3"
+    letterSpacing: "-.03em"
+  footer-signature:
+    fontFamily: "'Plus Jakarta Sans', 'Helvetica Neue', sans-serif"
+    fontSize: "clamp(48px, 11.6vw, 196px)"
+    fontWeight: 500
+    lineHeight: "1.25"
+    letterSpacing: "-.04em"
 rounded:
-  photograph: "0px"
-  control: "2px"
+  square: "0"
 spacing:
-  gutter: "clamp(20px, 3.34vw, 64px)"
-  grid-gap: "clamp(16px, 2.2vw, 32px)"
-  section-space: "clamp(72px, 8vw, 128px)"
-  inline: "16px"
-  related: "24px"
-  heading: "32px"
-  group: "48px"
-  footer: "64px"
+  xs: "8px"
+  sm: "12px"
+  md: "16px"
+  control: "20px"
+  lg: "24px"
+  xl: "32px"
+  xxl: "40px"
+  section-small: "64px"
+  section-medium: "80px"
+  gutter: "clamp(20px, 3.4vw, 64px)"
+  section: "clamp(80px, 10vw, 160px)"
 components:
-  action-primary:
-    backgroundColor: "{colors.accent}"
-    textColor: "{colors.ink}"
-    typography: "{typography.action}"
-    rounded: "{rounded.control}"
-    padding: "12px 22px"
-  action-primary-hover:
-    backgroundColor: "{colors.accent-hover}"
-    textColor: "{colors.ink}"
-  action-text:
+  filter:
+    backgroundColor: "transparent"
+    textColor: "{colors.muted}"
+    typography: "{typography.label}"
+    padding: "0 0 0 12px"
+    height: "44px"
+  filter-selected:
+    backgroundColor: "transparent"
+    textColor: "{colors.accent}"
+    typography: "{typography.label}"
+    padding: "0 0 0 12px"
+    height: "44px"
+  view-selected:
+    backgroundColor: "{colors.ink}"
     textColor: "{colors.paper}"
-    typography: "{typography.action}"
-  nav-contact:
+    typography: "{typography.caption}"
+    padding: "0 13px"
+    height: "38px"
+  view-selected-mobile:
+    backgroundColor: "{colors.ink}"
     textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    padding: "10px 16px"
-  nav-contact-hover:
+    typography: "{typography.caption}"
+    padding: "0 10px"
+    height: "44px"
+  navigation:
+    textColor: "{colors.ink}"
+    typography: "{typography.nav}"
+    height: "48px"
+  project-card:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.ink}"
-  work-categories:
-    backgroundColor: "{colors.surface-dark}"
-    textColor: "{colors.paper}"
-    padding: "12px"
-  service-arrow:
-    textColor: "{colors.paper}"
-    rounded: "{rounded.control}"
-    width: "44px"
+    typography: "{typography.card-title}"
+    rounded: "{rounded.square}"
+  project-index:
+    textColor: "{colors.ink}"
+    rounded: "{rounded.square}"
+    padding: "18px 0"
+  image-retry:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    typography: "{typography.label}"
+    padding: "8px 16px"
     height: "44px"
+    rounded: "{rounded.square}"
+  project-panel:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.square}"
+    width: "100%"
+  contact-link:
+    textColor: "{colors.ink}"
+    typography: "{typography.contact-email}"
+    height: "48px"
+    padding: "0 0 8px"
 ---
-
 # Design System: Niyi Visuals
 
 ## Overview
 
 **Creative North Star: "On Both Sides"**
 
-On Both Sides gives the client’s photography the greatest visual weight. Ink grounds, warm paper text, variable Plus Jakarta Sans, sparse mono metadata, rectangular images and fine rules produce a confident, human editorial system. Color comes primarily from the registered photographs; interface ornament remains quiet.
+On Both Sides expresses a personal photographic practice as a precise, independent publication. The near-white field, charcoal type and sparse vermilion details leave the registered photographs in charge. One proportional sans family moves from compact navigation to generous editorial statements without adding a second typographic voice.
 
-This record describes the built homepage and shared foundation only. It is evidence for local homepage review, not a claim that the remaining pages, a viewer, a contact form or production integrations exist. The pinned direction is already selected; this document records its implementation.
+The reusable signature is continuity: a photograph keeps its identity as the surrounding register changes density or opens into a reading panel. Rectangular imagery, asymmetry, fine rules and ordinary scrolling create energy without decorative effects. This is the implemented local world, extracted from source after the explicit 16 November 2026 redesign authorization; it replaces the older dark/coral and mono design record. No approved visual comp was supplied.
 
 **Key Characteristics:**
-- Real photography leads; text stays on a solid ground.
-- Asymmetric image scale with continuous readable prose.
-- Quiet links, thin rules and restrained state feedback.
 
-Source authority: `src/styles/tokens.css`, `src/styles/global.css`, `src/pages/index.astro`, `src/components/`, and `src/scripts/interactions.ts`. The visual direction lives in `PRODUCT.md`; the homepage composition lives in `.impeccable/surfaces/src-pages-index-astro.md`. The final local-review verdict is `.impeccable/review/finish-review.md`. These documents remain separate rather than being duplicated here.
+- Real client photography and descriptive editorial selection labels.
+- One Plus Jakarta Sans family with a deliberate hierarchy of display, reading and register roles.
+- Flat paper surfaces, fine rules, offset image scales and restrained vermilion feedback.
+- Connected Grid/Index/filtering and shared-photo detail, with static-page destinations.
 
 ## Colors
 
-Warm neutrals keep the photographic color and human subjects prominent. The frontmatter contains the canonical values.
+A quiet paper-and-charcoal palette gives the photographs their full color range; vermilion is a scarce navigational signal. Frontmatter values are normative and map directly to the same-named CSS custom properties, except `contact-ground`, which records the contact section’s authored literal.
+
+### Primary
+
+- **Vermilion** (`accent`): selected category/dot, focus outline, name and headline punctuation, small directional feedback, selection highlight.
+- **Deep vermilion** (`accent-hover`): supplied companion token, currently not applied to a rendered state; retain only as an incumbent reserved accent variant.
 
 ### Neutral
 
-- **Ink** is the page ground, opaque sticky header, selected inverse text and backdrop.
-- **Dark surface** distinguishes the native mobile navigation, category disclosure and reserved image/failure frames.
-- **Warm paper** supplies primary text and the personal chapter. **Coral accent** identifies primary actions and small category arrows; **accent hover** lightens their fill. **Accent on paper** supplies the small biography-link arrow.
-- **Muted dark-page text** softens supporting prose, captions and metadata without hiding them.
-- **Decorative rule** divides sections; **dark control border** identifies interactive outlines. These have distinct roles.
-- **Warm focus** is the dark-page focus indicator. It is a functional accent rather than a decorative brand color.
-- **Light-page text**, **muted light-page text** and **light focus** are used in the homepage’s paper-colored biography chapter. **Light control border** is reserved for future practical pages. No separate paper-themed content page is implemented.
+- **Near-white paper** (`paper`): page, navigation dialog and project panel.
+- **Charcoal** (`ink`): headings, reading text, selected layout indicator and structural dark strokes.
+- **Muted olive-gray** (`muted`): secondary prose, category labels, ordinals and contextual captions.
+- **Fine rule** (`line`): dividers, row boundaries and toolbar structure, never a substitute for text contrast.
+- **Image surface** (`surface`): reserved photograph geometry, loading/error field and layout-control ground.
+- **Contact ground** (`contact-ground`): slightly denser neutral closing chapter. Its footer uses the authored secondary rule and muted-text literals; they are local details, not new accent families.
 
-**The Photographic Color Rule.** Preserve the registered photographs’ original color or monochrome treatment; large interface surfaces stay neutral and coral is reserved for actions and small directional details.
+**The Photographic Color Rule.** Preserve each registered photograph’s color or monochrome treatment; keep interface grounds neutral and vermilion confined to punctuation, selected states, focus and small action details.
 
 ## Typography
 
-**Display / body / UI:** Plus Jakarta Sans, with Helvetica Neue and sans-serif fallbacks. The self-hosted WOFF2 declares weight (200–800), normal style and `font-display: swap`. All roles retain natural width. The built hierarchy uses regular prose (400), medium actions (500) and semibold headings (600).
+**Display Font:** Plus Jakarta Sans, with Helvetica Neue and sans-serif fallbacks.
+**Body Font:** The same family.
+**Label/Mono Font:** The same proportional family; no mono role.
 
-**Metadata:** Roboto Mono, monospace fallback, self-hosted normal weight (400), `font-display: swap`. Font assets and OFL notices remain in `public/fonts/`; only Plus Jakarta Sans is preloaded by `src/layouts/BaseLayout.astro`.
+The self-hosted Latin variable font supplies weights 200–800 with `font-display: swap`; the public hierarchy mostly uses regular, medium and semibold. Tight display tracking and balanced headings contrast with natural reading tracking. This is an optical, role-based scale rather than a fixed mathematical ratio.
 
-- **Display:** Home uses `clamp(48px, 6.5vw, 88px)` and 1.08 leading. The original “Where action” / “meets emotion” phrase spans one desktop row; the rest of the original headline is a muted 28–48px line beneath it. Below 768px the two main phrases form opposing left/right aligned lines at `clamp(40px, 8.6vw, 60px)` (40px below 360px); the remaining words use 24–34px. Both actions remain before the photograph in DOM and visual order.
-- **Headline / title:** reusable H2/H3 roles retain the frontmatter hierarchy. The leading Sport category has a deliberate 48–72px display treatment beside the photograph, returning to 32px on mobile. Other categories remain 26–40px. The inquiry H2 retains its 40–72px treatment. These are intentional named variants, not a replacement body scale.
-- **Body:** 18px at tablet/desktop and 17px below 768px. Hero and biography prose use 1.65 leading; service and inquiry prose use 1.6. The first biography paragraph remains a distinct 24–32px introduction at 1.2 leading. Biography is bounded to 57ch, hero supporting text to 63ch (45ch mobile), and inquiry supporting text to 35ch (32ch mobile).
-- **UI:** actions use the frontmatter role; desktop navigation uses 15px, with selected narrow-screen secondary actions at 14px. Minimum interactive geometry is preserved independently of text size.
-- **Metadata:** default 12px; photo captions use 1.45 leading. The mobile hero context/caption and narrow footer use 10px for short non-prose labels. Do not promote those small exceptions into a general text role.
+### Hierarchy
 
-**The Reading Voice Rule.** Use Plus Jakarta Sans for prose and UI; reserve Roboto Mono for short metadata.
+- **Display:** the original action/emotion heading; the smaller story line remains a separate subordinate clause. See `display`, `display-mobile` and `story-line` tokens.
+- **Headline:** personal-story and contact headings; the reading panel has its own `project-title` role.
+- **Title:** descriptive gallery titles and compact Index names. Index uses (24px) desktop and (18px) mobile.
+- **Body:** prose uses the `body` role, with the biography introduction enlarged through `body-introduction`. Biography paragraphs are limited to (56ch); selection descriptions to (48ch); opening introduction to (29ch). Mobile opening introduction uses (14px) without reducing the biography body.
+- **Label:** filters, context and metadata use the label/caption/nav roles. Source-specific supporting sizes span (10–16px); (10–11px) are reserved for short counts or category metadata, not prose. Source also uses (15px) service descriptions/actions, (16px) mobile detail prose, (19px) mobile toolbar headings, (21px) mobile wordmark, (22px) mobile biography/service type, and (28px) mobile perspective.
+- **Signature:** `footer-signature` is an intentionally oversized closing name, separate from navigational identity. It reaches its authored large display cap and uses (11.1vw) on mobile; it is `aria-hidden`, while the real identity remains in the header and copyright line. Mobile menu links use (48px).
+
+**The One Family Rule.** Use Plus Jakarta Sans for every public type role, including labels, ordinals and navigation; do not reintroduce mono or a second display family.
+
+The advisory detector’s generic “overused font” warning is an intentional exception because the user explicitly required this family. Its oversized-type heuristic also yields to the footer signature’s authored role. Do not infer permission to enlarge ordinary headings. Old-DESIGN palette/type warnings describe the superseded record, not a reason to restore it.
 
 ## Layout
 
-The shared container is `min(calc(100% - gutter * 2), 1440px)` and centered. Fluid gutter, grid gap and section spacing are recorded in frontmatter; gutter becomes 16px below 360px. The opaque sticky header reserves 88px, switching to 72px at 900px and below. Anchor scroll offsets add 24px to header height.
+The content frame is centered, capped at (1680px), with the fluid `gutter` token. Reading-panel content caps at (1520px). A compact header and two-column editorial opening lead into work; whitespace between chapters uses `section`. Repeated intervals use the frontmatter spacing scale, with image-sequence offsets authored per composition rather than forced into equal cards.
 
-The homepage now separates the wide typographic opening from its full-width landscape celebration image, with the original supporting copy and exploration link underneath. On desktop the headline’s secondary line and the two actions share a baseline; tablet/mobile actions flow beneath the heading. No essential text overlays the photograph.
+Desktop Grid uses twelve columns, (32px) horizontal gaps and (88px) vertical gaps, with varied spans and vertical offsets. It compresses to (24px/64px) gaps below (1100px). Below (700px), four columns and (12px/40px) gaps preserve deliberate inset portraits while most images span the width. Below (359px), gutter becomes (16px). Index uses thumbnail-plus-caption rows, (88px) thumbnails and (28px) gaps desktop; mobile uses (68px) thumbnails, (16px) gaps, hides ordinals and moves category beneath the title. The toolbar wraps filters below the heading/view controls at the middle breakpoint. It stays sticky at (top: 0; z-index: 10) on the paper ground, keeping controls reachable and above moving photographs during rapid input.
 
-The leading Sport feature is an 8/3 image/category-caption grid with a large title and ruled action; its photograph is 1.15. The following Parties/Lifestyle spread uses a 6/5 grid, 40–144px gap and a 96px Lifestyle offset. Parties has a broader 1.05 crop while Lifestyle retains 4/5. Below 768px the lead stacks with a normal caption, Sport and Parties return to 4/5, and Lifestyle remains 86% wide and right aligned.
+The opening landscape is cropped to (1.55) desktop and (1.5) mobile. Portraits retain differing authored ratios; the final Sport cover uses (.75) to preserve the complete head. Crops are image-specific, never universal. Detail covers use their natural image ratio, `object-fit: contain`, centered actual frame width and a viewport-height ceiling of (78vh) desktop / (70dvh) mobile. Supporting photographs retain natural geometry. Original photographic treatments remain unchanged.
 
-The personal story is a full-width paper-colored chapter. Inside its container, a 7/4 reading-column/portrait grid reverses the earlier photograph-left arrangement. The original five paragraphs precede the inset 3/4 monochrome portrait in DOM order. Mobile stacks in that same reading order, with the portrait at 80% width aligned right. Prose uses light-page color tokens; focus is dark ink on paper and selection reverses to ink/paper.
-
-Services remains 4/8 (3/8 on tablet) on ink; inquiry remains 1/1. The service rows and footer keep their existing responsive structure. The celebration is 2.2 on desktop and 1.5 below 768px; running remains 2.35/1.5. Focal records and original color/monochrome treatments remain in `src/content/photos.ts` and are unchanged.
-
-`PhotoFigure.astro` uses cover cropping, explicit intrinsic image dimensions and reserved aspect frames. Astro generates WebP/JPEG derivatives at supported widths among 480/768/1280/1920px with quality 83. The hero is eager/high priority; supporting images are lazy. A failed image keeps its frame and descriptive text.
+The layout is ordinary document scrolling. About, services and Contact stack at the mobile breakpoint; the desktop navigation becomes a native menu dialog there. Avoid sticky decorative furniture. Exact viewport, zoom and runtime acceptance belongs in QA.md; this document records source intent and the known review corrections, not a conformance or performance certificate.
 
 ## Elevation & Depth
 
-There are no box shadows. The header and modal use solid neutral grounds; borders, contrast and spacing establish separation. The native dialog occupies the viewport above an ink backdrop. Photography sits within clipped rectangular frames rather than raised cards.
+No decorative shadows are used. Fine neutral rules, paper-tone changes, image scale and whitespace separate chapters. The full-window project panel establishes depth by replacing the viewing plane, with a sticky paper toolbar; the native mobile dialog uses the same paper field. There is no glass, blur, texture or simulated physical card material.
 
-**The Flat Surface Rule.** Separate regions with tone, spacing and fine rules; do not introduce decorative shadows.
+**The Flat Surface Rule.** Establish hierarchy with scale, spacing, neutral tone and fine rules; do not add decorative shadows or floating card treatments.
 
 ## Shapes
 
-Photographs and content surfaces have square corners. Outlined and filled controls use the small control radius from frontmatter and a 1px border. Rules remain hairline separators. Arrows, chevrons and close controls are inline stroked SVGs; names accompany icon-only controls. No invented mark or ornamental badge extends the brand.
+Photographs, controls and reading surfaces are square-cornered. The small circular selected-filter dot is the sole repeated rounded marker; it is a state cue, not a general radius system. Fine strokes and restrained inline arrows replace boxed CTA furniture. Images reserve geometry before loading. Failure treatment occupies the same frame and must not move adjacent content.
 
 ## Components
 
-### Actions and service links
+### Navigation and destination links
 
-Primary actions are warm paper on ink, with content-sized padding and at least 48px height. Text actions use a persistent thin underline that strengthens on hover; filled actions darken gently. The outlined Contact navigation action inverts on hover. The generic outlined action variant exists in `ActionLink.astro` but is not used as a homepage content action. State feedback takes 160ms; pressed action movement is 1px over 120ms only when motion is allowed. Service rows are full destination links with a thin bottom rule, muted description and a bordered 44px arrow that inverts on hover.
+Text-forward and compact. A real name link, Work count, About and Contact sit on a ruled header. Navigation anchors have (48px) minimum height and vermilion hover feedback. Mobile Menu opens a native dialog; Close receives initial focus, expanded state tracks native closure, Escape closes and focus returns to Menu. The menu is paper, with large simple links. Do not use a fabricated logo.
 
-### Navigation and native modal
+The single build-time public content entry is `src/content/portfolio.ts`, which aggregates the preserved `home.ts` and `site.ts` content and resolves asset metadata before rendering. Public copy reaches the React island as typed props; React imports only the erased `PortfolioCopy` type, never build-time image metadata or a second content entry. Keep provenance and internal records outside the public projection.
 
-Desktop uses the text identity and Work / Services / About / Contact. Work remains a destination link alongside an independent 44×48px category disclosure button, with accurate expanded state. Its bordered dark list closes on outside activation, focus departure and Escape; Escape returns focus to its control. The chevron turns over 180ms.
+### Category filters
 
-At 900px and below, a 48px Open menu button opens a native `dialog` with `showModal()`. The close control receives focus; the browser supplies modal focus containment and an inert background. Close, Escape, navigation and a return to desktop close it; the script restores scroll and opener focus. The viewport-height dark surface scrolls on short screens and respects bottom safe area. Ordinary links retain ordinary navigation semantics. Home is marked current in mobile/footer navigation. With JavaScript disabled, a separate visible link navigation replaces the menu trigger.
+Plain state-changing buttons in a labelled group, not pill badges. Default labels are muted; pressed labels and their small dot are vermilion. The source uses (44px) minimum button height and `aria-pressed`. Each filter reserves constant (12px) left padding; its selected dot is absolutely positioned at the left edge so changing selection never shifts control widths. A polite, visually hidden status reports visible count, category and view without announcing every loading photograph.
 
-### Photography and category links
+### Grid / Index switch
 
-Each category feature is a single full-image/title/action link. Caption titles stay adjacent to their action and image. Fine-pointer hover scales only the category image to 1.02 over 360ms using the shared ease-out curve; reduced motion disables the effect. Photo records retain placement ID, alt and crop data without publishing the internal research ledgers.
+A small rectangular control on the neutral `surface` ground. The active option is charcoal with paper text; the inactive option is transparent. Inline Grid/Index SVGs accompany text. Buttons use `aria-pressed`; their shared indicator uses the quick spring. Desktop buttons retain the authored (38px) minimum height; mobile buttons use (44px) with (10px) inline padding, reducing to (7px) below the narrow breakpoint. Keep the active state visible without relying on animation.
 
-### Focus and motion
+### Photographic selection card and Index row
 
-The implemented focus treatment is a 2px warm outline with 5px offset on ink, overridden with dark ink inside the paper biography chapter. Skip to content appears on focus. Links remain usable without animation or scripts.
+Semantic `article` and destination anchor; a registered image, descriptive `h3`, category and arrow form one destination. No card shell, shadow or rounded clipping. Hover underlines the title and accents the arrow; fine-pointer, motion-allowed hover moves the arrow only (2px). Index retains the same identity in a compact ruled row. Numbers describe register position, not a date. Ordinary and modifier-click destination behavior must remain native when enhancement does not handle it.
 
-The shared easing is `cubic-bezier(0.22, 1, 0.36, 1)`. A loaded hero image can settle from 1.015 to 1 over 400ms; at widths of at least 768px the title can settle up to 8px over 400ms. The first work feature enters once by 12px over 400ms at a 0.12 intersection threshold. These are progressive enhancements with visible starting content. Menu entrance is a 220ms opacity change. Reduced motion sets animation/transition durations to zero and bypasses scripted entrances. No ambient loops or paragraph-by-paragraph reveal sequence exists.
+### Photograph loading and recovery
 
-This scope contains no image enlargement viewer or inquiry form. The inquiry closure is a link to Contact. Other content routes are local dev/preview handoffs to existing-site destinations, not completed local pages; do not use this documentation as evidence of their implementation.
+Each image carries real alternative text, source dimensions, focal point, responsive sources and decoding/loading hints. Geometry stays reserved. “Loading photograph…” is visual and hidden from assistive announcements. Failure exposes a status with the image description; detail images add a (44px) minimum-height Retry photograph button. Cached requests that finish before hydration are checked for a completed image with zero natural width. Retry clears the failed state and requests another source attempt. Gallery navigation remains available after image failure.
+
+### Shared photograph / project reading panel
+
+The selected photograph shares its stable layout identity between the gallery and full-window reading panel. The panel has dialog semantics, an inert background, contained Tab navigation, Escape, initial Back-to-work focus and an explicit return. It includes descriptive title, category/medium, registered sequence photographs, original-collection access, Next selection and direct email. Browser Back and closing are designed to restore layout, filter, exact saved scroll (including zero) and originating link focus; direct static URLs keep an obvious return. These are behavioral requirements, not claims that the current document independently tested them.
+
+Motion uses an interruptible layout spring (stiffness 230, damping 31, mass .85), a faster indicator spring (460/37), short filter exits and supporting text after the photograph begins moving. The sidecar records authored timings. MotionConfig follows the user preference; `?motion=reduce` supplies a calm-mode override. Shared-photo layout IDs and image/caption/indicator layout props are explicitly disabled in reduced mode, in addition to parent layout flags and zero-duration text/exit paths. Spatial transitions must vanish under reduced motion; ordinary scrolling remains unchanged. Browser confirmation is recorded separately.
+
+### Contact and service destinations
+
+Contact is a readable neutral chapter with the real email as its primary underlined destination, followed by callable telephone, location and supplied social links. Hover accents the email and underline. These are honest `mailto:`/`tel:` destinations, not an inquiry form or simulated receipt. Service rows link to the original authoritative commercial page while terms remain unresolved. There is no implemented input/field component to document.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** preserve photograph identity, meaningful alt text, reserved geometry and the recorded focal positions.
-- **Do** keep linked image, full category name and action together as one destination.
-- **Do** retain the 18px tablet/desktop and 17px mobile prose roles, with the larger biography introduction distinct.
-- **Do** keep content visible before enhancement and make reduced motion static.
-- **Do** use destination links and state-changing buttons with visible keyboard focus.
+- **Do** preserve photograph identity, meaningful alternatives, reserved geometry and image-specific focal positions.
+- **Do** use semantic destination links and state-changing buttons, with visible focus and clear pressed states.
+- **Do** retain the asymmetry of the Grid and the compact density of the Index while keeping their images and labels connected.
+- **Do** keep original factual copy, direct contact methods and clearly labelled original collection links.
+- **Do** make spatial motion interruptible and honor the user’s reduced-motion preference.
 
 ### Don't:
 
-- **Don’t** substitute stock or generated portfolio photographs, invented logos or business claims.
-- **Don’t** turn the work sequence into three uniform cards or put long prose in tracked mono.
-- **Don’t** place readable content behind photographic overlays or depend on hover alone.
-- **Don’t** infer a paper-themed page, viewer, inquiry form, hosting service, CMS or production origin from this homepage record.
-
-## Homepage differentiation revision — 15 November 2026
-
-The user requested clearer visual distance from the original Pixieset website while retaining On Both Sides. The wide opening, separate landscape image, leading Sport caption and paper biography chapter are the resulting approved-scope design changes. That layout revision kept the source copy and photographs. The subsequent user-requested typography/color revision below supersedes its original font and action color. PRODUCT.md v1.1 records this change; the other seven pages remain behind the homepage approval gate.
-
-## Typography and accent revision — 15 November 2026
-
-User requested the Aponic documentation typeface and small amounts of color. Computed styles verified Plus Jakarta Sans Variable (reference H1 700, sections 600, prose/navigation 400). Portfolio uses the same family with 600 headings, 400 prose and 500 actions; sparse Roboto Mono metadata remains. The wider face uses a 48–88px desktop display, 40–60px mobile display and 1.08 leading without artificial width compression. Mobile hero actions use 15px text and 20px icon gaps, reducing to the existing 14px narrow-screen role. Only primary action fills, category arrows, the biography arrow and service hover fills gain coral; selection uses coral on ink. The explicit reference font request overrides generic detector saturation advice. PRODUCT.md v1.2 is authoritative.
-
-### Detector exceptions for this revision
-
-Plus Jakarta Sans is the explicit user reference and Roboto Mono is a pinned sparse metadata role, so generic “overused font” findings do not apply. The type scan also flags documented context-specific sizes: shared non-Home H1 defaults 44–96px, short metadata 10px, narrow secondary actions 14px, mobile hero actions 15px, and story-line endpoint 34px. They remain intentional exceptions; prose stays 17–18px, the visible Home display stays within 88px, and responsive fitting was checked from 320 to 1920px.
+- **Don’t** substitute stock or generated portfolio images, invent logos, dates, clients, endorsements or filmmaking claims.
+- **Don’t** revive the superseded dark/coral palette or mono metadata system.
+- **Don’t** turn all photographs into uniform boxed cards, round their corners or place reading copy over them.
+- **Don’t** use a decorative cursor, parallax, sound, a sphere or motion that obstructs ordinary scrolling.
+- **Don’t** interpret this local design record as approval to publish, migrate hosting, add a CMS or send an inquiry.

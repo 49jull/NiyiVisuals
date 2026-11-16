@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
 
-// Preview-only handoff: the other pages are deliberately outside this phase.
-const pending = new Set(['/about/', '/services/', '/portfolio/', '/gallery-1/', '/gallery-2/', '/gallery-3/', '/contact/']);
+// The published service/price page remains authoritative while terms are unresolved.
+const pending = new Set(['/services/']);
 function existingPageHandoff() {
   const middleware = (request, response, next) => {
     const url = new URL(request.url ?? '/', 'http://localhost');
@@ -18,6 +19,7 @@ function existingPageHandoff() {
 }
 export default defineConfig({
   output: 'static',
+  integrations: [react()],
   trailingSlash: 'always',
   devToolbar: { enabled: false },
   vite: { plugins: [existingPageHandoff()] },

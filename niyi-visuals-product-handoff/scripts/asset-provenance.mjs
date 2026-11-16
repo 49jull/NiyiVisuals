@@ -1,10 +1,10 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
-const sources = JSON.parse(await readFile(new URL('migration/home-asset-sources.json', root), 'utf8'));
+const sources = [...JSON.parse(await readFile(new URL('migration/home-asset-sources.json', root), 'utf8')), ...JSON.parse(await readFile(new URL('migration/collection-asset-sources.json', root), 'utf8'))];
 const directory = new URL('dist/_astro/', root);
 let count = 0;
 for (const name of await readdir(directory)) {
-  const id = name.match(/^(NV-HOME-\d+)/)?.[1];
+  const id = name.match(/^(NV-(?:HOME|SPORT|PARTIES|LIFESTYLE)-\d+)/)?.[1];
   if (!id || !/\.(webp|jpg)$/.test(name)) continue;
   const source = sources.find(item => item.id === id);
   if (!source) throw new Error(`Missing photographic source: ${id}`);

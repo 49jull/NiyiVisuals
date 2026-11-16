@@ -9,14 +9,14 @@
 
 ## Scope and review gates
 
-- Current scope is local foundation and complete homepage implementation, including dependency installation, preview and validation. No other content pages, external Site registration, public deployment, client-site edits or real inquiry submissions are authorized.
-- On a subsequent homepage implementation request, build foundation and Home only. The completed local homepage is awaiting the user’s visual approval before any other content page is developed. Route definitions and shared navigation may be prepared first; do not disguise unfinished destinations as working pages.
-- Owner editing/CMS choice is deferred until after homepage review. The implemented stack is Astro with strict TypeScript, static HTML and plain CSS. Hosting selection and live Pixieset migration remain unapproved.
+- Current scope is the complete local editorial portfolio: Home/Work, Grid/Index/filtering, static project URLs, About and Contact entry points, preview and validation. No external Site registration, public deployment, client-site edits or real inquiry submissions are authorized.
+- The user explicitly superseded the homepage-only gate on 16 November 2026. Implement the requested core experience; services continue to their original authoritative page until their commercial terms are clarified.
+- Owner editing/CMS choice is deferred until after homepage review. The implemented stack is Astro with strict TypeScript, static HTML, plain CSS and a React/Motion gallery island. Hosting selection and live Pixieset migration remain unapproved.
 - Changes to client hosting/domain, publication, real message tests and new paid services need their own applicable user authorization.
 
 ## Content and design
 
-- Implement the pinned “On Both Sides” direction and page-specific requirements in PRODUCT.md. Use the specified Plus Jakarta Sans/Roboto Mono roles, ink/paper themes with restrained coral actions, editorial image scale and restrained motion. Do not substitute a generic template or mix the unselected concepts.
+- Implement PRODUCT.md v2.0’s user-authorized editorial redesign: near-white, charcoal, restrained vermilion and one Plus Jakarta Sans family. Use stable photographic identities, connected Grid/Index/filtering and shared photograph-to-project transitions. Preserve the client truth behind “On Both Sides”; the earlier dark layout and mono roles are historical.
 - Use the client's registered photographs. No stock/generated portfolio images, invented logo, business claims, captions, endorsements, pricing interpretations or placeholder marketing copy.
 - Preserve all eight source routes and account for all 100 image placements. Keep category mappings authoritative and correct; `/gallery-4/` is an honest 404 pending historical clarification, not a fourth gallery.
 - Preserve exact source copy separately from approved display copy. Inventory summaries are not verbatim copy. Keep provenance and approval records in development-only data; explicitly project approved public fields into rendered content.

@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Portfolio from '../components/Portfolio';
+import { preparePortfolio } from '../lib/portfolio';
+import type { Category } from '../types/portfolio';
+export function getStaticPaths() { return ['portfolio','about','contact','gallery-1','gallery-2','gallery-3'].map(section => ({ params: { section } })); }
+const section = Astro.params.section!;
+const data = await preparePortfolio();
+const category: Category = section === 'gallery-1' ? 'Sport' : section === 'gallery-2' ? 'Parties' : section === 'gallery-3' ? 'Lifestyle' : 'All';
+const initialSection = section === 'about' ? 'about' : section === 'contact' ? 'contact' : 'work';
+const name = category !== 'All' ? `${category} Photography` : section === 'about' ? 'About Niyi Scholten' : section === 'contact' ? 'Contact Niyi Scholten' : 'Selected Work';
+---
+<BaseLayout title={`${name} — Niyi Visuals`} description={`${name}. Sport, parties and lifestyle photography by Niyi Scholten in Apeldoorn, The Netherlands.`}>
+  <Portfolio {...data} initialCategory={category} initialSection={initialSection} client:load />
+</BaseLayout>

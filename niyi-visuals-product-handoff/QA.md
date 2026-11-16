@@ -1,62 +1,36 @@
-# Homepage verification — 15 November 2026
+# Editorial portfolio verification — 16 November 2026
 
-Scope: local Home and shared foundation only. No deployment, client-site mutation or inquiry submission.
+Scope: complete local editorial core. No publication, client-site mutation, form submission or film service claim. Previous dark version is recoverable through the named backup tag.
 
-## Automated checks
+## Build and source checks
 
-- `npm run check`: 0 errors, 0 warnings, 0 hints.
-- `npm run lint`: pass (ESLint 10, TypeScript and Astro rules).
-- `npm run build`: pass; exactly one HTML content page.
-- `npm run test`: all 5 tests pass. Includes six photographic placements, original Home text, category routes, preview semantics, research exclusion and all 16 current handoff manifest entries.
-- `npm audit`: zero vulnerabilities, including development tools after a scoped transitive dependency override.
-- [Web Interface Guidelines](https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md) fetched and applied during UI review; PRODUCT.md controls source-copy voice, pinned typography and scope where generic guidance differs.
-- Impeccable detector: the revision reports font-ramp advisories against the earlier design record. Intentional Home story/mobile/category display roles are now recorded in DESIGN.md. Earlier generic “Roboto” matching was a false positive for the prescribed Roboto Mono metadata role.
-- Raster provenance scan: 54 source/build raster files checked, none missing provenance. Sources and generated derivatives are accounted for separately.
+Astro 7 + strict TypeScript retained; React 19 and Motion 14 provide the requested connected interactions. Current checks: type diagnostics 0 errors/warnings/hints; ESLint pass; static build pass; all five built-output tests pass; npm audit zero vulnerabilities. Final command results are retained in the task output.
 
-## Browser checks
+The build produces 17 HTML files: Home, six existing-path entry points, eight descriptive selection pages, Services continuation and a branded 404. Services stays linked to the authoritative original offer. Gallery 4/unknown paths remain honest 404s. All six original Home placements and all original Home prose survive. All 100 source placements remain accounted for. All 16 current handoff manifest entries match; the 14 original research/register/evidence files are unchanged. Planning, ledgers and evidence are excluded from public output.
 
-Desktop and mobile layouts inspected in the in-app browser. Additional overflow/type/header checks at 320/390/768/1024/1366/1920px: no horizontal document overflow. The browser reserves a scrollbar, so capture content widths may be 15px narrower than the requested CSS viewport.
+## Browser observations
 
-- All six image sources load. Desktop and mobile use separate responsive ratios/focal treatment; celebration remains landscape on mobile.
-- Header Work disclosure opens by button; Escape closes and returns focus to its control.
-- Mobile menu opens with named expanded state and initial Close focus. Native modal dialog isolates background; keyboard traversal remains within it. Closing returns focus and restores body scrolling/position.
-- First Escape closes an expanded Work disclosure; next Escape closes its containing menu.
-- Native Back to top now targets a static document-start marker instead of the sticky header.
-- Hero actions fit together at 390px after the gap correction; narrow-screen layouts remain usable without overflow.
-- Console inspection: no reported warnings/errors during the exercised paths.
-- Source/role review confirms reduced-motion branches and no-JavaScript navigation fallback. Browser preference emulation and a JavaScript-disabled session were not available through this browser capability set, so those are code-reviewed rather than runtime-certified.
-- Supporting prose corrected following independent review to 18px tablet/desktop and 17px mobile, with 1.6–1.65 leading (introductory identity line remains a larger heading-like paragraph).
+One desktop/mobile review and its correction confirmation were performed in the in-app browser. Current captures: `.impeccable/review/publication-desktop.jpg`, `publication-mobile.jpg`, the corresponding hero views, Index, portrait detail, mobile detail/menu and forced failure. Full Grid captures show all eight covers and the real portrait.
 
-The first screenshot attempts contained capture artifacts from unloaded/offscreen media and sticky-header positioning; they were rejected and replaced. Review evidence must show all intended image regions and be captured from the document start. Final review files supersede earlier captures.
+- Grid/Index and category filtering retain project identities/order. Rapid repeated normal-motion input settles to Index / All / eight selections with matching URL and live status. Controls sit above the animated photographs, stay in reach and keep stable active-label widths.
+- Opening a cover changes to its static project URL and shows the same photograph. Back, Escape and the close link work. Exact restoration was observed at scroll 0 → 0 and in a filtered Index at scroll 97 → 97, with focus returned to the originating photograph.
+- Direct project visits, refresh, next-selection links and return navigation work. Supporting sequences use real registered images, factual category/medium and descriptive captions; no fictional dates/clients are displayed.
+- The mobile native dialog reports expanded true, initially focuses Close, closes on Escape, reports false and returns to Open menu. Project Shift+Tab wraps from the close link to the final contact link; its background is inert and body scroll is locked while open.
+- A separate temporary production-output fixture deliberately returned 404 for a cover. The visible error frame retained its dimensions/description and Retry control. Retry issued a fresh URL and remained honest when failure persisted; navigation stayed available. No failure-injection code or fixture is in the public build.
+- Calm mode was exercised with `?motion=reduce`: rapid view/filter changes and project opening reported the reduced flag and no spatial transform matrices. All parent, image, caption and indicator layout props explicitly disable spatial motion; MotionConfig also respects user preferences. The OS preference itself was not separately emulated by the browser tool.
+- Reflow measurements at 320/390/768/1024/1366/1920px showed eight projects and no horizontal document overflow. See `publication-responsive.json`. The reserved scrollbar explains content widths 15px narrower than requested viewports. The actual default preview was also inspected.
+- About and Contact entry links reach their sections with correct document titles. Email/tel/social destinations were inspected; no messages were sent.
 
-## Performance evidence and limits
+## Visual corrections
 
-Production browser enhancement is inlined: 2,464 bytes uncompressed / 987 bytes gzipped at measurement. No React runtime or animation library. CSS approximately 23KB uncompressed; self-hosted font files total 40,028 bytes, below the specified 120KB font target. Hero responsive WebP variants range about 27–219KB (480–1920px). No high-resolution collection preloading or third-party scripts.
+The final Sport cover now preserves the subject’s complete head on desktop/mobile. Portrait detail fits the actual natural-ratio photograph to the viewport, removing the gray side matte (desktop observed frame 520×780px). Menu focus/state, exact scroll-zero restoration, cached image failures and explicit reduced-layout behavior were corrected. The independent reviewer’s final bounded verdict is recorded in `publication-finish-review.md`.
 
-These are build asset measurements, not a Lighthouse score or field Core Web Vitals claim. Initial transfer varies with viewport, device pixel ratio, lazy-loading thresholds and browser cache. Field LCP/INP/CLS and a full release accessibility/device pass remain unmeasured.
+Fresh official Web Interface Guidelines were applied. The manual detector ran once: 41 advisories referenced the replaced type ramp, three referenced new contact neutrals, and one generic saturation warning named the explicitly requested Plus Jakarta Sans. The new design record documents those values and intentional display roles; this is not a claim of automated accessibility certification.
 
-## Independent review
+## Performance and limits
 
-Impeccable finish verdict: SHIP for local homepage visual review. A verdict pass scored the four named body typography corrections: 4 resolved, 0 partial, 0 unresolved. This is a review of the homepage and those fixes, not a production or whole-site certification. User visual approval is still pending.
+The earlier measured combined client JavaScript was approximately 123KB gzip (React + Motion + the island), about 23KB above the original aspirational 100KB target. This deliberate dependency cost supports the newly requested layout/shared-element interactions; there is no WebGL, GSAP, UI kit, tracker or third-party runtime. Final file-size measurements may vary slightly after source refinements. Only one self-hosted variable font is loaded. Images use generated 480/960/1600px variants bounded by source size, eager first covers, lazy supporting imagery, dimensions and reserved frames. Provenance scan: 96 source/build rasters, 0 missing.
 
-## Scope and release dependencies
+This was local lab/browser verification, not field Core Web Vitals, physical-phone performance, a multi-browser matrix, a dedicated screen-reader session or browser 200% zoom testing. The 320px reflow path and accessibility tree were inspected. JavaScript-free links/content are verified in built HTML; JavaScript-disabled browser mode was not separately exercised. Master images, release permissions, production origin/hosting, price ambiguities and any future inquiry provider remain unresolved release dependencies. No fabricated success or production-readiness claim is made.
 
-Only Home has been developed. Dev/preview 302 handoffs make pending navigation useful without claiming the other pages are ready; the future Services anchors do not exist on the original site. Gallery 4 returns HTTP 404. Production output contains no redirects or other content pages.
-
-Original Home copy was recovered, but copy exports for other pages, owner masters/rights/credits, currency and terms, privacy, inquiry delivery, hosting/origin, redirect control and owner editing workflow still require later work. Canonical and sitemap configuration is deferred until the actual origin is chosen. The homepage stays noindex throughout local review.
-
-## Differentiation revision — 15 November 2026
-
-The user liked the initial homepage but requested greater visual separation from the original. Revised the opening into a full-width typographic composition with actions before a landscape image, gave Sport a photograph-left/large-caption-right spread, broadened the desktop Parties crop, and changed the complete personal story to a paper-colored chapter with copy first and an inset portrait to the right. All source copy, six photo placements, nav destinations, the then-current font families and restrained-motion behavior were retained.
-
-PRODUCT.md v1.1 and its identical distribution copy record these user-authorized layout changes; their manifest entries were refreshed. The other 14 supplied research/register/evidence files remain unchanged. The body sizes remain 18px tablet/desktop and 17px mobile. Browser checks at 320/390/768/1024/1366/1920px show no horizontal document overflow. This revision supersedes the initial layout evidence; the homepage approval gate remains pending.
-
-The independent refinement review also returned SHIP for local homepage visual review, with no material fix requested. The revised paper chapter was checked in-browser for its actual prose colors and dark focus treatment. See `.impeccable/review/finish-review.md` for the current review scope.
-
-## Typography and coral revision — 15 November 2026
-
-Replaced Archivo with self-hosted Plus Jakarta Sans variable (Latin, 200–800, swap, critical preload), verified against docs.aponic.org computed styles. Semibold headings, medium actions and regular 17–18px prose retain clear roles. Removed unused Archivo binaries/dependency and its unsupported width-axis styling. Muted coral is limited to primary actions, category arrows, biography arrow, service hover and selection. New reference and contrast evidence: `migration/typography-reference.md`. Desktop/mobile screenshots now show this revision; original photographic assets and text remain unchanged.
-
-For v1.2, desktop/mobile were inspected together, with one mobile action-spacing correction confirmed. Responsive measurements at 320/390/768/1024/1366/1920px show no horizontal document overflow and six loaded photos. Native mobile menu open/Escape behavior was rechecked. Coral pairs measure 8.83:1 for ink text, 11.25:1 on hover, and 5.42:1 for the dark coral arrow on paper. Type detector exceptions are explicitly recorded in DESIGN.md. Fresh Web Interface Guidelines review found no material issue in changed files.
-
-Post-revision checks: `npm run check` (0 errors/warnings/hints), `npm run lint`, `npm run build`, all five `npm run test` cases and `git diff --check` passed. `npm audit --omit=optional --audit-level=low` reported zero vulnerabilities. Self-hosted fonts now total 40,028 bytes.
+Final confirmation: all build/type/lint/test checks passed after cleanup; 17 pages built, five tests passed, zero npm vulnerabilities and clean diff whitespace. Route probes returned 200 for all local core paths, 302 to the exact original Services URL, and 404 for Gallery 4. Final combined client JavaScript measures 122,031 bytes gzip. Next-selection confirmation observed “In motion”, Back-to-work focus and panel scroll 0. The independent verdict pass returned **ship**, scoring all six listed fixes resolved within the documented limits. The temporary failure server was stopped; the normal preview remains running.

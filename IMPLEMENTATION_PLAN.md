@@ -138,3 +138,7 @@ Added repository-level AGENTS.md, this plan and .gitignore; initialized local Gi
 ## Current typography revision
 
 User requested the typeface from docs.aponic.org and small color accents. PRODUCT.md v1.2 records verified Plus Jakarta Sans variable for headings/prose/UI, continued sparse Roboto Mono metadata, and restrained muted coral actions/arrows. This supersedes the original font and action-color recommendation; the homepage review gate remains.
+
+## Superseding implementation — 16 November 2026
+
+User authorized a complete editorial portfolio redesign, replacing the dark visual system and earlier homepage-only gate. Recoverable baseline: Git tag `backup/before-publication-redesign-2026-11-16` at `2f8eac8`. Preserve Astro, add a React/Motion island for Grid/Index/filtering/shared detail expansion, build eight static descriptive selection URLs, preserve factual content/contact and original service page, and review desktop/mobile plus history/focus/reduced motion. PRODUCT.md v2.0 governs current scope; no deployment.

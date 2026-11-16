@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Portfolio from '../../components/Portfolio';
+import { preparePortfolio } from '../../lib/portfolio';
+import { projectRecords } from '../../content/portfolio';
+export function getStaticPaths() { return projectRecords.map(project => ({ params: { slug: project.slug } })); }
+const data = await preparePortfolio();
+const project = data.projects.find(project => project.slug === Astro.params.slug)!;
+---
+<BaseLayout title={`${project.title} — Niyi Visuals`} description={project.description}>
+  <Portfolio {...data} initialProject={project.slug} client:load />
+</BaseLayout>

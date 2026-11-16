@@ -1,28 +1,16 @@
 ---
 version: 1
-slug: "src-pages-index-astro"
-primary_target: "src/pages/index.astro"
-related_targets: []
+slug: src-pages-index-astro
+primary_target: src/pages/index.astro
+related_targets: [src/components/Portfolio.tsx, src/styles/portfolio.css]
 ---
+# Niyi Visuals — the photographic register
+Mode: Experience. The user explicitly requested a complete redesign of the existing project, delegated creative choices, and supplied the near-white editorial world and both signature interactions. This replaces the previous dark homepage-only direction.
 
-# Home — On Both Sides
-
-Mode: Experience. Build only the homepage and its shared foundation. The user has explicitly requested the functioning homepage, with desktop/mobile inspection, before approving any other page. Follow the already selected PRODUCT.md composition directly; no new identity exercise or generated photographic replacements.
-
-## Direction contract
-
-THESIS: Niyi's lived understanding of a sporting moment connects celebration, action and personal photography. Real photographs lead, with the original words given a solid readable ground.
-
-OWN-WORLD: Specified ink and warm paper, Plus Jakarta Sans variable and sparse Roboto Mono metadata, rectangular photographs, hairline section boundaries and quiet outlined controls with muted coral primary actions and small directional accents. No decorative gradients, cards, club badges or invented content.
-
-STORY: Identify Niyi and his Apeldoorn base; enter Sport, Parties or Lifestyle; read the complete original Home introduction; find services and inquiry.
-
-FIRST VIEWPORT: Compact 88px header, original action/emotion phrase set across the desktop width with the rest of the headline and visible actions below; a broad landscape celebration photograph follows on its own ink ground. Mobile gives the main phrase two opposing alignments, keeps both actions before the landscape image, and retains all original prose.
-
-FORM: Pinned editorial sequence from PRODUCT.md; direct code implementation for the requested live homepage. Original six photographic placements, a dominant Sport photograph with separate oversized category caption, offset broader Parties and portrait Lifestyle, a warm-paper personal chapter with copy before its inset portrait, service rows, running image and compact invitation. This user-requested revision intentionally separates the composition from the original Pixieset site. No concept roll: direction and composition already specified by the user and PRODUCT.md.
-
-MOTION: One opening composition settles by 1.015→1 in 400ms, with text movement ≤8px; selected Sport image may enter once ≤12px. Category hover ≤1.02, menu feedback 220/160ms, no ambient or per-word effects; reduced motion is static. Content stays visible if scripts fail.
-
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
-
-Dependencies: photo masters/publication information and final production origin remain pending. Source Home copy recovered through the rendered original page on 15 November 2026. Pending page paths use a local-server-only 302 handoff to their exact existing-site equivalents, without developing those pages. No deployment.
+THESIS: The photographs retain their identity while the publication changes shape around them.
+OWN-WORLD: Near-white #F7F7F2, charcoal #24251F, vermilion #BD361E only for selected states/details, one Plus Jakarta Sans family. Rectangular real client photographs, precise alignment, no stock/demonstration media or unsupported film claims.
+STORY: Understand Niyi’s photography and Apeldoorn base, explore eight descriptive photographic selections in Grid or Index, filter by existing category, enter a selection and return to the exact browsing place, then read the source personal story and contact directly.
+FIRST VIEWPORT: Compact name/Work/About/Contact header. Original action/emotion headline set large to the left, short real introduction to the right. A compact filter/layout toolbar leads immediately into a large landscape celebration with an offset floodlit football portrait. Mobile stacks the introduction and controls, shows a landscape opening photo and retains touch-visible navigation.
+FORM: An independent photographic publication’s image register brought to life: eight varied-scale/aspect selections, shared images in a compact Index, art-directed static detail sequences, complete original Home prose and portrait, existing service links and direct contact. Descriptive selection labels are not commission titles, dates or client history. Full original collections remain reachable through explicit archive links. Astro remains the framework; one React/Motion island owns coordinated interactions.
+MOTION: Motion layout springs coordinate Grid/Index and filtering, a shared photo layoutId connects gallery and detail, supporting text enters after 180ms; rapid input interrupts springs. Small indicator feedback is faster. Reduced motion removes spatial transitions. Ordinary scrolling, no sphere/parallax/custom cursor.
+FINISH: A bounded desktop/mobile review, one material correction batch and confirming evidence; independent reviewer disposition, token-bearing DESIGN.md and sidecar, recorded provenance, build/type/lint/source checks. No deployment.

@@ -1,41 +1,45 @@
-# Niyi Visuals — homepage review
+# Niyi Visuals — editorial portfolio
 
-Local implementation of the complete Home page and shared foundation, following **On Both Sides** in PRODUCT.md. Astro, strict TypeScript and plain CSS; no React or animation runtime.
+A local, pre-rendered Astro/TypeScript portfolio with a focused React island and Motion (`motion/react`). Real client photography and verified content are preserved. No public deployment or form backend is configured.
 
 ## Preview
 
-Use Node 24 (24.19.0 was used for validation). Run commands in this directory:
+From `/Users/julians/Desktop/Niyi redesign/niyi-visuals-product-handoff`:
 
 ```sh
-npm ci
+npm install
 npm run dev
 ```
 
-Open the Local URL printed by Astro, normally **http://127.0.0.1:4321/**. The development server is bound to this computer's loopback address. No public deployment has been created. Astro 7 may keep the server running as a managed background process; `npx astro dev status` shows it and `npx astro dev stop` stops it.
+Open http://127.0.0.1:4321/. Astro 7 runs the development server as a background service; use `npx astro dev status`, `npx astro dev logs` or `npx astro dev stop` as needed. The current preview is already running.
 
-For optimized production output:
+## Experience
 
-```sh
-npm run build
-npm run preview
-```
+- Eight descriptive photographic selections in an asymmetric Grid or compact Index.
+- Category filters, stable project identities, interruptible layout springs and a shared photograph-to-detail expansion.
+- Static `/work/[slug]/` pages support direct links, refresh and JavaScript-free reading.
+- Closing/Escape/Back restore the gallery view, filter, exact scroll position and originating focus. Next-selection navigation resets reading position and focus.
+- Native mobile menu, keyboard containment, meaningful image descriptions, responsive WebP sources, reserved dimensions, loading/error/retry states and reduced motion.
+- About/contact use their existing paths as entry points into the connected publication. `/portfolio/` and the three gallery paths remain local entry points. `/services/` continues to the original published offer; service terms are not reinterpreted.
+- Direct email, telephone and genuine social links. No simulated form submission, fabricated film or invented project history.
 
-The preview command prints its own Local URL (4322 when the development server occupies 4321). Stop that server with `npx astro preview stop` when no longer needed.
+Add `?motion=reduce` to preview the calm variant independently of system preferences. OS reduced motion is respected automatically.
 
-**Scope:** only `/` is built. During `dev` and `preview`, the seven pending routes are handed off with a temporary 302 to the matching original Pixieset page. Links retain their intended local paths in the source. This is a local review convenience, not an implementation of those pages, a permanent redirect, or a change to the client website. Existing Services may not have the future `#sport`, `#parties`, and `#lifestyle` anchors. Do not deploy this homepage-only output as the complete website.
+## Replace or extend content
 
-## Implemented
+The clear content entry point is **`src/content/portfolio.ts`**. It contains the image register and ordered selection records, and aggregates the preserved copy/contact records from `home.ts` and `site.ts`. Only public text and optimized image properties cross into the React island.
 
-- Original Home headline, supporting paragraph, five introduction blocks and closing invitation, recovered from the rendered source website.
-- All six registered Home photo placements, with exact recorded source URLs and local responsive WebP/JPEG variants.
-- Self-hosted Plus Jakarta Sans weight variable font and Roboto Mono 400, with OFL notices.
-- A wide typographic hero above landscape photography, a leading Sport image/category spread, offset Parties/Lifestyle photography, a warm-paper personal story, service rows, inquiry close and complete shared footer.
-- Native route links; independent Work disclosure; modal mobile navigation with Escape, browser-native focus containment, focus return and scroll restoration.
-- Descriptive image alternatives, reserved geometry, high-priority opening image, lazy below-fold images and an image failure treatment.
-- Restrained opening/selected-feature motion and hover feedback, with reduced-motion CSS/script branches and visible static defaults.
-- Preview noindex metadata; no trackers, social embeds, fabricated legal links or inquiry submission backend.
+1. Add owned source photographs under `src/assets/photography/` or `src/assets/collections/` and import them into the image register. Provide a unique ID, visible-subject alt text and focal point. Preserve source provenance separately in `migration/`.
+2. Edit `projectRecords`: stable URL slug, descriptive title, category, description, ordered image keys and composition role. The first image is both gallery cover and opening detail photograph. Update the collection note when the selection count changes. Years/client names are intentionally absent until supplied and verified.
+3. Edit `portfolioContent` for identity/location and its referenced `home.ts`/`site.ts` for original copy, email, telephone, socials and services. No demonstration content needs replacing: the existing photographs and business information are authentic.
+4. `src/lib/portfolio.ts` generates appropriately sized responsive image properties at build time. Do not hotlink guessed variants or put the research/registers in `public/`.
+5. Add actual film assets, descriptions/captions and accessible playback controls before introducing film work. None is currently supplied; there is no fabricated video or filmmaker service claim.
 
-## Validation
+`PRODUCT.md` v2.0 governs the current authorized redesign. `DESIGN.md` and `.impeccable/design.json` document the actual visual system; `QA.md` records verification and limits. The 14 original research/register/evidence files remain unchanged. All 100 original placements remain accounted for, including the complete collections explicitly linked to the original site.
+
+## Recovery and checks
+
+The previous version is recoverable at Git tag **`backup/before-publication-redesign-2026-11-16`**, commit `2f8eac8`.
 
 ```sh
 npm run check
@@ -44,18 +48,4 @@ npm run build
 npm run test
 ```
 
-Tests expect the production build first. They verify photo/content preservation, category destinations, only-Home output, preview semantics and unchanged source evidence. `npm audit` currently reports zero vulnerabilities. The scoped minimatch override resolves a transitive development-tool advisory; remove it when typescript-eslint updates its own dependency.
-
-Rendered review used desktop and mobile screenshots plus layout checks at 320, 390, 768, 1024, 1366 and 1920 CSS pixels. Tested desktop disclosure and mobile menu open/close, nested Escape behavior, focus containment/return, scroll restoration and back-to-top. The available browser exposes an accessibility tree; an exhaustive VoiceOver session, physical-device testing, actual browser JavaScript-disabled/preference-emulation tests and field performance measurements are not claimed.
-
-See `QA.md` for exact results, `.impeccable/review/` for screenshots/review, and `DESIGN.md` for the implemented system. The user must approve the homepage before other page development begins.
-
-## Content and assets
-
-`src/content/` contains public display records. `migration/` records original copy, source URLs, pending publication information and placement reconciliation; it is never served. The six downloaded files are existing hosted derivatives, not owner-supplied masters. Every responsive raster retains its source origin through embedded JPEG comments or WebP provenance sidecars generated by the build script. Preserve this when extending the image pipeline.
-
-Keep original research, evidence, masters, private exports and secrets out of `public/`. The production-output test checks that planning material is excluded. Preserve the supplied PRODUCT.md distribution copies and handoff checksums.
-
-## Pending after homepage approval
-
-The other seven pages and their gallery viewer; owner editing/CMS decision; original copy for remaining pages; photo masters/publication and credit information; price/currency clarifications; secure inquiry delivery and arranged receipt testing; approved privacy information; production origin, hosting and migration/redirect decisions. Production canonical/share-image URLs and sitemap will be configured against the actual selected origin, not a guessed domain.
+The build creates static HTML and responsive images, then preserves photographic provenance. Tests inspect the real built output, static project routes, preserved copy/contact, image geometry, migration exclusion and source integrity. Full-resolution masters, publication information, production origin/hosting and any future form integration remain owner-dependent. Do not publish until authorized.

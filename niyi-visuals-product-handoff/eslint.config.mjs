@@ -7,5 +7,5 @@ export default [
   ...ts.configs.recommended,
   ...astro.configs['flat/recommended'],
   { files: ['**/*.astro'], languageOptions: { parserOptions: { parser: ts.parser } } },
-  { files: ['src/**/*.ts'], languageOptions: { globals: { document: 'readonly', window: 'readonly', HTMLElement: 'readonly', HTMLDialogElement: 'readonly', HTMLButtonElement: 'readonly', HTMLImageElement: 'readonly', HTMLDetailsElement: 'readonly', IntersectionObserver: 'readonly', requestAnimationFrame: 'readonly' } } },
+  { files: ['src/**/*.ts', 'src/**/*.tsx'], languageOptions: { globals: { URL: 'readonly', console: 'readonly', HTMLAnchorElement: 'readonly', MouseEvent: 'readonly', document: 'readonly', window: 'readonly', HTMLElement: 'readonly', HTMLDialogElement: 'readonly', HTMLButtonElement: 'readonly', HTMLImageElement: 'readonly', HTMLDetailsElement: 'readonly', IntersectionObserver: 'readonly', requestAnimationFrame: 'readonly' } } },
 ];

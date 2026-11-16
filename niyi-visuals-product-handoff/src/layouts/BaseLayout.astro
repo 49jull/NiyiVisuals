@@ -1,7 +1,5 @@
 ---
 import '../styles/global.css';
-import SiteHeader from '../components/SiteHeader.astro';
-import SiteFooter from '../components/SiteFooter.astro';
 interface Props { title: string; description: string; }
 const { title, description } = Astro.props;
 ---
@@ -10,7 +8,7 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0c0c0c" />
+    <meta name="theme-color" content="#f7f7f2" />
     <meta name="description" content={description} />
     <meta name="robots" content="noindex, nofollow" />
     <meta property="og:title" content={title} />
@@ -18,13 +16,10 @@ const { title, description } = Astro.props;
     <meta property="og:type" content="website" />
     <link rel="preload" href="/fonts/plus-jakarta-sans-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
     <title>{title}</title>
+    <noscript><style>.gallery-filters,.gallery-view,.mobile-menu-button{display:none!important}.desktop-navigation{display:flex!important;gap:16px;font-size:12px}.site-header{flex-wrap:wrap;padding-block:16px}.header-profession{display:none!important}</style></noscript>
   </head>
   <body>
-    <div id="top" aria-hidden="true"></div>
     <a href="#main-content" class="skip-link">Skip to content</a>
-    <SiteHeader />
     <main id="main-content" tabindex="-1"><slot /></main>
-    <SiteFooter />
-    <script>import '../scripts/interactions';</script>
   </body>
 </html>

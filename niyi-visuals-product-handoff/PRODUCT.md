@@ -2,7 +2,7 @@
 
 <!-- impeccable:product-schema 1 -->
 
-**Version:** 1.2 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
+**Version:** 2.0 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
 
 **Creative direction:** On Both Sides. **Existing website:** [Niyi Visuals](https://niyivisuals.mypixieset.com/)
 
@@ -11,6 +11,22 @@ This is the primary specification for a future Codex implementation. It consolid
 The canonical copy belongs at `PRODUCT.md` in the project root. `outputs/PRODUCT.md` is an identical distribution copy; edit the root copy and regenerate the distribution copy together. All project paths below resolve from the project root, including when this file is opened through the distribution copy. The handoff archive includes this file at its root and the referenced `outputs/` files beneath it. Do not upload these planning files, research captures or registers into a public website build.
 
 This deliberately extended PRODUCT.md includes visual requirements, page structures and QA because the user requested one comprehensive implementation specification. Later skill workflows may derive supporting design records from it, but must not discard these requirements or replace this direction with a new concept exercise.
+
+## Current authorized redesign — 16 November 2026
+
+The user explicitly replaced the earlier dark homepage direction with a complete, local editorial portfolio experience. This section supersedes conflicting visual, scope, component and motion requirements in the historical specification below. All factual content, contact, provenance and no-publication constraints still apply.
+
+- Preserve Astro 7 and TypeScript; add a React island using Motion through `motion/react` for connected gallery layouts and shared photograph transitions. No framework migration, CMS, WebGL, GSAP, Atelier, registration or deployment is needed.
+- Visual world: near-white #F7F7F2, charcoal #24251F, muted #66675F, fine #D0D1C8 rules and restrained vermilion #BD361E. One self-hosted Plus Jakarta Sans family supplies every role. Retire the old dark/coral system and Roboto Mono usage.
+- An image register brought to life: compact Niyi Scholten / Work / About / Contact header; the original action/emotion headline and real Apeldoorn introduction; eight photographic selections in an asymmetric editorial grid, with real work visible in the first viewport. Grid/Index controls and category filters share stable image identities and interruptible Motion layout springs. Index shows category and descriptive title, omitting unsupplied years/client metadata.
+- Eight descriptive selections are drawn from registered client photographs. Titles describe visible subjects, not asserted commissions or historical events. Selections may combine images from one source category without implying they depict one event. The full source collections remain reachable through explicitly labelled original-site archive links; the 100 original placements remain accounted for in the ledger. Do not substitute demonstration or stock media for the client's available work.
+- Local project URLs `/work/[slug]/` are statically rendered and refreshable. From the gallery, the selected photograph expands into a full-window reading panel. Closing, Escape and browser Back restore the exact view, category, scroll position and focus. Next-selection links work; modifier-click and JavaScript-free links retain normal navigation. Direct project visits have an obvious return to work.
+- Preserve all five original Home introductory paragraphs, supporting text, invitation, portrait, category/service links, real email/phone/socials and source photo treatments. About and contact are readable sections with their existing paths as entry points. `/portfolio/` and category paths are local entry points. `/services/` continues to the authoritative existing service page; unresolved prices/terms are not reinterpreted. No working form integration existed; contact uses honest mailto/tel links.
+- The user now authorizes implementing the complete core experience, superseding the earlier homepage-only gate. No additional factual biography, client names, dates, endorsements or filmmaking service claims may be invented. Film support can be added when actual video media is supplied; none exists in the current package.
+- Use ordinary scroll, clear touch targets, visible focus, native modal navigation, inert project background, keyboard containment/return, responsive optimized images, stable dimensions, image failure states and reduced motion. No sphere, cursor trick, parallax, sound or decorative animation.
+- Verify desktop/mobile in one batched review, correct meaningful issues, confirm, then finish. Record checks and limits in QA.md. Public launch remains unauthorized.
+
+The earlier design rules below are retained as a research and migration baseline, not the current visual acceptance target. The factual contract remains authoritative wherever this revision does not change it.
 
 ## 1. How to use this specification
 

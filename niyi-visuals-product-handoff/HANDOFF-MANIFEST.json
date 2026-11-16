@@ -10,13 +10,13 @@
   "files": [
     {
       "path": "PRODUCT.md",
-      "bytes": 71153,
-      "sha256": "8d6b7bb8a866e29231a6b8bcb781f0b06dd2780811e4103cd591a87cb571a78d"
+      "bytes": 74896,
+      "sha256": "81187b0d525586514ffcffd369f9d61d7409d385a66795a60529e11d8a59ef60"
     },
     {
       "path": "outputs/PRODUCT.md",
-      "bytes": 71153,
-      "sha256": "8d6b7bb8a866e29231a6b8bcb781f0b06dd2780811e4103cd591a87cb571a78d"
+      "bytes": 74896,
+      "sha256": "81187b0d525586514ffcffd369f9d61d7409d385a66795a60529e11d8a59ef60"
     },
     {
       "path": "outputs/redesign-strategy.md",
@@ -89,5 +89,5 @@
       "sha256": "8785457d8a7caf2f5e8ebffb2f23e136e4d6dee7777f22e7d9a8c1a92f6be1d4"
     }
   ],
-  "spec_revision_note": "PRODUCT.md v1.2 records the user-requested homepage typography and restrained coral accents following v1.1 composition changes. Supplied research, registers and evidence are unchanged."
+  "spec_revision_note": "PRODUCT.md v2.0 records the explicit user-authorized near-white editorial portfolio redesign with Motion gallery/detail interactions. The 14 original research/register/evidence files remain unchanged."
 }

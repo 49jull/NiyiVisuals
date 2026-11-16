@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Page not found — Niyi Visuals" description="This page is unavailable. Explore Niyi Scholten’s photography or get in touch.">
+  <div class="not-found">
+    <a href="/">Niyi Scholten.</a>
+    <h1>This page is<br />out of the frame.</h1>
+    <p>The page you’re looking for is unavailable.</p>
+    <nav aria-label="Find your way"><a href="/portfolio/">Explore the work</a><a href="/contact/">Get in touch</a></nav>
+  </div>
+</BaseLayout>
+<style>.not-found{padding:48px var(--gutter);max-width:1100px}.not-found> a{font-weight:600;text-decoration:none}.not-found h1{font-size:clamp(42px,7vw,96px);line-height:1.1;margin-block:96px 32px}.not-found p{color:var(--muted)}nav{display:flex;gap:32px;flex-wrap:wrap;margin-top:32px}nav a{min-height:48px;display:flex;align-items:center}</style>
