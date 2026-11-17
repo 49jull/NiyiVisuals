@@ -10,6 +10,11 @@ playwright-report/
 .env.*
 !.env.example
 .impeccable/config.local.json
+.impeccable/review/
+.vercel/
+*.tsbuildinfo
+*.pem
+*.key
 
 # Future owner-supplied originals and private exports; never publish these.
 private/

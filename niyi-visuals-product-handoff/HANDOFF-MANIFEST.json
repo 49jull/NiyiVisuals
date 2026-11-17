@@ -10,13 +10,13 @@
   "files": [
     {
       "path": "PRODUCT.md",
-      "bytes": 77753,
-      "sha256": "389ee89d342ca1366cb9307808b54264f7b76478fc4fee5ad1b6f71be4f9247c"
+      "bytes": 78449,
+      "sha256": "76267ed9fc33e0dbc282ca4e7642912cd7a6a115ff98736a8f93f8f2af17b7eb"
     },
     {
       "path": "outputs/PRODUCT.md",
-      "bytes": 77753,
-      "sha256": "389ee89d342ca1366cb9307808b54264f7b76478fc4fee5ad1b6f71be4f9247c"
+      "bytes": 78449,
+      "sha256": "76267ed9fc33e0dbc282ca4e7642912cd7a6a115ff98736a8f93f8f2af17b7eb"
     },
     {
       "path": "outputs/redesign-strategy.md",

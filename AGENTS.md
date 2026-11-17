@@ -9,9 +9,9 @@
 
 ## Scope and review gates
 
-- Current scope is the complete local editorial portfolio: Home/Work, Grid/Index/filtering, static project URLs, About and Contact entry points, preview and validation. No external Site registration, public deployment, client-site edits or real inquiry submissions are authorized.
+- Current scope is the complete local editorial portfolio: Home/Work, Grid/Index/filtering, static project URLs, About and Contact entry points, preview and validation. The user now authorizes GitHub upload to `49jull/NiyiVisuals` and a Vercel client preview with automatic Git deployments. No external Site registration, client-domain/client-site changes or real inquiry submissions are authorized.
 - The user explicitly superseded the homepage-only gate on 16 November 2026. Implement the requested core experience; links and redirects to the old website have been removed at the user’s request; retain service descriptions as plain content.
-- Owner editing/CMS choice is deferred until after homepage review. The implemented stack is Astro with strict TypeScript, static HTML, plain CSS and a React/Motion gallery island. Hosting selection and live Pixieset migration remain unapproved.
+- Owner editing/CMS choice is deferred until after homepage review. The implemented stack is Astro with strict TypeScript, static HTML, plain CSS and a React/Motion gallery island. Vercel is selected for the client preview; live Pixieset migration remains unapproved.
 - Changes to client hosting/domain, publication, real message tests and new paid services need their own applicable user authorization.
 
 ## Content and design

@@ -1,6 +1,6 @@
 # Niyi Visuals — editorial portfolio
 
-A local, pre-rendered Astro/TypeScript portfolio with a focused React island and Motion (`motion/react`). Real client photography and verified content are preserved. No public deployment or form backend is configured.
+A local, pre-rendered Astro/TypeScript portfolio with a focused React island and Motion (`motion/react`). Real client photography and verified content are preserved. Vercel client-preview configuration is included; no form backend is configured. See the repository-root README for the Git deployment setup.
 
 ## Preview
 
@@ -20,7 +20,7 @@ Open http://127.0.0.1:4321/. Astro 7 runs the development server as a background
 - Static `/work/[slug]/` pages support direct links, refresh and JavaScript-free reading.
 - Closing/Escape/Back restore the gallery view, filter, exact scroll position and originating focus. Next-selection navigation resets reading position and focus.
 - Native mobile menu, keyboard containment, meaningful image descriptions, responsive WebP sources, reserved dimensions, loading/error/retry states and reduced motion.
-- About/contact use their existing paths as entry points into the connected publication. `/portfolio/` and the three gallery paths remain local entry points. `/services/` continues to the original published offer; service terms are not reinterpreted.
+- About/contact use their existing paths as entry points into the connected publication. `/portfolio/` and the three gallery paths remain local entry points. Original-site Services links and redirects have been removed at the user’s request; service descriptions remain plain content.
 - Direct email, telephone and genuine social links. No simulated form submission, fabricated film or invented project history.
 
 Add `?motion=reduce` to preview the calm variant independently of system preferences. OS reduced motion is respected automatically.
@@ -35,7 +35,7 @@ The clear content entry point is **`src/content/portfolio.ts`**. It contains the
 4. `src/lib/portfolio.ts` generates appropriately sized responsive image properties at build time. Do not hotlink guessed variants or put the research/registers in `public/`.
 5. Add actual film assets, descriptions/captions and accessible playback controls before introducing film work. None is currently supplied; there is no fabricated video or filmmaker service claim.
 
-`PRODUCT.md` v2.0 governs the current authorized redesign. `DESIGN.md` and `.impeccable/design.json` document the actual visual system; `QA.md` records verification and limits. The 14 original research/register/evidence files remain unchanged. All 100 original placements remain accounted for, including the complete collections explicitly linked to the original site.
+`PRODUCT.md` v2.0 governs the current authorized redesign. `DESIGN.md` and `.impeccable/design.json` document the actual visual system; `QA.md` records verification and limits. The 14 original research/register/evidence files remain unchanged. All 100 original placements remain accounted for, with original-site visitor links removed at the user’s request.
 
 ## Recovery and checks
 
@@ -48,7 +48,7 @@ npm run build
 npm run test
 ```
 
-The build creates static HTML and responsive images, then preserves photographic provenance. Tests inspect the real built output, static project routes, preserved copy/contact, image geometry, migration exclusion and source integrity. Full-resolution masters, publication information, production origin/hosting and any future form integration remain owner-dependent. Do not publish until authorized.
+The build creates static HTML and responsive images, then preserves photographic provenance. Tests inspect the real built output, static project routes, preserved copy/contact, image geometry, migration exclusion and source integrity. Full-resolution masters, publication information, production origin/hosting and any future form integration remain owner-dependent. The user has authorized GitHub upload and a Vercel client preview; client-domain migration remains unapproved.
 
 ## Photographic interaction refinement
 
