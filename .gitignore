@@ -9,8 +9,8 @@ playwright-report/
 .env
 .env.*
 !.env.example
-.impeccable/config.local.json
-.impeccable/review/
+**/.impeccable/config.local.json
+**/.impeccable/review/
 .vercel/
 *.tsbuildinfo
 *.pem
