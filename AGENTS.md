@@ -16,7 +16,7 @@
 
 ## Content and design
 
-- Implement PRODUCT.md v2.0’s user-authorized editorial redesign: near-white, charcoal, restrained vermilion and one Plus Jakarta Sans family. Use stable photographic identities, connected Grid/Index/filtering and shared photograph-to-project transitions. Preserve the client truth behind “On Both Sides”; the earlier dark layout and mono roles are historical.
+- Implement PRODUCT.md v2.1’s user-authorized editorial redesign: near-white, charcoal, restrained vermilion and one Plus Jakarta Sans family. Use stable photographic identities, connected Grid/Index/filtering and shared photograph-to-project transitions. Preserve the client truth behind “On Both Sides”; the earlier dark layout and mono roles are historical.
 - Use the client's registered photographs. No stock/generated portfolio images, invented logo, business claims, captions, endorsements, pricing interpretations or placeholder marketing copy.
 - Preserve all eight source routes and account for all 100 image placements. Keep category mappings authoritative and correct; `/gallery-4/` is an honest 404 pending historical clarification, not a fourth gallery.
 - Preserve exact source copy separately from approved display copy. Inventory summaries are not verbatim copy. Keep provenance and approval records in development-only data; explicitly project approved public fields into rendered content.

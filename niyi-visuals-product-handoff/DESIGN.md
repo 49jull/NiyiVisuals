@@ -273,7 +273,7 @@ A small rectangular control on the neutral `surface` ground. The active option i
 
 ### Photographic selection card and Index row
 
-Semantic `article` and destination anchor; a registered image, descriptive `h3`, category and arrow form one destination. No card shell, shadow or rounded clipping. Hover underlines the title and accents the arrow; fine-pointer, motion-allowed hover moves the arrow only (2px). Index retains the same identity in a compact ruled row. Numbers describe register position, not a date. Ordinary and modifier-click destination behavior must remain native when enhancement does not handle it.
+Semantic `article` and destination anchor; a registered image, descriptive `h3`, category and arrow form one destination. No card shell, shadow or rounded clipping. Hover/focus accents the caption and arrow; an inner image surface enlarges 1.03 inside the fixed frame, the caption shifts 2px, and a small View selection cue clarifies entry. Phone/touch cues stay visible. Reduced motion keeps colour and focus feedback without zoom. Index retains the same identity in a compact ruled row. Numbers describe register position, not a date. Ordinary and modifier-click destination behavior must remain native when enhancement does not handle it.
 
 ### Photograph loading and recovery
 
@@ -306,3 +306,18 @@ Contact is a readable neutral chapter with the real email as its primary underli
 - **Don’t** turn all photographs into uniform boxed cards, round their corners or place reading copy over them.
 - **Don’t** use a decorative cursor, parallax, sound, a sphere or motion that obstructs ordinary scrolling.
 - **Don’t** interpret this local design record as approval to publish, migrate hosting, add a CMS or send an inquiry.
+
+
+## Interaction refinement — 17 November 2026
+
+This preserves the existing editorial world and photographic identities. The current binding interaction contract is PRODUCT.md v2.1.
+
+- **Photographic presence:** image-only inner wrapper scales 1→1.03 over 480ms with the existing ease-out; caption moves up 2px over 220ms, colour feedback takes 180ms. Keyboard focus receives the same feedback. The small View selection cue settles by 6px over 260ms and fades over 180ms; it is always visible on phones/coarse pointers, and hidden in the compact Index. No frame moves, tilts or follows a pointer. Text never scales with the image.
+- **Scroll rhythm:** PhotoArrival enhances only initially offscreen material. First-view/server-rendered content stays at opacity 1/zero movement. Offscreen photographs with their captions settle from 14px / .72 opacity over 460ms, once, with no stagger. A per-experience visited set retains arrivals across filtering and project reopening. Detail supporting sequences use the same behavior; reading prose does not animate. Index switches keep their existing layout spring.
+- **Optical edge:** ViewportBlur contains five overlapping masked backdrop layers at .5/1/2/4/8px. Desktop height is clamp(80px,12svh,132px); phone height is 64px plus bottom safe area, capped at 94px, at .6 strength. The container and every layer have pointer-events none and no colour fill. It sits at z20, below project panels. One IntersectionObserver watches the bottom strip for navigation, captions/cues and reading sections; entering those regions fades it out over 140ms, then hides it to avoid needless compositing. Resize/visualViewport resize rebuild geometry; native scrolling has no JS listener. Keyboard focus, open menu/project, reduced motion/transparency, forced colours and unsupported CSS retain a clear edge.
+- **Entry and exit:** shared photo IDs/springs are retained. Exiting panels immediately stop intercepting pointer input and become inert/hidden to accessibility while their short exit finishes. A close-request guard prevents duplicate Back requests. Existing focus, exact zero/nonzero scroll, filters, Grid/Index, refresh and direct links remain part of the acceptance contract.
+- **Spacing:** desktop opening padding becomes 42px/36px, phone 28px; phone introduction gap becomes 20px. Grid row gaps become 72px/36px desktop/phone. The first right portrait offset becomes 64px, inset portrait 96px; mobile keeps its existing aligned offsets. Aspect ratios/focal choices and all source photographs are retained.
+
+The requested blur is a bounded photographic transition, not a glass surface or colour wash. Unsupported/low-effect preference contexts remain fully usable without it. Actual browser results and device-testing limits belong in QA.md; no physical-device frame-rate or accessibility certification is implied.
+
+Detector exceptions for this pass: the 20 type-ramp advisories concern context-specific sizes already described above. Existing contact neutrals remain unchanged. The #000 values in the new gradients are mask alpha values, not painted black surfaces or new palette colors. The user expressly requested the bounded optical blur; no opaque gradient substitutes for it.

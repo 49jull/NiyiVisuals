@@ -49,3 +49,7 @@ npm run test
 ```
 
 The build creates static HTML and responsive images, then preserves photographic provenance. Tests inspect the real built output, static project routes, preserved copy/contact, image geometry, migration exclusion and source integrity. Full-resolution masters, publication information, production origin/hosting and any future form integration remain owner-dependent. Do not publish until authorized.
+
+## Photographic interaction refinement
+
+Hover or keyboard-focus a cover for fixed-frame zoom and a View selection cue; the cue stays visible on phones. Scroll entrances run once per photographic identity. A small transparent progressive backdrop edge softens approaching imagery and clears around captions, reading passages, focus, menus/projects and the footer. Reduced motion/transparency and unsupported rendering keep a sharp edge. Native scrolling remains unchanged. Prior version: `backup/before-interaction-refinement-2026-11-17` (`ae925e7`).

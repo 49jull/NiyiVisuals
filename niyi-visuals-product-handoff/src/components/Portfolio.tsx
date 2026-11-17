@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import type { MouseEvent } from 'react';
 import type { MotionStyle } from 'motion/react';
-import { AnimatePresence, LayoutGroup, MotionConfig, motion, useReducedMotion } from 'motion/react';
+import { AnimatePresence, LayoutGroup, MotionConfig, motion, useIsPresent, useReducedMotion } from 'motion/react';
 import type { Category, GalleryView, PortfolioImage, PortfolioProject, PortfolioCopy } from '../types/portfolio';
 import '../styles/portfolio.css';
+import PhotoArrival from './PhotoArrival';
+import ViewportBlur from './ViewportBlur';
 
 interface Props {
   projects: PortfolioProject[];
@@ -23,7 +25,7 @@ function Arrow({ down = false }: { down?: boolean }) {
   return <svg className={down ? 'arrow arrow--down' : 'arrow'} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" /></svg>;
 }
 
-function Photograph({ photo, eager = false, sizes = '(max-width: 700px) 100vw, 65vw', sharedId, retryable = false, reduced = false }: { photo: PortfolioImage; eager?: boolean; sizes?: string; sharedId?: string; retryable?: boolean; reduced?: boolean }) {
+function Photograph({ photo, eager = false, sizes = '(max-width: 700px) 100vw, 65vw', sharedId, retryable = false, reduced = false, interactive = false }: { photo: PortfolioImage; eager?: boolean; sizes?: string; sharedId?: string; retryable?: boolean; reduced?: boolean; interactive?: boolean }) {
   const [failedSource, setFailedSource] = useState('');
   const [attempt, setAttempt] = useState(0);
   const [loadedSource, setLoadedSource] = useState('');
@@ -38,28 +40,32 @@ function Photograph({ photo, eager = false, sizes = '(max-width: 700px) 100vw, 6
   const imageSrcSet = attempt ? photo.srcSet.replace(/(\S+) (\d+w)/g, `$1?retry=${attempt} $2`) : photo.srcSet;
   const failed = failedSource === photo.src;
   return <motion.div layout={Boolean(sharedId) && !reduced} {...(sharedId && !reduced ? { layoutId: sharedId } : {})} className="photograph" data-photo-id={photo.id} style={{ '--focal': photo.focal, '--natural-ratio': `${photo.width} / ${photo.height}`, '--image-ratio': photo.width / photo.height } as MotionStyle} transition={spring}>
-    <motion.img key={`${photo.src}-${attempt}`} ref={imageRef} layout={Boolean(sharedId) && !reduced} src={imageSrc} srcSet={imageSrcSet} onLoad={() => setLoadedSource(photo.src)} sizes={sizes} width={photo.width} height={photo.height} alt={photo.alt} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : 'auto'} decoding="async" onError={() => setFailedSource(photo.src)} style={{ opacity: failed ? 0 : 1 }} />
+    <div className="photo-image"><motion.img key={`${photo.src}-${attempt}`} ref={imageRef} layout={Boolean(sharedId) && !reduced} src={imageSrc} srcSet={imageSrcSet} onLoad={() => setLoadedSource(photo.src)} sizes={sizes} width={photo.width} height={photo.height} alt={photo.alt} loading={eager ? 'eager' : 'lazy'} fetchPriority={eager ? 'high' : 'auto'} decoding="async" onError={() => setFailedSource(photo.src)} style={{ opacity: failed ? 0 : 1 }} /></div>
+    {interactive && !failed ? <span className="photo-invite" aria-hidden="true">View selection <Arrow /></span> : null}
     {loadedSource !== photo.src && !failed ? <span className="photo-loading" aria-hidden="true">Loading photograph…</span> : null}
     {failed ? <span className="photo-failure" role="status">Image unavailable.<br />{photo.alt}{retryable ? <button type="button" onClick={() => { setFailedSource(''); setAttempt(value => value + 1); }}>Retry photograph</button> : null}</span> : null}
   </motion.div>;
 }
 
-function GalleryCard({ project, number, open, selected, reduced }: { project: PortfolioProject; number: number; open: (project: PortfolioProject, event: MouseEvent<HTMLAnchorElement>) => void; selected: boolean; reduced: boolean }) {
+function GalleryCard({ project, number, open, selected, reduced, visited, view }: { visited: Set<string>; view: GalleryView; project: PortfolioProject; number: number; open: (project: PortfolioProject, event: MouseEvent<HTMLAnchorElement>) => void; selected: boolean; reduced: boolean }) {
   return <motion.article layout={!reduced} className={`project-card project-card--${project.arrangement}`} data-project={project.slug} transition={spring}>
     <motion.a layout={!reduced} href={`/work/${project.slug}/`} className="project-link" id={`project-${project.slug}`} onClick={event => open(project, event)} aria-label={`Open ${project.title}, ${project.category}`} aria-current={selected ? 'true' : undefined}>
-      <Photograph photo={project.cover} eager={number < 2} sharedId={`photo-${project.slug}`} reduced={reduced} />
+      <PhotoArrival identity={`cover-${project.slug}`} visited={visited} reduced={reduced} disabled={view === 'index' || selected}>
+      <Photograph photo={project.cover} interactive={!selected} eager={number < 2} sharedId={`photo-${project.slug}`} reduced={reduced} />
       <motion.div layout={reduced ? false : 'position'} className="project-caption" transition={spring}>
         <span className="project-ordinal" aria-hidden="true">{String(number + 1).padStart(2, '0')}</span>
-        <motion.h3 layout={reduced ? false : 'position'} transition={spring}>{project.title}</motion.h3>
+        <motion.h3 layout={reduced ? false : 'position'} transition={spring}><span className="caption-title">{project.title}</span></motion.h3>
         <motion.span layout={reduced ? false : 'position'} className="project-category" transition={spring}>{project.category}</motion.span>
         <span className="project-open"><span className="sr-only">Open selection</span><Arrow /></span>
       </motion.div>
+      </PhotoArrival>
     </motion.a>
   </motion.article>;
 }
 
-function ProjectPanel({ project, next, close, openNext, reduced, content }: { content: PortfolioCopy; project: PortfolioProject; next: PortfolioProject; close: () => void; openNext: (project: PortfolioProject, event: MouseEvent<HTMLAnchorElement>) => void; reduced: boolean }) {
+function ProjectPanel({ project, next, close, openNext, reduced, content, visited }: { visited: Set<string>; content: PortfolioCopy; project: PortfolioProject; next: PortfolioProject; close: () => void; openNext: (project: PortfolioProject, event: MouseEvent<HTMLAnchorElement>) => void; reduced: boolean }) {
   const panel = useRef<HTMLDivElement>(null);
+  const present = useIsPresent();
   const closeButton = useRef<HTMLAnchorElement>(null);
   useEffect(() => {
     const root = document.getElementById('site-content');
@@ -74,7 +80,7 @@ function ProjectPanel({ project, next, close, openNext, reduced, content }: { co
     closeButton.current?.focus({ preventScroll: true });
   }, [project.slug]);
 
-  return <motion.div ref={panel} layoutRoot layoutScroll className="project-panel" role="dialog" aria-modal="true" aria-labelledby="project-title" data-reduced-motion={reduced}
+  return <motion.div ref={panel} layoutRoot layoutScroll className="project-panel" style={{ pointerEvents: present ? 'auto' : 'none' }} inert={!present} aria-hidden={!present} role="dialog" aria-modal="true" aria-labelledby="project-title" data-reduced-motion={reduced}
     initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : 0.28 }}
     onKeyDown={event => {
       if (event.key === 'Escape') { event.preventDefault(); close(); }
@@ -92,7 +98,7 @@ function ProjectPanel({ project, next, close, openNext, reduced, content }: { co
         <h1 id="project-title">{project.title}</h1>
         <div><p>{project.description}</p><dl><div><dt>Category</dt><dd>{project.category}</dd></div><div><dt>Medium</dt><dd>{project.format}</dd></div></dl></div>
       </motion.div>
-      <div className="project-sequence">{project.images.slice(1).map((photo, index) => <figure className={`sequence-image sequence-image--${index % 3}`} key={`${project.slug}-${photo.id}`}><Photograph photo={photo} retryable sizes="(max-width: 700px) 100vw, 75vw" /><figcaption>{photo.alt}</figcaption></figure>)}</div>
+      <div className="project-sequence">{project.images.slice(1).map((photo, index) => <figure className={`sequence-image sequence-image--${index % 3}`} key={`${project.slug}-${photo.id}`}><PhotoArrival identity={`sequence-${project.slug}-${photo.id}`} visited={visited} reduced={reduced}><Photograph photo={photo} retryable sizes="(max-width: 700px) 100vw, 75vw" /><figcaption>{photo.alt}</figcaption></PhotoArrival></figure>)}</div>
       <div className="project-context"><span>From the {project.category} collection</span><a href={`https://niyivisuals.mypixieset.com/gallery-${project.category === 'Sport' ? 1 : project.category === 'Parties' ? 2 : 3}/`} target="_blank" rel="noreferrer">Explore the complete collection <Arrow /></a></div>
       <a href={`/work/${next.slug}/`} className="next-project" onClick={event => openNext(next, event)}><span>Next selection</span><strong>{next.title}</strong><Arrow /></a>
       <div className="project-bottom"><button type="button" onClick={close}>Return to your place in the work</button><a href={`mailto:${content.contact.email}`}>Let’s connect <Arrow /></a></div>
@@ -118,6 +124,8 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
   const menuButton = useRef<HTMLButtonElement>(null);
   const browse = useRef<BrowseState>({ view: 'grid', category: initialCategory, scroll: null, focus: '', url: '/' });
   const wasOpen = useRef(Boolean(initialProject));
+  const closing = useRef(false);
+  const visited = useRef(new Set<string>());
   const current = projects.find(project => project.slug === selected);
   const HomeHeading = current ? 'h2' : 'h1';
   const visible = projects.filter(project => category === 'All' || project.category === category);
@@ -125,6 +133,7 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
 
   useEffect(() => {
     const sync = () => {
+      closing.current = false;
       const url = new URL(window.location.href);
       const queryCategory = url.searchParams.get('category');
       const restored = window.history.state?.niyiBrowse as BrowseState | undefined;
@@ -156,6 +165,7 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
   function openProject(project: PortfolioProject, event: MouseEvent<HTMLAnchorElement>) {
     if (!ordinaryClick(event)) return;
     event.preventDefault();
+    closing.current = false;
     const url = new URL(`/work/${project.slug}/`, window.location.origin);
     if (calmMode) url.searchParams.set('motion', 'reduce');
     if (view === 'index') url.searchParams.set('view', 'index');
@@ -169,6 +179,8 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
   }
 
   function closeProject() {
+    if (closing.current) return;
+    closing.current = true;
     if (window.history.state?.niyiOverlay) window.history.back();
     else {
       const url = new URL('/', window.location.origin);
@@ -190,7 +202,7 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
   }
 
   return <LayoutGroup id="niyi-portfolio">
-    <div id="site-content" data-hydrated={hydrated} data-reduced-motion={reduced} inert={Boolean(current)}>
+    <div id="site-content" data-hydrated={hydrated} data-reduced-motion={reduced} data-project-open={Boolean(current)} inert={Boolean(current)}>
       <header className="site-header page-width" id="top">
         <a className="wordmark" href="/" aria-label="Niyi Scholten — Home">Niyi Scholten<span className="wordmark-period">.</span></a>
         <span className="header-profession">Independent photographer</span>
@@ -216,7 +228,7 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
         </div>
         <p className="sr-only" aria-live="polite">{visible.length} photographic selections, {category === 'All' ? 'all categories' : category}, {view} view.</p>
         <motion.div layout={!reduced} className={`project-gallery project-gallery--${view}`} data-view={view} transition={spring}>
-          <AnimatePresence initial={false} mode="popLayout">{visible.map(project => <motion.div layout={!reduced} key={project.slug} className={`gallery-slot gallery-slot--${project.arrangement}`} initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : 0.16, layout: spring }}><GalleryCard project={project} number={projects.indexOf(project)} open={openProject} selected={selected === project.slug} reduced={reduced} /></motion.div>)}</AnimatePresence>
+          <AnimatePresence initial={false} mode="popLayout">{visible.map(project => <motion.div layout={!reduced} key={project.slug} className={`gallery-slot gallery-slot--${project.arrangement}`} initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : 0.16, layout: spring }}><GalleryCard visited={visited.current} view={view} project={project} number={projects.indexOf(project)} open={openProject} selected={selected === project.slug} reduced={reduced} /></motion.div>)}</AnimatePresence>
         </motion.div>
         <div className="work-colophon"><p>{category === 'All' ? content.collectionNote : `${visible.length} photographic selections from my ${category} collection.`}</p><a href="/services/">Photography services <Arrow /></a></div>
       </section>
@@ -239,6 +251,7 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
       </div></footer>
       <noscript><p className="no-script-note">The photographic selections open as complete pages. Layout switching requires JavaScript.</p></noscript>
     </div>
-    <AnimatePresence onExitComplete={restoreBrowse}>{current ? <ProjectPanel key="project-panel" content={content} project={current} next={next} close={closeProject} openNext={openProject} reduced={reduced} /> : null}</AnimatePresence>
+    <ViewportBlur disabled={Boolean(current) || menuOpen || reduced} refreshKey={`${view}-${category}`} />
+    <AnimatePresence onExitComplete={restoreBrowse}>{current ? <ProjectPanel visited={visited.current} key="project-panel" content={content} project={current} next={next} close={closeProject} openNext={openProject} reduced={reduced} /> : null}</AnimatePresence>
   </LayoutGroup>;
 }

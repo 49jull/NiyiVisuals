@@ -54,3 +54,51 @@
 .gallery-filters button{padding-left:12px}
 .filter-dot{position:absolute;left:0}
 @media(max-width:700px){.gallery-view button{min-height:44px}}
+
+/* Photographs retain their frames; feedback lives inside them. */
+.photo-image{position:absolute;inset:0;transform:scale(1);transition:transform 480ms var(--ease-out)}
+.photo-image img{width:100%;height:100%}
+.photo-arrival{min-width:0}
+.project-gallery--index .photo-arrival{display:contents}
+.caption-title{display:inline-block;transition:transform 220ms var(--ease-out),color 180ms}
+.photo-invite{position:absolute;z-index:3;right:16px;bottom:16px;display:inline-flex;align-items:center;gap:20px;padding:9px 13px;background:var(--paper);color:var(--ink);font-size:11px;line-height:1.4;opacity:0;transform:translateY(6px);transition:opacity 180ms,transform 260ms var(--ease-out);pointer-events:none}
+.photo-invite .arrow{width:16px;height:16px}
+.project-gallery--index .photo-invite{display:none}
+.project-link:focus-visible .photo-invite{opacity:1;transform:none}
+.project-link:focus-visible .caption-title{color:var(--accent)}
+.project-link:focus-visible .project-open{color:var(--accent)}
+@media(hover:hover) and (pointer:fine){
+  .project-link:hover .photo-invite{opacity:1;transform:none}
+  .project-link:hover .caption-title{color:var(--accent)}
+}
+@media(prefers-reduced-motion:no-preference){
+  #site-content[data-reduced-motion=false][data-project-open=false] .project-link:focus-visible .photo-image{transform:scale(1.03)}
+  #site-content[data-reduced-motion=false] .project-link:focus-visible .caption-title{transform:translateY(-2px)}
+  @media(hover:hover) and (pointer:fine){
+    #site-content[data-reduced-motion=false][data-project-open=false] .project-link:hover .photo-image{transform:scale(1.03)}
+    #site-content[data-reduced-motion=false] .project-link:hover .caption-title{transform:translateY(-2px)}
+  }
+}
+@media(hover:none),(pointer:coarse){.photo-invite{opacity:1;transform:none;padding:8px 10px;right:12px;bottom:12px;font-size:10px;gap:12px}.project-link:active .project-open{color:var(--accent)}}
+/* Show work earlier without changing the selected editorial arrangement. */
+.editorial-opening{padding-block:42px 36px}
+.project-gallery{row-gap:72px}
+.gallery-slot--portrait-right{margin-top:64px}
+.gallery-slot--portrait-inset{margin-top:96px}
+@media(max-width:700px){.editorial-opening{padding-block:28px}.opening-introduction{margin-top:20px}.project-gallery{row-gap:36px}.project-gallery .gallery-slot{margin-top:0}.photo-invite{right:12px;bottom:12px}.project-panel-bar{padding-top:env(safe-area-inset-top,0px);height:calc(68px + env(safe-area-inset-top,0px))}.mobile-navigation{padding-bottom:max(20px,env(safe-area-inset-bottom,0px))}}
+
+/* A bounded progressive backdrop, never an opaque colour wash. */
+.viewport-blur{position:fixed;z-index:20;inset:auto 0 0;height:clamp(80px,12svh,132px);pointer-events:none;user-select:none;opacity:1;transition:opacity 140ms ease-out;--blur-scale:1}
+.viewport-blur[data-muted=true]{opacity:0;visibility:hidden;transition:opacity 140ms ease-out,visibility 0s 140ms}
+.viewport-blur>span{position:absolute;inset:0;pointer-events:none;backdrop-filter:blur(calc(var(--blur)*var(--blur-scale)));-webkit-backdrop-filter:blur(calc(var(--blur)*var(--blur-scale)));mask-image:var(--mask);-webkit-mask-image:var(--mask)}
+.viewport-blur>span:nth-child(1){--blur:.5px;--mask:linear-gradient(transparent 0%,#000 20%,#000 40%,transparent 60%)}
+.viewport-blur>span:nth-child(2){--blur:1px;--mask:linear-gradient(transparent 15%,#000 35%,#000 55%,transparent 75%)}
+.viewport-blur>span:nth-child(3){--blur:2px;--mask:linear-gradient(transparent 30%,#000 50%,#000 70%,transparent 90%)}
+.viewport-blur>span:nth-child(4){--blur:4px;--mask:linear-gradient(transparent 50%,#000 75%,#000 90%,transparent 100%)}
+.viewport-blur>span:nth-child(5){--blur:8px;--mask:linear-gradient(transparent 70%,#000 100%)}
+body:has(:focus-visible) .viewport-blur{opacity:0;visibility:hidden;transition:opacity 140ms ease-out,visibility 0s 140ms}
+@media(max-width:700px){.viewport-blur{height:min(94px,calc(64px + env(safe-area-inset-bottom,0px)));--blur-scale:.6}}
+@supports not ((backdrop-filter:blur(1px)) and (mask-image:linear-gradient(transparent,#000))){.viewport-blur{display:none}}
+@media(prefers-reduced-motion:reduce),(prefers-reduced-transparency:reduce),(forced-colors:active){.viewport-blur{display:none}}
+
+@media(max-width:700px){.photo-invite{opacity:1;transform:none}}

@@ -142,3 +142,7 @@ User requested the typeface from docs.aponic.org and small color accents. PRODUC
 ## Superseding implementation — 16 November 2026
 
 User authorized a complete editorial portfolio redesign, replacing the dark visual system and earlier homepage-only gate. Recoverable baseline: Git tag `backup/before-publication-redesign-2026-11-16` at `2f8eac8`. Preserve Astro, add a React/Motion island for Grid/Index/filtering/shared detail expansion, build eight static descriptive selection URLs, preserve factual content/contact and original service page, and review desktop/mobile plus history/focus/reduced motion. PRODUCT.md v2.0 governs current scope; no deployment.
+
+## Interaction refinement — 17 November 2026
+
+User requested a focused refinement of the existing editorial design, guided by Lena Harrer’s behavior. Baseline tag: `backup/before-interaction-refinement-2026-11-17` / `ae925e7`. Implemented fixed-frame hover/focus zoom, persistent mobile cues, cached once-only photo arrivals, a context-aware masked backdrop edge and guarded project exits. Native scroll/framework/content retained; no dependency or deployment added. PRODUCT.md v2.1 governs this pass.

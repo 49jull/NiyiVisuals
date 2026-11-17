@@ -2,7 +2,7 @@
 
 <!-- impeccable:product-schema 1 -->
 
-**Version:** 2.0 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
+**Version:** 2.1 · **Prepared:** 15 November 2026 · **Status:** planning specification for review; no implementation or publication authorized by this document alone.
 
 **Creative direction:** On Both Sides. **Existing website:** [Niyi Visuals](https://niyivisuals.mypixieset.com/)
 
@@ -11,6 +11,17 @@ This is the primary specification for a future Codex implementation. It consolid
 The canonical copy belongs at `PRODUCT.md` in the project root. `outputs/PRODUCT.md` is an identical distribution copy; edit the root copy and regenerate the distribution copy together. All project paths below resolve from the project root, including when this file is opened through the distribution copy. The handoff archive includes this file at its root and the referenced `outputs/` files beneath it. Do not upload these planning files, research captures or registers into a public website build.
 
 This deliberately extended PRODUCT.md includes visual requirements, page structures and QA because the user requested one comprehensive implementation specification. Later skill workflows may derive supporting design records from it, but must not discard these requirements or replace this direction with a new concept exercise.
+
+## Authorized interaction refinement — 17 November 2026
+
+The user likes the existing editorial world and requested a focused interaction/presentation pass, using Lena Harrer’s live website as the main behavioral reference. Preserve content, identity, routes, filtering and the useful layouts below. This revision augments the current motion contract rather than introducing another visual direction.
+
+- Interactive covers enlarge inside their fixed frame by 1.03 on fine-pointer hover and keyboard focus; captions shift by 2px and a small “View selection” cue clarifies the action. Touch/phone cues remain visible without hover. Reduced motion keeps colour/focus/action feedback without spatial zoom.
+- Photographs/captions below the initial viewport settle once through a 14px / 0.72→1 entrance over 460ms, with no stagger or initial full hiding. Cache arrivals through filtering/reopening. First-view and JavaScript-free content remain immediately visible. Use native scrolling and the existing Motion system; no parallax, cursor effect, loop or extra animation dependency.
+- Add a fixed, click-through progressive BACKDROP blur: five overlapping masked layers, 0.5/1/2/4/8px, in a bounded desktop strip of 80–132px. Phone strip is about 64px plus safe-area, capped at 94px, with 0.6 blur strength. No colour wash or opaque gradient; preserve underlying imagery. Fade it out where captions/action cues or readable sections meet that strip, for keyboard focus, and while menus/projects are open. Suppress for reduced motion/transparency and forced colours; unsupported backdrop/mask browsers retain a sharp edge.
+- Keep shared photographic identities and layout spring continuity. Prevent duplicate close requests; exits release pointer interception while focus/scroll restoration stays reliable. Preserve exact zero and nonzero scroll positions, Grid/Index, filters, direct URLs, refresh and browser Back.
+- Slightly shorten the opening and selected inter-image gaps to reach photography earlier, preserving all crops/aspect decisions and the eight-selection composition. Maintain safe areas and clear mobile targets.
+- Save the prior version at `backup/before-interaction-refinement-2026-11-17` (ae925e7). Verify desktop/mobile scroll, hover/focus/tap, blur contexts, project transitions, Back/rapid input, footer and reduced motion. No deployment or new factual content is authorized.
 
 ## Current authorized redesign — 16 November 2026
 

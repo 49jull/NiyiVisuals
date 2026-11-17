@@ -10,13 +10,13 @@
   "files": [
     {
       "path": "PRODUCT.md",
-      "bytes": 74896,
-      "sha256": "81187b0d525586514ffcffd369f9d61d7409d385a66795a60529e11d8a59ef60"
+      "bytes": 77298,
+      "sha256": "04662a849f1b413db48fd0c8edfd98c83ec306336f28162ce0e6b410fa793899"
     },
     {
       "path": "outputs/PRODUCT.md",
-      "bytes": 74896,
-      "sha256": "81187b0d525586514ffcffd369f9d61d7409d385a66795a60529e11d8a59ef60"
+      "bytes": 77298,
+      "sha256": "04662a849f1b413db48fd0c8edfd98c83ec306336f28162ce0e6b410fa793899"
     },
     {
       "path": "outputs/redesign-strategy.md",
@@ -89,5 +89,5 @@
       "sha256": "8785457d8a7caf2f5e8ebffb2f23e136e4d6dee7777f22e7d9a8c1a92f6be1d4"
     }
   ],
-  "spec_revision_note": "PRODUCT.md v2.0 records the explicit user-authorized near-white editorial portfolio redesign with Motion gallery/detail interactions. The 14 original research/register/evidence files remain unchanged."
+  "spec_revision_note": "PRODUCT.md v2.1 records the user-authorized interaction and progressive-edge-blur refinement; all 14 original research/register/evidence files remain unchanged."
 }
