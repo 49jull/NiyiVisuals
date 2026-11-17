@@ -61,3 +61,13 @@ No physical-phone FPS, dedicated screen reader, broader browser matrix, older-br
 ## Old-site link removal
 
 At the user’s request, removed original-collection links, Services links and the development/preview/static Services redirect. Service descriptions remain plain content with their existing layout; photographs and interactions are unchanged. Build (16 pages), type check, lint and all five tests pass. Scanned all 19 built HTML/JavaScript files: zero old-site domain references. Local Home returns 200; the removed /services/ route returns 404 without a Location header. No deployment.
+
+## GitHub / Vercel client preview
+
+User authorized upload to `49jull/NiyiVisuals` and a Vercel client preview. The repository was empty before upload; existing local commit history and both recovery tags were pushed without force or rewriting history. Source imagery, font license, research and required build/configuration files are present. Generated reviews stay local; historical review versions remain in preserved Git history. Excluded-path history audit and high-confidence secret-pattern scan found no matches. Environment files, dependencies, generated output, Vercel local state and private exports are ignored.
+
+Vercel imports `main` from the connected GitHub repository, with root directory `niyi-visuals-product-handoff`, Astro static preset, `npm ci`, `npm run build`, `dist`, root-relative paths and trailing slashes. No adapter, environment secret, client-domain change, Pages workflow, form submission or paid service was added. The initial Vercel build completed successfully; its permissive Node range selected Node 26, so package and lockfile now pin Node 24.x for repeatable future builds.
+
+Live URL: https://niyi-visuals.vercel.app/ . Anonymous HTTP checks returned 200 for Home, all six local entry routes, all eight shareable project pages, nine Home photographs, CSS and the self-hosted font. Gallery 4, removed Services, PRODUCT.md and research register URLs return 404. No original-site links appear on Home. The noindex/nofollow response header and existing metadata are preserved; this is indexing guidance, not access protection.
+
+Hosted browser verification exercised Index, Sport filtering, project opening and browser Back, returning to the same filtered Index, then restored All/Grid. Local check/lint/build and all five tests passed; build emits 16 pages and 72 image derivatives. The following Node-pin/documentation push also exercises the automatic Git deployment connection.

@@ -14,6 +14,10 @@ npm run dev
 
 ## Vercel client preview
 
+Live preview: **https://niyi-visuals.vercel.app/**
+
+Repository: https://github.com/49jull/NiyiVisuals
+
 Import `49jull/NiyiVisuals` into Vercel and use these settings:
 
 | Setting | Value |
