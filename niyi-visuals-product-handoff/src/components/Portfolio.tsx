@@ -99,7 +99,7 @@ function ProjectPanel({ project, next, close, openNext, reduced, content, visite
         <div><p>{project.description}</p><dl><div><dt>Category</dt><dd>{project.category}</dd></div><div><dt>Medium</dt><dd>{project.format}</dd></div></dl></div>
       </motion.div>
       <div className="project-sequence">{project.images.slice(1).map((photo, index) => <figure className={`sequence-image sequence-image--${index % 3}`} key={`${project.slug}-${photo.id}`}><PhotoArrival identity={`sequence-${project.slug}-${photo.id}`} visited={visited} reduced={reduced}><Photograph photo={photo} retryable sizes="(max-width: 700px) 100vw, 75vw" /><figcaption>{photo.alt}</figcaption></PhotoArrival></figure>)}</div>
-      <div className="project-context"><span>From the {project.category} collection</span><a href={`https://niyivisuals.mypixieset.com/gallery-${project.category === 'Sport' ? 1 : project.category === 'Parties' ? 2 : 3}/`} target="_blank" rel="noreferrer">Explore the complete collection <Arrow /></a></div>
+      <div className="project-context"><span>From the {project.category} collection</span></div>
       <a href={`/work/${next.slug}/`} className="next-project" onClick={event => openNext(next, event)}><span>Next selection</span><strong>{next.title}</strong><Arrow /></a>
       <div className="project-bottom"><button type="button" onClick={close}>Return to your place in the work</button><a href={`mailto:${content.contact.email}`}>Let’s connect <Arrow /></a></div>
     </div>
@@ -230,7 +230,7 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
         <motion.div layout={!reduced} className={`project-gallery project-gallery--${view}`} data-view={view} transition={spring}>
           <AnimatePresence initial={false} mode="popLayout">{visible.map(project => <motion.div layout={!reduced} key={project.slug} className={`gallery-slot gallery-slot--${project.arrangement}`} initial={{ opacity: 1 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: reduced ? 0 : 0.16, layout: spring }}><GalleryCard visited={visited.current} view={view} project={project} number={projects.indexOf(project)} open={openProject} selected={selected === project.slug} reduced={reduced} /></motion.div>)}</AnimatePresence>
         </motion.div>
-        <div className="work-colophon"><p>{category === 'All' ? content.collectionNote : `${visible.length} photographic selections from my ${category} collection.`}</p><a href="/services/">Photography services <Arrow /></a></div>
+        <div className="work-colophon"><p>{category === 'All' ? content.collectionNote : `${visible.length} photographic selections from my ${category} collection.`}</p></div>
       </section>
 
       <section className="perspective page-width" aria-label="Photographic approach"><p>{content.home.supporting}</p><span>{content.profession}</span></section>
@@ -240,13 +240,13 @@ function PortfolioExperience({ projects, portrait, content, initialProject = '',
         <div className="about-story"><h2 id="about-title">On both sides<br />of the moment<span>.</span></h2><p className="about-introduction">{content.home.introduction[0]}</p>{content.home.introduction.slice(1).map(text => <p key={text}>{text}</p>)}<a className="underlined-link" href={`mailto:${content.contact.email}`}>Let’s make something together <Arrow /></a></div>
       </section>
 
-      <section className="services-section page-width" aria-labelledby="services-title"><h2 id="services-title">What I photograph</h2><div>{content.services.map(service => <a href={service.service} key={service.key}><h3>{service.name}</h3><p>{service.description}</p><Arrow /></a>)}</div></section>
+      <section className="services-section page-width" aria-labelledby="services-title"><h2 id="services-title">What I photograph</h2><div>{content.services.map(service => <div key={service.key}><h3>{service.name}</h3><p>{service.description}</p></div>)}</div></section>
 
       <footer className="contact-section" id="contact"><div className="page-width">
         <div className="contact-opening"><h2>Let’s connect<span>.</span></h2><p>{content.home.invitation}</p></div>
         <a className="contact-email" href={`mailto:${content.contact.email}`}>{content.contact.email}<Arrow /></a>
         <div className="contact-details"><a href={content.contact.telephoneUri}>{content.contact.phone}</a><span>{content.location}</span><div><a href={content.contact.instagram} target="_blank" rel="noreferrer">Instagram <Arrow /></a><a href={content.contact.tiktok} target="_blank" rel="noreferrer">TikTok <Arrow /></a></div></div>
-        <div className="footer-line"><span>© {new Date().getFullYear()} {content.brand}</span><a href="/portfolio/">Work</a><a href="/services/">Services</a><a href="#top">Back to top <Arrow /></a></div>
+        <div className="footer-line"><span>© {new Date().getFullYear()} {content.brand}</span><a href="/portfolio/">Work</a><a href="#top">Back to top <Arrow /></a></div>
         <p className="footer-wordmark" aria-hidden="true">Niyi Scholten.</p>
       </div></footer>
       <noscript><p className="no-script-note">The photographic selections open as complete pages. Layout switching requires JavaScript.</p></noscript>

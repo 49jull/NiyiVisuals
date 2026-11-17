@@ -15,6 +15,7 @@ test('all eight selections have shareable static pages and original route entry 
     assert.equal([...page.matchAll(/<h1\b/g)].length, 1);
     assert.match(page, /href="\/#work"/);
     assert.match(page, /class="next-project"/);
+    assert.doesNotMatch(page, /niyivisuals\.mypixieset\.com|href="\/services\//);
     assert.ok(html.includes(`href="/work/${slug}/"`));
   }
   for (const route of ['portfolio','about','contact','gallery-1','gallery-2','gallery-3']) assert.ok(existsSync(new URL(`dist/${route}/index.html`, root)));
@@ -27,7 +28,7 @@ test('original Home photographs, prose and genuine contact methods survive the r
   assert.match(html, /MOMENTS MOVE FAST LET(?:&#x27;|&#39;|')S FREEZE YOURS/);
   assert.match(html, /href="mailto:shotsbyniyi@gmail.com"/);
   assert.match(html, /href="tel:\+31642818825"/);
-  for (const category of ['sport','parties','lifestyle']) assert.ok(html.includes(`href="/services/#${category}"`));
+  assert.doesNotMatch(html, /href="\/services\//);
   assert.doesNotMatch(html, /href="#"|testimonials|awards|filmmaker/i);
 });
 test('photography has dimensions, descriptive alternatives and responsive sources before hydration', () => {

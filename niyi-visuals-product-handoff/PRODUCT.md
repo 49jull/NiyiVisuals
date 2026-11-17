@@ -12,6 +12,10 @@ The canonical copy belongs at `PRODUCT.md` in the project root. `outputs/PRODUCT
 
 This deliberately extended PRODUCT.md includes visual requirements, page structures and QA because the user requested one comprehensive implementation specification. Later skill workflows may derive supporting design records from it, but must not discard these requirements or replace this direction with a new concept exercise.
 
+## Link removal — current user instruction
+
+Remove all visitor links and redirects to the old Pixieset website, including the original-collection actions and Services handoff. Keep the service descriptions as plain content. Do not replace these destinations or change other content, layouts or interactions. This overrides earlier requirements to link to the original collections/services; research and provenance references remain private and intact.
+
 ## Authorized interaction refinement — 17 November 2026
 
 The user likes the existing editorial world and requested a focused interaction/presentation pass, using Lena Harrer’s live website as the main behavioral reference. Preserve content, identity, routes, filtering and the useful layouts below. This revision augments the current motion contract rather than introducing another visual direction.
